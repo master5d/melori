@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "version": "0.1.0",
+  "disk_encryption": "off",
+  "llm_local": true
+}

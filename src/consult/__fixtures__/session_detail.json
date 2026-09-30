@@ -1,0 +1,102 @@
+{
+  "session": {
+    "id": "2026-09-29-01",
+    "client": "anna",
+    "date": "2026-09-29",
+    "created": "2026-09-29T16:55:43",
+    "status": "open",
+    "meeting_type": "session",
+    "template_id": null,
+    "duration_ms": 100,
+    "language": "en"
+  },
+  "transcript": [
+    {
+      "i": 1,
+      "source": "me",
+      "start_ms": 0,
+      "end_ms": 100,
+      "text": "A session fact."
+    }
+  ],
+  "note": {
+    "n": 1,
+    "created": "2026-09-29T16:55:43",
+    "author": "model",
+    "template_id": "dap",
+    "sections": [
+      ["data", "Data"],
+      ["assessment", "Assessment"],
+      ["plan", "Plan"]
+    ],
+    "fields": {
+      "data": "Session data.",
+      "assessment": "Working formulation.",
+      "plan": "Next step."
+    },
+    "parent": null,
+    "provenance": {
+      "model": "local",
+      "endpoint_local": true,
+      "input": "transcript",
+      "chars_sent": 19,
+      "language": "en",
+      "attempts": 1
+    },
+    "warnings": []
+  },
+  "versions": [
+    {
+      "n": 1,
+      "created": "2026-09-29T16:55:43",
+      "author": "model",
+      "template_id": "dap",
+      "parent": null,
+      "provenance": {
+        "model": "local",
+        "endpoint_local": true,
+        "input": "transcript",
+        "chars_sent": 19,
+        "language": "en",
+        "attempts": 1
+      },
+      "warnings": []
+    }
+  ],
+  "email": {
+    "subject": "Следующая встреча",
+    "body": "Договорились о следующем шаге.",
+    "author": "model",
+    "from_note": 1,
+    "created": "2026-09-29T16:55:43",
+    "provenance": {
+      "model": "local",
+      "endpoint_local": true,
+      "input": "note",
+      "chars_sent": 71,
+      "language": "en",
+      "attempts": 1
+    },
+    "opened_in_mail_at": null
+  },
+  "asks": [
+    {
+      "at": "2026-09-29T16:55:43",
+      "elapsed_ms": 100,
+      "kind": "free",
+      "question": "What was discussed?",
+      "answer": "Opinion text.\nCONVERGENCES:\n- shared view\nDIVERGENCES:\n- differing view",
+      "provenance": {
+        "model": "local",
+        "endpoint_local": true,
+        "input": "transcript",
+        "chars_sent": 18,
+        "until_ms": 100,
+        "truncated": false,
+        "language": "en",
+        "attempts": 1
+      }
+    }
+  ],
+  "runs": []
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Согласие отозвано</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>
+body{margin:0;background:#F4EFE6;color:#1F1B16;font-family:"IBM Plex Sans",sans-serif}
+a{color:#2448B8}a:hover{color:#1A3690}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; display: flex; background: #F4EFE6">
+  <nav aria-label="Разделы" style="width: 76px; box-sizing: border-box; padding: 28px 0; display: flex; flex-direction: column; align-items: center; border-right: 1px solid #D9CFBF">
+    <div style="font-family: Literata, serif; font-size: 30px; font-weight: 600; color: #2448B8">m</div>
+  </nav>
+  <main style="flex-grow: 1; box-sizing: border-box; padding: 40px 56px 32px 72px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-content: start; row-gap: 22px">
+    <a href="Main.dc.html" style="grid-column: span 12; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-decoration: none">← Клиенты</a>
+    <header style="grid-column: span 12; border-bottom: 2px solid #1F1B16; padding-bottom: 14px; display: flex; align-items: baseline; gap: 20px">
+      <h1 style="margin: 0; font-family: Literata, serif; font-weight: 600; font-size: 48px; color: #5E554A; text-decoration: line-through">Вера</h1>
+      <span role="status" style="font-size: 15px; color: #A3342A">Согласие отозвано 02.09.2026 · новые сессии невозможны</span>
+    </header>
+    <section style="grid-column: span 8; display: flex; flex-direction: column; gap: 16px">
+      <p style="margin: 0; font-family: Literata, serif; font-size: 17px; line-height: 1.6">Сохранённые сессии остаются только для чтения до истечения срока хранения (до 01.12.2026) или до удаления по запросу клиента.</p>
+      <div style="border-top: 1px solid #D9CFBF; padding-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5E554A">4 сессии · последняя 28.08.2026</div>
+    </section>
+    <aside style="grid-column: span 4; border: 1px solid #A3342A; box-sizing: border-box; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-family: Literata, serif; font-size: 20px; font-weight: 600">Удалить все данные клиента</h2>
+      <p style="margin: 0; font-size: 14px; color: #5E554A; line-height: 1.5">Папка клиента будет стёрта целиком, без корзины. Введите псевдоним, чтобы подтвердить.</p>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #5E554A">Псевдоним
+        <input type="text" placeholder="Вера" style="height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #1F1B16; background: #FBF8F2; font-size: 16px">
+      </label>
+      <button type="button" disabled style="height: 44px; background: #A3342A; color: #FBF8F2; border: none; font-size: 15px; opacity: 0.55">Удалить навсегда</button>
+    </aside>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

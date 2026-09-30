@@ -1,0 +1,20 @@
+{
+  "chat": 1,
+  "turn": {
+    "q": "What was discussed?",
+    "a": "this is not in the records",
+    "at": "2026-09-29T16:55:43",
+    "refs": [],
+    "provenance": {
+      "model": "local",
+      "endpoint_local": true,
+      "input": "fragments",
+      "chars_sent": 0,
+      "fragments": 0,
+      "sessions": 0,
+      "language": "en",
+      "attempts": 0
+    }
+  },
+  "stored": true
+}

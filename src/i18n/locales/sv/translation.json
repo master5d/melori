@@ -1,0 +1,1592 @@
+{
+  "tray": {
+    "settings": "Inställningar...",
+    "checkUpdates": "Sök efter uppdateringar...",
+    "copyLastTranscript": "Kopiera senaste transkriptionen",
+    "unloadModel": "Avlasta modell",
+    "model": "Modell",
+    "quit": "Avsluta",
+    "cancel": "Avbryt"
+  },
+  "sidebar": {
+    "general": "Allmänt",
+    "models": "Modeller",
+    "advanced": "Avancerat",
+    "postProcessing": "Efterbearbetning",
+    "history": "Historik",
+    "debug": "Felsökning",
+    "about": "Om",
+    "coach": "Coach",
+    "transcribe": "Transcribe File",
+    "assistant": "Assistant",
+    "tts": "Voice",
+    "tutor": "Tutor",
+    "dictionTraining": "Diction & Clarity",
+    "menVoice": "Men's Voice",
+    "womenVoice": "Women's Voice",
+    "voiceTraining": "Voice Training",
+    "onlineTraining": "Online Speaking",
+    "oratoryTraining": "Public Speaking",
+    "speechImprov": "Improvise",
+    "toastTraining": "Toast Art",
+    "readingTraining": "Artistic Reading",
+    "rhetoricTraining": "Kids Rhetoric",
+    "cameraTraining": "On Camera",
+    "handpan": "Handpan",
+    "karaoke": "Karaoke",
+    "audio": "Audio",
+    "practice": "Daily Practice",
+    "linguaTutor": "Lingua Tutor",
+    "clients": "Clients"
+  },
+  "onboarding": {
+    "stepOf": "Step {{current}} of {{total}}",
+    "consult": {
+      "engine": "Engine",
+      "model": "Recognition model",
+      "audio": "Audio",
+      "consent": "Client consent",
+      "engineTitle": "Set up the consultation engine",
+      "modelTitle": "Choose a recognition model",
+      "audioTitle": "Check microphone and call sound",
+      "consentTitle": "melori works only with client consent",
+      "engineHint": "The local engine must be ready before you continue.",
+      "modelHint": "Choose and download the model you will use for consultations.",
+      "audioHint": "Select a microphone and call output device.",
+      "consentHint": "Create a client with the permissions they granted.",
+      "engineWait": "Wait for the engine to become ready. If it does not start, run scripts/setup-engine.",
+      "consentBody": "Before the first meeting, create a pseudonymous client and record their consent.",
+      "firstClient": "Create first client"
+    },
+    "subtitle": "Ställ in ditt röst-till-text-arbetsflöde på några snabba steg.",
+    "recommended": "Rekommenderat",
+    "download": "Ladda ner",
+    "downloading": "Laddar ner...",
+    "customModelDescription": "Stöds inte officiellt",
+    "downloadFailed": "Nedladdningen misslyckades. Försök igen.",
+    "modelCard": {
+      "accuracy": "noggrannhet",
+      "speed": "hastighet"
+    },
+    "models": {
+      "small": {
+        "name": "Whisper Small",
+        "description": "Snabb och ganska noggrann."
+      },
+      "medium": {
+        "name": "Whisper Medium",
+        "description": "Bra noggrannhet, medelhög hastighet"
+      },
+      "turbo": {
+        "name": "Whisper Turbo",
+        "description": "Balanserad noggrannhet och hastighet."
+      },
+      "large": {
+        "name": "Whisper Large",
+        "description": "Bra noggrannhet, men långsam."
+      },
+      "parakeet-tdt-0.6b-v2": {
+        "name": "Parakeet V2",
+        "description": "Endast engelska. Den bästa modellen för engelsktalande."
+      },
+      "parakeet-tdt-0.6b-v3": {
+        "name": "Parakeet V3",
+        "description": "Snabb och noggrann"
+      },
+      "moonshine-base": {
+        "name": "Moonshine Base",
+        "description": "Mycket snabb, endast engelska. Hanterar accenter bra."
+      },
+      "moonshine-tiny-streaming-en": {
+        "name": "Moonshine V2 Tiny",
+        "description": "Blixtsnabb, endast engelska"
+      },
+      "moonshine-small-streaming-en": {
+        "name": "Moonshine V2 Small",
+        "description": "Snabb, endast engelska. Bra balans mellan hastighet och noggrannhet."
+      },
+      "moonshine-medium-streaming-en": {
+        "name": "Moonshine V2 Medium",
+        "description": "Endast engelska. Hög kvalitet."
+      },
+      "breeze-asr": {
+        "name": "Breeze ASR",
+        "description": "Optimerad för taiwanesisk mandarin. Stöd för kodväxling."
+      },
+      "sense-voice-int8": {
+        "name": "SenseVoice",
+        "description": "Mycket snabb. Kinesiska, engelska, japanska, koreanska, kantonesiska."
+      },
+      "gigaam-v3-e2e-ctc": {
+        "name": "GigaAM v3",
+        "description": "Rysk taligenkänning. Snabb och noggrann."
+      },
+      "canary-180m-flash": {
+        "name": "Canary 180M Flash",
+        "description": "Mycket snabb. Engelska, tyska, spanska, franska. Stöder översättning."
+      },
+      "canary-1b-v2": {
+        "name": "Canary 1B v2",
+        "description": "Noggrann flerspråkig. 25 europeiska språk. Stöder översättning."
+      },
+      "cohere-int8": {
+        "name": "Cohere",
+        "description": "En stor, långsammare, men mycket noggrann flerspråkig modell."
+      }
+    },
+    "errors": {
+      "loadModels": "Misslyckades med att ladda tillgängliga modeller",
+      "downloadModel": "Misslyckades med att ladda ner modell: {{error}}",
+      "selectModel": "Failed to select the model"
+    },
+    "permissions": {
+      "title": "Behörigheter krävs",
+      "description": "Echo behöver ett par behörigheter för att fungera korrekt.",
+      "microphone": {
+        "title": "Mikrofonåtkomst",
+        "description": "Krävs för att höra din röst för transkription."
+      },
+      "accessibility": {
+        "title": "Hjälpmedelsåtkomst",
+        "description": "Krävs för att skriva transkriberad text i dina program."
+      },
+      "grant": "Bevilja behörighet",
+      "granted": "Beviljad",
+      "waiting": "Väntar...",
+      "allGranted": "Allt klart!",
+      "errors": {
+        "checkFailed": "Misslyckades med att kontrollera behörigheter. Försök igen.",
+        "requestFailed": "Misslyckades med att begära behörighet. Försök igen."
+      }
+    },
+    "title": "Välkommen till Echo",
+    "next": "Nästa",
+    "back": "Bakåt",
+    "skip": "Hoppa över",
+    "finish": "Slutför",
+    "openSettings": "Öppna inställningar",
+    "step": {
+      "language": {
+        "title": "Diktationsspråk",
+        "hint": "Välj ditt primära språk för röstigenkänning och gränssnitt."
+      },
+      "model": {
+        "title": "Transkriberingsmodell",
+        "hint": "Välj en ASR-modell optimerad för hastighet eller precision."
+      },
+      "hotkey": {
+        "title": "Global snabbknapp",
+        "hint": "Använd denna snabbknapp var som helst för att börja diktera."
+      },
+      "tryout": {
+        "title": "Testa diktering",
+        "hint": "Tryck på snabbknappen och säg en testfras."
+      },
+      "enhance": {
+        "title": "AI-efterbehandling",
+        "hint": "Konfigurera valfritt AI-förfining för texten."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "Anpassad",
+    "active": "Aktiv",
+    "switching": "Byter...",
+    "noModelsAvailable": "Inga modeller tillgängliga",
+    "verifying": "Verifierar {{modelName}}...",
+    "verifyingGeneric": "Verifierar...",
+    "extracting": "Extraherar {{modelName}}...",
+    "extractingMultiple": "Extraherar {{count}} modeller...",
+    "extractingGeneric": "Extraherar...",
+    "downloading": "Laddar ner {{percentage}}%",
+    "downloadingMultiple": "Laddar ner {{count}} modeller...",
+    "modelReady": "Modell klar",
+    "loading": "Laddar {{modelName}}...",
+    "loadingGeneric": "Laddar...",
+    "modelError": "Modellfel",
+    "modelUnloaded": "Modell avlastad",
+    "noModelDownloadRequired": "Ingen modell - Nedladdning krävs",
+    "deleteModel": "Ta bort {{modelName}}",
+    "downloadSpeed": "{{speed}} MB/s",
+    "cancel": "Avbryt",
+    "cancelDownload": "Avbryt nedladdning",
+    "capabilities": {
+      "languageSelection": "Stöder flera indataspråk",
+      "singleLanguage": "Stöder endast detta språk",
+      "multiLanguage": "Flerspråkig",
+      "languageOnly": "Endast {{language}}",
+      "translation": "Kan översätta till engelska",
+      "translate": "Översätt till engelska"
+    }
+  },
+  "settings": {
+    "melori": {
+      "templates": {
+        "title": "Note templates",
+        "name": "Template name",
+        "section": "Section {{n}}",
+        "titleField": "Title",
+        "key": "Key",
+        "guidance": "Guidance",
+        "up": "Up",
+        "down": "Down",
+        "remove": "Remove",
+        "addSection": "Add section",
+        "save": "Save",
+        "new": "New template",
+        "copy": "Make a copy",
+        "edit": "Edit",
+        "locked": "Built-in template",
+        "deleteConflict_one": "This template is assigned to {{count}} client — they will switch to SOAP.",
+        "deleteConflict_other": "This template is assigned to {{count}} clients — they will switch to SOAP.",
+        "deleteConfirm": "Delete and switch clients",
+        "errors": {
+          "name": "Enter a template name (1–60 characters).",
+          "empty": "Add at least one section.",
+          "tooMany": "Use no more than 12 sections.",
+          "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+          "title": "Enter a section title (1–60 characters).",
+          "guidance": "Guidance must be 400 characters or fewer.",
+          "duplicate": "Section keys must be unique."
+        }
+      },
+      "apply": "Apply",
+      "engine": {
+        "title": "Engine and language model",
+        "baseUrl": "OpenAI-compatible server address",
+        "model": "Language model",
+        "corpus": "Corpus directory",
+        "embedModel": "Embedding model",
+        "embedModelHint": "empty — semantic search unavailable",
+        "mirror": "Recognition model mirror",
+        "mirrorHint": "Models without an official source are available only through the configured mirror.",
+        "local": "● Server on this computer — session data stays local.",
+        "remote": "● This server is outside this computer.",
+        "checking": "Checking server locality…",
+        "restarting": "Engine is restarting…"
+      },
+      "privacy": {
+        "templates": {
+          "title": "Note templates",
+          "name": "Template name",
+          "section": "Section {{n}}",
+          "titleField": "Title",
+          "key": "Key",
+          "guidance": "Guidance",
+          "up": "Up",
+          "down": "Down",
+          "remove": "Remove",
+          "addSection": "Add section",
+          "save": "Save",
+          "new": "New template",
+          "copy": "Make a copy",
+          "edit": "Edit",
+          "locked": "Built-in template",
+          "deleteConflict_one": "This template is assigned to {{count}} client — they will switch to SOAP.",
+          "deleteConflict_other": "This template is assigned to {{count}} clients — they will switch to SOAP.",
+          "deleteConfirm": "Delete and switch clients",
+          "errors": {
+            "name": "Enter a template name (1–60 characters).",
+            "empty": "Add at least one section.",
+            "tooMany": "Use no more than 12 sections.",
+            "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+            "title": "Enter a section title (1–60 characters).",
+            "guidance": "Guidance must be 400 characters or fewer.",
+            "duplicate": "Section keys must be unique."
+          }
+        },
+        "title": "Privacy",
+        "hideNotes": "Hide notes from screen sharing and call recording",
+        "hint": "Protects client data when you share your screen or record a call. The recording pill stays visible."
+      },
+      "appearance": {
+        "templates": {
+          "title": "Note templates",
+          "name": "Template name",
+          "section": "Section {{n}}",
+          "titleField": "Title",
+          "key": "Key",
+          "guidance": "Guidance",
+          "up": "Up",
+          "down": "Down",
+          "remove": "Remove",
+          "addSection": "Add section",
+          "save": "Save",
+          "new": "New template",
+          "copy": "Make a copy",
+          "edit": "Edit",
+          "locked": "Built-in template",
+          "deleteConflict": "This template is assigned to {{clients}} clients — they will switch to SOAP.",
+          "deleteConfirm": "Delete and switch clients",
+          "errors": {
+            "name": "Enter a template name (1–60 characters).",
+            "empty": "Add at least one section.",
+            "tooMany": "Use no more than 12 sections.",
+            "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+            "title": "Enter a section title (1–60 characters).",
+            "guidance": "Guidance must be 400 characters or fewer.",
+            "duplicate": "Section keys must be unique."
+          }
+        },
+        "title": "Appearance",
+        "system": "As system",
+        "day": "Day",
+        "evening": "Evening"
+      }
+    },
+    "modelSettings": {
+      "title": "{{model}}-inställningar",
+      "noSettingsNeeded": "Denna modell fungerar automatiskt utan att någon konfiguration krävs."
+    },
+    "general": {
+      "title": "Allmänt",
+      "shortcut": {
+        "title": "Echo-kortkommandon",
+        "description": "Konfigurera kortkommandon för att starta tal-till-text-inspelning",
+        "loading": "Laddar kortkommandon...",
+        "none": "Inga kortkommandon konfigurerade",
+        "notFound": "Kortkommando hittades inte",
+        "pressKeys": "Tryck på tangenter...",
+        "bindings": {
+          "transcribe": {
+            "name": "Kortkommando för transkribering",
+            "description": "Kortkommandot för att spela in och transkribera din röst."
+          },
+          "cancel": {
+            "name": "Kortkommando för att avbryta",
+            "description": "Kortkommandot för att avbryta den aktuella inspelningen."
+          },
+          "transcribe_with_post_process": {
+            "name": "Snabbkommando för efterbearbetning",
+            "description": "Valfritt: En dedikerad snabbknapp som alltid tillämpar AI-efterbearbetning på din transkription."
+          },
+          "meeting_toggle": {
+            "name": "Toggle meeting",
+            "description": "Start or stop the meeting."
+          },
+          "meeting_window": {
+            "name": "Meeting window",
+            "description": "Show or focus the meeting window."
+          },
+          "meeting_ask_focus": {
+            "name": "Focus meeting question",
+            "description": "Focus the Ask field in the meeting window."
+          },
+          "meeting_ask_recap5": {
+            "name": "Ask for last 5 minutes",
+            "description": "Ask what was discussed in the last five minutes."
+          },
+          "meeting_ask_missed": {
+            "name": "Ask what was missed",
+            "description": "Ask what important client speech may have been missed."
+          },
+          "meeting_ask_agreed": {
+            "name": "Ask what was agreed",
+            "description": "Ask what was agreed during the meeting."
+          },
+          "meeting_analyze": {
+            "name": "Analyze meeting",
+            "description": "Generate the meeting note."
+          },
+          "meeting_copy_note": {
+            "name": "Copy meeting note",
+            "description": "Copy the generated meeting note."
+          },
+          "meeting_council": {
+            "name": "Consult council",
+            "description": "Ask the psychology council about the meeting."
+          },
+          "meeting_mark": {
+            "name": "Mark moment",
+            "description": "Mark the current moment in the meeting."
+          }
+        },
+        "errors": {
+          "restore": "Misslyckades med att återställa ursprungligt kortkommando",
+          "set": "Misslyckades med att ställa in kortkommando: {{error}}",
+          "reset": "Misslyckades med att återställa kortkommando till ursprungsvärdet"
+        }
+      },
+      "language": {
+        "title": "Språk",
+        "description": "Välj språk för taligenkänning. Auto kommer automatiskt att bestämma språket, medan val av ett specifikt språk kan förbättra noggrannheten för det språket.",
+        "descriptionUnsupported": "Parakeet-modellen upptäcker automatiskt språket. Inget manuellt val behövs.",
+        "searchPlaceholder": "Sök språk...",
+        "noResults": "Inga språk hittades",
+        "auto": "Auto"
+      },
+      "pushToTalk": {
+        "label": "Tryck för att tala",
+        "description": "Håll ned för att spela in, släpp för att stoppa"
+      }
+    },
+    "models": {
+      "title": "Transkriptionsmodeller",
+      "description": "Välj en transkriptionsmodell eller ladda ner ytterligare modeller. Olika modeller erbjuder varierande nivåer av noggrannhet och hastighet.",
+      "yourModels": "Nedladdade modeller",
+      "availableModels": "Tillgängliga att ladda ner",
+      "downloaded": "Nedladdad",
+      "available": "Tillgänglig att ladda ner",
+      "deleteConfirm": "Är du säker på att du vill ta bort {{modelName}}? Du måste ladda ner den igen för att använda den.",
+      "deleteActiveConfirm": "{{modelName}} är din aktiva modell. Om du tar bort den avbryts transkriptioner tills du väljer en ny modell. Är du säker?",
+      "deleteTitle": "Ta bort modell",
+      "filters": {
+        "all": "Alla",
+        "multiLanguage": "Flerspråkig",
+        "translation": "Översättning",
+        "allLanguages": "Alla språk"
+      },
+      "noModelsMatch": "Inga modeller matchar detta filter."
+    },
+    "sound": {
+      "title": "Ljud",
+      "microphone": {
+        "title": "Mikrofon",
+        "description": "Välj din föredragna mikrofonenhet",
+        "placeholder": "Välj mikrofon...",
+        "loading": "Laddar..."
+      },
+      "audioFeedback": {
+        "label": "Ljudåterkoppling",
+        "description": "Spela upp ljud när inspelningen startar och stoppar"
+      },
+      "outputDevice": {
+        "title": "Utmatningsenhet",
+        "description": "Välj din föredragna ljudutmatningsenhet för återkopplingsljud",
+        "placeholder": "Välj utmatningsenhet...",
+        "loading": "Laddar..."
+      },
+      "volume": {
+        "title": "Volym",
+        "description": "Justera volymen för ljudåterkopplingsljud"
+      }
+    },
+    "advanced": {
+      "title": "Avancerat",
+      "groups": {
+        "app": "App",
+        "output": "Utmatning",
+        "transcription": "Transkription",
+        "history": "Historik",
+        "experimental": "Experimentellt",
+        "subtitles": "Undertexter",
+        "voiceCommands": "Röstkommandon",
+        "shell": "Skal"
+      },
+      "experimentalToggle": {
+        "label": "Experimentella funktioner",
+        "description": "Aktivera experimentella funktioner som fortfarande är under utveckling."
+      },
+      "lazyStreamClose": {
+        "label": "Håll mikrofonen öppen mellan transkriptioner",
+        "description": "Håller mikrofonströmmen öppen i 30 sekunder efter att inspelningen avslutats, vilket minskar latensen för transkriptioner efter varandra. Kan försämra Bluetooth-ljudkvaliteten medan den är aktiv."
+      },
+      "acceleration": {
+        "whisper": {
+          "title": "Whisper-acceleration",
+          "description": "Hårdvaruacceleration för Whisper-modeller. Auto använder GPU om tillgängligt (Metal på macOS, Vulkan på Windows/Linux)."
+        },
+        "ort": {
+          "title": "ONNX-acceleration",
+          "description": "Hårdvaruacceleration för ONNX-modeller (Parakeet, Canary, Moonshine, etc.). DirectML på Windows är experimentellt. Modeller kan misslyckas med att transkribera."
+        },
+        "gpuDevice": {
+          "title": "GPU-enhet",
+          "description": "Välj vilken GPU som ska användas för Whisper-inferens. Auto väljer den dedikerade GPU:n.",
+          "auto": "Auto"
+        }
+      },
+      "startHidden": {
+        "label": "Starta dold",
+        "description": "Starta i systemfältet utan att öppna fönstret."
+      },
+      "autostart": {
+        "label": "Starta vid uppstart",
+        "description": "Starta Echo automatiskt när du loggar in på din dator."
+      },
+      "showTrayIcon": {
+        "label": "Visa ikon i systemfältet",
+        "description": "Visa Echo-ikonen i systemfältet."
+      },
+      "overlay": {
+        "title": "Överlagringsposition",
+        "description": "Visa visuell återkoppling under inspelning och transkription. På Linux rekommenderas 'Ingen'.",
+        "options": {
+          "none": "Ingen",
+          "bottom": "Nederst",
+          "top": "Överst"
+        }
+      },
+      "pasteMethod": {
+        "title": "Klistra-in-metod",
+        "description": "Välj hur text infogas. Direkt: simulerar skrivande via systeminmatning. Ingen: hoppar över klistra in, uppdaterar endast historik/urklipp.",
+        "options": {
+          "clipboard": "Urklipp ({{modifier}}+V)",
+          "clipboardCtrlShiftV": "Urklipp (Ctrl+Shift+V)",
+          "clipboardShiftInsert": "Urklipp (Shift+Insert)",
+          "direct": "Direkt",
+          "none": "Ingen",
+          "externalScript": "Externt skript"
+        },
+        "externalScriptPlaceholder": "/sökväg/till/ditt/skript.sh"
+      },
+      "typingTool": {
+        "title": "Skrivverktyg",
+        "description": "Välj vilket Linux-skrivverktyg som ska användas för metoden Direkt klistra in. Auto kommer automatiskt att upptäcka och använda det bästa tillgängliga verktyget för ditt system.",
+        "options": {
+          "auto": "Auto (Rekommenderas)"
+        }
+      },
+      "clipboardHandling": {
+        "title": "Hantering av urklipp",
+        "description": "Ändra inte urklipp bevarar ditt nuvarande urklippsinnehåll efter transkription. Kopiera till urklipp lämnar transkriptionsresultatet i ditt urklipp efter att ha klistrat in.",
+        "options": {
+          "dontModify": "Ändra inte urklipp",
+          "copyToClipboard": "Kopiera till urklipp"
+        }
+      },
+      "autoSubmit": {
+        "title": "Skicka automatiskt",
+        "description": "Skicka automatiskt den valda tangentkombinationen efter textinsättning. Cmd+Enter gäller på macOS, medan Windows/Linux använder Super+Enter.",
+        "options": {
+          "off": "Av",
+          "enter": "Enter",
+          "cmdEnter": "Cmd+Enter",
+          "superEnter": "Super+Enter",
+          "ctrlEnter": "Ctrl+Enter"
+        }
+      },
+      "translateToEnglish": {
+        "label": "Översätt till engelska",
+        "description": "Översätt automatiskt tal från andra språk till engelska under transkription.",
+        "descriptionUnsupported": "Översättning stöds inte av {{model}}-modellen."
+      },
+      "modelUnload": {
+        "title": "Avlasta modell",
+        "description": "Frigör automatiskt GPU/CPU-minne när modellen inte har använts under den angivna tiden",
+        "options": {
+          "never": "Aldrig",
+          "immediately": "Omedelbart",
+          "min2": "Efter 2 minuter",
+          "min5": "Efter 5 minuter",
+          "min10": "Efter 10 minuter",
+          "min15": "Efter 15 minuter",
+          "hour1": "Efter 1 timme",
+          "sec15": "Efter 15 sekunder (Felsökning)"
+        }
+      },
+      "customWords": {
+        "title": "Anpassade ord",
+        "description": "Lägg till ord som ofta hörs fel eller stavas fel under transkription. Systemet kommer automatiskt att korrigera liknande ord för att matcha din lista.",
+        "placeholder": "Lägg till ett ord",
+        "add": "Lägg till",
+        "remove": "Ta bort {{word}}",
+        "duplicate": "\"{{word}}\" finns redan"
+      },
+      "autoPunctuate": {
+        "label": "Automatisk interpunktion",
+        "description": "Infogar automatiskt kommatecken och avslutande skiljetecken utifrån meningens struktur (stöd för RU/EN)."
+      },
+      "autoCapitalize": {
+        "label": "Automatisk versalisering",
+        "description": "Gör automatiskt första bokstaven i meningar till versal."
+      },
+      "subtitles": {
+        "enable": {
+          "label": "Live-undertexter",
+          "description": "Visa transkriberad text i realtid under inspelningsklotet."
+        },
+        "fontSize": {
+          "label": "Storlek på undertexter",
+          "description": "Textstorlek för undertexterna på skärmen.",
+          "options": {
+            "small": "Liten",
+            "medium": "Mellan",
+            "large": "Stor"
+          }
+        },
+        "maxChars": {
+          "label": "Undertextlängd",
+          "description": "Maximalt antal tecken som behålls på skärmen."
+        },
+        "refreshMs": {
+          "label": "Uppdateringsintervall",
+          "description": "Hur ofta live-undertexterna uppdateras medan du talar."
+        }
+      },
+      "commandMode": {
+        "label": "Kommandoläge",
+        "description": "Inled diktering med en instruktion (\"översätt till engelska\", \"gör kortare\") för att omvandla texten, eller avsluta med \"tryck enter\" för att skicka. Omvandlingskommandon kräver en efterbehandlingsleverantör."
+      },
+      "selfCorrection": {
+        "label": "Självkorrigering",
+        "description": "När du rättar dig själv (\"klockan 2, nej, klockan 3\") behålls bara den korrigerade versionen."
+      },
+      "spokenLists": {
+        "label": "Talade listor",
+        "description": "Gör dikterade uppräkningar (\"för det första… för det andra…\") till en numrerad lista."
+      },
+      "devDictionary": {
+        "label": "Utvecklarordlista",
+        "description": "Styr transkriberingen mot korrekt stavning av vanliga utvecklarverktyg och jargong (GitHub, Vercel, TypeScript…)."
+      },
+      "snippets": {
+        "title": "Textsnuttar",
+        "description": "Talade utlösarfraser som expanderar till färdig text (signaturer, länkar).",
+        "triggerPlaceholder": "Utlösarfras",
+        "textPlaceholder": "Expanderar till…",
+        "add": "Lägg till",
+        "duplicate": "Textsnutten \"{{trigger}}\" finns redan",
+        "remove": "Ta bort textsnutt {{trigger}}"
+      },
+      "shellSkin": {
+        "title": "Svitens skal",
+        "description": "Välj hur ljudsvitens moduler ska visas: ”Rail” är ett smalt sidofält, ”Home” är en studioöversikt med modulkort, och ”Deck” är en DAW-liknande layout med modulflikar högst upp och ett fast transportfält.",
+        "options": {
+          "rail": "Rail",
+          "home": "Home",
+          "deck": "Deck"
+        }
+      }
+    },
+    "postProcessing": {
+      "title": "Efterbearbetning",
+      "hotkey": {
+        "title": "Snabbkommando"
+      },
+      "api": {
+        "title": "API (OpenAI-kompatibelt)",
+        "provider": {
+          "title": "Leverantör",
+          "description": "Välj en OpenAI-kompatibel leverantör."
+        },
+        "appleIntelligence": {
+          "title": "Apple Intelligence",
+          "description": "Körs helt lokalt på enheten. Ingen API-nyckel eller nätverksåtkomst krävs.",
+          "requirements": "Kräver en Apple Silicon Mac som kör macOS Tahoe (26.0) eller senare. Apple Intelligence måste vara aktiverat i systeminställningarna.",
+          "unavailable": "Apple Intelligence är inte tillgängligt på den här enheten. Kräver en Apple Silicon Mac som kör macOS Tahoe (26.0) eller senare med Apple Intelligence aktiverat i systeminställningarna."
+        },
+        "baseUrl": {
+          "title": "Bas-URL",
+          "description": "API-bas-URL för den valda leverantören. Endast den anpassade leverantören kan redigeras.",
+          "placeholder": "https://api.openai.com/v1"
+        },
+        "apiKey": {
+          "title": "API-nyckel",
+          "description": "API-nyckel för den valda leverantören.",
+          "placeholder": "sk-..."
+        },
+        "model": {
+          "title": "Modell",
+          "descriptionApple": "Ange en valfri numerisk tokengräns eller behåll standardinställningen på enheten.",
+          "descriptionCustom": "Ange den modellidentifierare som förväntas av din anpassade slutpunkt.",
+          "descriptionDefault": "Välj en modell som exponeras av den valda leverantören.",
+          "placeholderApple": "Apple Intelligence",
+          "placeholderWithOptions": "Sök eller välj en modell",
+          "placeholderNoOptions": "Ange ett modellnamn",
+          "refreshModels": "Uppdatera modeller"
+        }
+      },
+      "prompts": {
+        "title": "Prompt",
+        "selectedPrompt": {
+          "title": "Vald prompt",
+          "description": "Välj en mall för att förfina transkriptioner eller skapa en ny. Använd ${output} inuti prompttexten för att referera till den fångade transkriptionen."
+        },
+        "noPrompts": "Inga prompter tillgängliga",
+        "selectPrompt": "Välj en prompt",
+        "createNew": "Skapa ny prompt",
+        "promptLabel": "Prompt-etikett",
+        "promptLabelPlaceholder": "Ange namn på prompt",
+        "promptInstructions": "Prompt-instruktioner",
+        "promptInstructionsPlaceholder": "Skriv instruktionerna som ska köras efter transkription. Exempel: Förbättra grammatik och tydlighet för följande text: ${output}",
+        "promptTip": "Tips: Använd <code>${output}</code> för att infoga den transkriberade texten i din prompt.",
+        "updatePrompt": "Uppdatera prompt",
+        "deletePrompt": "Ta bort prompt",
+        "createPrompt": "Skapa prompt",
+        "cancel": "Avbryt",
+        "selectToEdit": "Välj en prompt ovan för att visa och redigera dess detaljer.",
+        "createFirst": "Klicka på 'Skapa ny prompt' ovan för att skapa din första prompt för efterbearbetning."
+      }
+    },
+    "history": {
+      "title": "Historik",
+      "openFolder": "Öppna mapp för inspelningar",
+      "loading": "Laddar historik...",
+      "empty": "Inga transkriptioner ännu. Börja spela in för att bygga upp din historik!",
+      "copyToClipboard": "Kopiera transkription till urklipp",
+      "save": "Spara transkription",
+      "unsave": "Ta bort från sparade",
+      "delete": "Ta bort post",
+      "deleteError": "Misslyckades med att ta bort post. Försök igen.",
+      "retranscribe": "Transkribera igen",
+      "retranscribeError": "Misslyckades med att transkribera igen. Försök igen.",
+      "transcribing": "Transkriberar...",
+      "transcriptionFailed": "Transkribering misslyckades. Du kan transkribera igen med hjälp av ikonen för nytt försök."
+    },
+    "debug": {
+      "title": "Felsökning",
+      "logDirectory": {
+        "title": "Loggmapp",
+        "description": "Plats där loggfiler lagras"
+      },
+      "logLevel": {
+        "title": "Loggnivå",
+        "description": "Ställ in loggningens detaljrikedom"
+      },
+      "updateChecks": {
+        "label": "Sök efter uppdateringar",
+        "description": "Sök automatiskt efter nya versioner av Echo"
+      },
+      "soundTheme": {
+        "label": "Ljudtema",
+        "description": "Välj ett ljudtema för återkoppling vid start och stopp av inspelning"
+      },
+      "wordCorrectionThreshold": {
+        "title": "Tröskelvärde för ordkorrigering",
+        "description": "Känslighet för anpassade ordkorrigeringar"
+      },
+      "historyLimit": {
+        "title": "Historikgräns",
+        "description": "Maximalt antal historikposter som ska sparas",
+        "entries": "poster"
+      },
+      "recordingRetention": {
+        "title": "Radera inspelningar automatiskt",
+        "description": "Radera gamla inspelningar automatiskt för att spara utrymme",
+        "never": "Aldrig",
+        "preserveLimit": "Behåll de senaste {{count}}",
+        "days3": "Efter 3 dagar",
+        "weeks2": "Efter 2 veckor",
+        "months3": "Efter 3 månader",
+        "placeholder": "Välj lagringsperiod..."
+      },
+      "alwaysOnMicrophone": {
+        "label": "Alltid påslagen mikrofon",
+        "description": "Håll mikrofonen aktiv för snabbare svar"
+      },
+      "clamshellMicrophone": {
+        "title": "Clamshell-mikrofon",
+        "description": "Mikrofon som ska användas när bärbara datorns lock är stängt"
+      },
+      "postProcessingToggle": {
+        "label": "Efterbearbetning",
+        "description": "Aktivera AI-driven textförfining efter transkription"
+      },
+      "muteWhileRecording": {
+        "label": "Ljudlös under inspelning",
+        "description": "Stäng av systemljudet under inspelning"
+      },
+      "appendTrailingSpace": {
+        "label": "Lägg till avslutande mellanslag",
+        "description": "Lägg till ett mellanslag efter klistrad transkription"
+      },
+      "keyboardImplementation": {
+        "title": "Tangentbordsimplementering",
+        "description": "Välj tangentbordsgenvägens implementation.",
+        "bindingsReset": "Kortkommandona var inkompatibla och återställdes till standardvärden"
+      },
+      "paths": {
+        "appData": "Appdata:",
+        "models": "Modeller:",
+        "settings": "Inställningar:"
+      },
+      "pasteDelay": {
+        "title": "Fördröjning vid klistra in",
+        "description": "Fördröjning innan klistra in-tangenttryckning skickas (i millisekunder). Öka om fel text klistras in."
+      },
+      "recordingBuffer": {
+        "title": "Extra inspelningsbuffert",
+        "description": "Extra tid (i millisekunder) för att fortsätta spela in efter att du släppt tangenten, för att fånga upp avslutande ljud. 0 = ingen extra buffert."
+      }
+    },
+    "about": {
+      "title": "Om",
+      "version": {
+        "title": "Version",
+        "description": "Nuvarande version av Echo"
+      },
+      "appDataDirectory": {
+        "title": "Mapp för appdata",
+        "description": "Plats där Echo lagrar sina data"
+      },
+      "sourceCode": {
+        "title": "Källkod",
+        "description": "Visa källkod och bidra",
+        "button": "Visa på GitHub"
+      },
+      "acknowledgments": {
+        "title": "Tack till",
+        "whisper": {
+          "title": "Whisper.cpp",
+          "description": "Högpresterande inferens av OpenAI:s Whisper-modell för automatisk taligenkänning",
+          "details": "Echo använder Whisper.cpp för snabb, lokal tal-till-text-behandling. Tack till det fantastiska arbete som utförts av Georgi Gerganov med medarbetare."
+        }
+      },
+      "eliteEdition": "Lokal tvåspråkig diktering"
+    },
+    "coach": {
+      "wpm": "WPM",
+      "fillers": "Fillers",
+      "pace": {
+        "slow": "slow",
+        "good": "good pace",
+        "fast": "fast"
+      },
+      "aggregate": "This view: avg {{wpm}} WPM · {{rate}}% fillers",
+      "toastEnabled": {
+        "title": "Coach toast",
+        "description": "Show a brief delivery summary after each dictation"
+      },
+      "title": "Coach",
+      "thisWeek": "this week",
+      "avgWpm": "avg WPM",
+      "fillerRate": "fillers",
+      "sessions": "dictations",
+      "vsPrev": "vs last week",
+      "trend": "Trend",
+      "windowDays7": "7d",
+      "windowDays30": "30d",
+      "windowAll": "All",
+      "streak": "Streak",
+      "streakDays": "{{count}}-day streak",
+      "streakBest": "best {{count}}",
+      "empty": "No sessions yet — dictate something to see progress.",
+      "belowAvg": "below your avg",
+      "aboveAvg": "above your avg"
+    },
+    "capture": {
+      "captureSuccess": "Saved to capture folder",
+      "captureError": "Voice capture failed — check the folder",
+      "dirLabel": "Voice capture folder",
+      "dirDescription": "Folder where dictated notes are saved when you start with a capture phrase (empty = off)",
+      "dirPlaceholder": "/path/to/your/notes/inbox",
+      "phrasesLabel": "Capture trigger phrases",
+      "phrasesDescription": "Comma-separated phrases that start a capture (e.g. capture note, save note)",
+      "phrasesPlaceholder": "capture note, save note"
+    },
+    "transcribe": {
+      "tab": "Transcribe",
+      "title": "Transcribe File",
+      "pickFile": "Pick Audio/Video File",
+      "noFile": "No file selected",
+      "timestamps": "Include timestamps",
+      "fmtInline": "Inline [MM:SS]",
+      "fmtJson": "JSON (Word-level)",
+      "fmtKaraoke": "Karaoke VTT",
+      "diarize": "Speaker diarization",
+      "speakersPlaceholder": "Speaker count hint",
+      "run": "Transcribe",
+      "working": "Transcribing...",
+      "copy": "Copy All",
+      "saveAs": "Save As...",
+      "cancel": "Cancel",
+      "cancelled": "Cancelled",
+      "progress": {
+        "decoding": "Decoding audio…",
+        "loadingModel": "Loading model…",
+        "transcribing": "Transcribing…",
+        "diarizing": "Identifying speakers…",
+        "formatting": "Formatting…",
+        "done": "Done"
+      },
+      "saveTo": "Save to…",
+      "savedTo": "Saved to {{path}}",
+      "diarizeCliNote": "Diarization runs on CPU and is slow for long files — and an in-app run can stop if you switch tabs. For reliable speaker-labelled output, use the CLI:\necho --transcribe-file \"FILE\" -o \"OUT.txt\" --diarize --format speaker",
+      "translate": "Översätt till",
+      "translateNone": "Ingen översättning"
+    },
+    "assistant": {
+      "title": "Assistant",
+      "description": "Personal AI assistant that can answer questions and help with tasks.",
+      "enable": {
+        "label": "Enable Assistant",
+        "description": "Toggle assistant mode on or off."
+      },
+      "systemPrompt": {
+        "label": "System Prompt",
+        "description": "The base personality and instructions for the assistant. If empty, uses the default instructions."
+      },
+      "systemPromptPlaceholder": "You are Echo, a concise, friendly voice assistant...",
+      "tryIt": "Try it",
+      "ask": "Ask",
+      "speakReply": "Speak reply"
+    },
+    "tts": {
+      "title": "Voice (Text-to-Speech)",
+      "description": "Echo can speak agent questions and replies aloud.",
+      "speakAnswers": "Speak agent questions aloud",
+      "voice": "Voice",
+      "voiceAuto": "Auto (by language)",
+      "localEngine": "Lokal motor",
+      "localEngineSupertonic": "Supertonic (neural, 31 språk)",
+      "localEnginePiper": "Piper (äldre)",
+      "supertonicVoice": "Supertonic-röst",
+      "downloadVoices": "Ladda ner Supertonic-röster (~384 MB)",
+      "downloadingVoices": "Laddar ner… {{percent}}%",
+      "rate": "Speaking rate",
+      "testVoice": "Test voice",
+      "localEngineKitten": "Kitten (English only, compact)"
+    },
+    "tutor": {
+      "enable": {
+        "label": "Language Tutor",
+        "description": "Enable scoring and feedback for pronunciation practice."
+      },
+      "practice": "Practice",
+      "reference": "Reference Phrase",
+      "spoken": "What you said",
+      "score": "Score",
+      "overall": "Overall",
+      "note": "Note",
+      "language": "Language",
+      "record": "Record",
+      "stopRecording": "Stop",
+      "transcribing": "Transcribing…",
+      "spokenHeard": "Heard: “{{spoken}}”",
+      "phonemeUnavailable": "Per-phoneme compare needs the bundled espeak (Windows). Showing word-level match.",
+      "micError": "Couldn't access the microphone.",
+      "youSaid": "you said {{ipa}}"
+    },
+    "karaoke": {
+      "title": "Karaoke",
+      "subtitle": "Importera ett spår, sjung med och få ett betyg",
+      "custom": "Custom: {{name}}",
+      "import": "Import",
+      "lyricsLabel": "Lyrics (Space separated words for timing sync)",
+      "seconds": "{{val}}s",
+      "speedSlow": "0.75x (Slow)",
+      "speedNormal": "1.0x (Normal)",
+      "speedFast": "1.25x (Fast)",
+      "scoreTitle": "Pronunciation Score",
+      "match": "match",
+      "alignmentBreakdown": "Word Alignment breakdown",
+      "singAlong": "Sing along",
+      "singStop": "Stop singing",
+      "pitchScoreTitle": "Pitch accuracy",
+      "pitchScoreValue": "{{pct}}% on pitch",
+      "micError": "Couldn't access the microphone. Playing the reference only.",
+      "customApprox": "Pitch target for custom audio is approximate (best for solo voice)."
+    },
+    "course": {
+      "subtitle": "Personal mentorship & Echo guidance",
+      "tabCourse": "Course",
+      "tabDiary": "Diary",
+      "lesson": "Lesson {{n}}",
+      "completed": "Done",
+      "backToLessons": "Back to lessons",
+      "exercisesHeading": "Practice exercises:",
+      "backToExercises": "Back to exercises",
+      "instructionLabel": "Exercise instruction",
+      "howTo": "How to do it:",
+      "practiceHeading": "Practice & reporting",
+      "recordTitle": "Record exercise",
+      "recording": "Recording...",
+      "recordHint": "Record a fragment of your practice",
+      "listen": "Listen:",
+      "reportLabel": "Describe your experience (daily report)",
+      "reportPlaceholder": "Describe how it went and any difficulties you faced...",
+      "submitting": "Submitting...",
+      "submit": "Send to Echo mentor",
+      "recommendations": "Echo mentor recommendations",
+      "diaryEmptyTitle": "Diary is empty",
+      "diaryEmptyBody": "Complete any exercise in the Course tab and submit your first report to get Echo's feedback.",
+      "lessonReport": "Lesson {{n}}: {{name}}",
+      "task": "Exercise",
+      "reviewed": "Reviewed",
+      "myReport": "My report:",
+      "analysis": "Echo mentor analysis:",
+      "toastRecStart": "Recording started. Practise now!",
+      "toastMicFail": "Failed to access microphone.",
+      "toastRecStop": "Recording stopped.",
+      "toastFillReport": "Please fill in your report first.",
+      "toastLessonDone": "Congratulations! You completed: {{title}}",
+      "toastSubmitted": "Report submitted and analyzed by your mentor.",
+      "toastCoachFail": "Failed to query coach. Check your LLM settings."
+    },
+    "handpan": {
+      "subtitle": "Multi-Scale Hang Drum",
+      "selectScale": "Select scale",
+      "ringTime": "Ring Time (Sustain)",
+      "hardness": "Strike Hardness",
+      "reverb": "Reverb Space",
+      "help": "Press keyboard keys 1 to 9 to pluck the corresponding notes, or click/tap directly on the drum fields.",
+      "keyLabel": "Key {{k}}"
+    },
+    "audio": {
+      "title": "Audio",
+      "meter": {
+        "title": "Input Level",
+        "clip": "Clip",
+        "noDevice": "No input device — select a microphone to see levels.",
+        "idle": "Waiting for input…"
+      },
+      "gain": {
+        "title": "Input Gain",
+        "description": "Boost or cut the microphone signal before it is metered and dictated (0 dB = no change)."
+      },
+      "monitor": {
+        "title": "Monitor input",
+        "description": "Hear your microphone live in headphones to tune gain and mic position. Use headphones — monitoring through speakers can cause feedback.",
+        "device": "Monitor output",
+        "deviceDescription": "Where you hear yourself. Route to headphones to avoid feedback.",
+        "volume": "Monitor volume",
+        "volumeDescription": "How loud you hear yourself. Does not change the captured or dictated audio.",
+        "feedbackWarning": "Monitoring off: feedback detected.",
+        "deviceError": "Monitoring stopped: audio output unavailable.",
+        "inputLost": "Monitoring stopped: input device lost."
+      },
+      "spectrum": {
+        "title": "Spectrum",
+        "peakHold": "Hold",
+        "freeze": "Freeze",
+        "idle": "Waiting for input…"
+      },
+      "deviceHealth": {
+        "title": "Enhet",
+        "noDevice": "Ingen ingångsenhet",
+        "noFacts": "Strömmen är inte öppen",
+        "noSignal": "Ingen signal",
+        "reconnect": "Anslut igen",
+        "reconnectFailed": "Det gick inte att öppna ingångsenheten igen",
+        "status": {
+          "ok": "Signal finns",
+          "starting": "Waiting for the first frame…",
+          "silent": "Mikrofonen är tyst — kontrollera om den är avstängd",
+          "stalled": "Enheten slutade leverera ljud",
+          "unavailable": "Enheten är inte tillgänglig",
+          "unknown": "Kontrollerar…"
+        }
+      },
+      "autoStopSilence": {
+        "title": "Auto-stop after silence, min",
+        "description": "0 disables automatic stop."
+      }
+    },
+    "practice": {
+      "title": "Daily Practice",
+      "day": "Day {{day}}",
+      "streak": "streak: {{count}}",
+      "tab": {
+        "session": "Session",
+        "beforeAfter": "Before / After"
+      },
+      "record": "Record",
+      "stop": "Stop",
+      "done": "Done",
+      "oneMore": "One more",
+      "sessionDone": "Today's session complete!",
+      "sessionDoneHint": "Streak: {{count}} day(s). Come back tomorrow.",
+      "courseDone": "Course complete!",
+      "courseDoneHint": "Pick another course to keep practicing.",
+      "beforeAfterTitle": "Before / After",
+      "beforeAfterHint": "Record a 60-second free reading — the same check every time. Your first take is Point A; later takes show the progress you can hear.",
+      "recordBaseline": "Record Point A",
+      "recordCheck": "Record a new check",
+      "baseline": "Point A",
+      "latest": "Now",
+      "latestPending": "Now — not yet",
+      "latestHint": "Record a second take after a few sessions to compare.",
+      "noTakes": "No takes yet — record your Point A to start.",
+      "allTakes": "{{count}} takes total"
+    },
+    "lingua": {
+      "wizardTitle": "Linguistic profile",
+      "pickLanguage": "Which language are you entering?",
+      "multiHint": "multiple answers welcome",
+      "back": "Back",
+      "next": "Next",
+      "finish": "Begin",
+      "newSession": "New session",
+      "redoProfile": "Redo profile",
+      "emptyHint": "Say hello — the tutor will open the first cycle from your profile.",
+      "thinking": "the field is tuning…",
+      "inputPlaceholder": "Write to the tutor…"
+    }
+  },
+  "footer": {
+    "downloadingModel": "Laddar ner {{model}}...",
+    "checkingUpdates": "Söker efter uppdateringar...",
+    "updateAvailable": "Uppdatering tillgänglig: {{version}}",
+    "updateAvailableShort": "Uppdatering tillgänglig",
+    "upToDate": "Uppdaterad",
+    "downloadUpdate": "Ladda ner uppdatering",
+    "restart": "Starta om",
+    "updateCheckingDisabled": "Uppdateringskontroll inaktiverad",
+    "downloading": "Laddar ner... {{progress}}%",
+    "installing": "Installerar...",
+    "preparing": "Förbereder...",
+    "checkForUpdates": "Sök efter uppdateringar",
+    "portableUpdateTitle": "Manual update required",
+    "portableUpdateMessage": "Portable installs cannot be updated automatically. To update: download the latest NSIS installer from GitHub Releases, install it to the same folder, then copy your Data/ folder (settings, models, recordings) from the old version to the new one.",
+    "portableUpdateButton": "Open GitHub Releases"
+  },
+  "common": {
+    "loading": "Laddar...",
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "reset": "Återställ",
+    "add": "Lägg till",
+    "remove": "Ta bort",
+    "delete": "Ta bort",
+    "edit": "Redigera",
+    "create": "Skapa",
+    "update": "Uppdatera",
+    "close": "Stäng",
+    "open": "Öppna",
+    "default": "Standard",
+    "enabled": "Aktiverad",
+    "disabled": "Inaktiverad",
+    "on": "På",
+    "off": "Av",
+    "yes": "Ja",
+    "no": "Nej",
+    "noOptionsFound": "Inga alternativ hittades"
+  },
+  "accessibility": {
+    "permissionsRequired": "Behörigheter för hjälpmedel krävs",
+    "permissionsDescription": "Echo behöver behörighet för hjälpmedel för att kunna skriva transkriberad text.",
+    "openSettings": "Öppna systeminställningar",
+    "dismiss": "Avvisa"
+  },
+  "errors": {
+    "loadDirectory": "Fel vid laddning av mapp: {{error}}",
+    "micPermissionDeniedTitle": "Mikrofonåtkomst nekad",
+    "micPermissionDenied": {
+      "generic": "Mikrofonåtkomst nekades av operativsystemet. Bevilja mikrofonbehörighet i dina systeminställningar.",
+      "windows": "Aktivera mikrofonåtkomst i Inställningar → Integritet och säkerhet → Mikrofon (inklusive åtkomst till skrivbordsappar).",
+      "macos": "Bevilja mikrofonåtkomst i Systeminställningar → Integritet och säkerhet → Mikrofon.",
+      "linux": "Bevilja mikrofonåtkomst i systemets ljud- eller integritetsinställningar."
+    },
+    "recordingFailed": "Misslyckades med att starta inspelning: {{error}}",
+    "modelLoadFailed": "Misslyckades med att ladda modell: {{model}}",
+    "modelLoadFailedUnknown": "okänd modell",
+    "noInputDeviceTitle": "Ingen mikrofon hittades",
+    "noInputDevice": "Ingen ljudenhet hittades. Anslut en mikrofon eller ett headset och försök igen.",
+    "pasteFailedTitle": "Det gick inte att klistra in texten",
+    "pasteFailed": "Texten kunde inte klistras in i det aktiva programmet.",
+    "renderingSettingsTitle": "Fel vid rendering av inställningar",
+    "renderingSettingsDescription": "Komponenten för avsnittet \"{{section}}\" saknas."
+  },
+  "appLanguage": {
+    "title": "Applikationsspråk",
+    "description": "Ändra språket i Echo-gränssnittet"
+  },
+  "overlay": {
+    "transcribing": "Transkriberar...",
+    "processing": "Bearbetar...",
+    "cancel": "Avbryt inspelning",
+    "preparing": "Förbereder…",
+    "movingToWindow": "flyttar till aktivt fönster",
+    "loadingModel": "laddar modell…",
+    "localBadge": "lokalt",
+    "recording": "Recording"
+  },
+  "meetingCopilot": {
+    "launch": "Meeting",
+    "recording": "REC",
+    "idle": "Idle",
+    "both": "me + others",
+    "micOnly": "mic only",
+    "stop": "Stop",
+    "close": "Close",
+    "me": "me",
+    "others": "others",
+    "waiting": "Listening…",
+    "error": "Couldn't start capture. Check your microphone and try again.",
+    "consentTitle": "This records all participants",
+    "consentBody": "You are responsible for obtaining consent from everyone in the meeting before recording.",
+    "consentCancel": "Cancel",
+    "consentAccept": "I will",
+    "save": {
+      "save": "Save",
+      "saving": "Saving…",
+      "savedTo": "Saved to {{path}}"
+    },
+    "analysis": {
+      "soap": "SOAP",
+      "business": "Business",
+      "template": "Template",
+      "session": "Session",
+      "analyze": "Analyze",
+      "analyzing": "Analyzing…",
+      "copy": "Copy",
+      "copied": "Copied",
+      "retry": "Retry",
+      "destination": "Sends transcript to {{label}}",
+      "sessionWarning": "This Session analysis will be sent to a non-local LLM.",
+      "summary": "Summary",
+      "keyPoints": "Key points",
+      "actionItems": "Action items",
+      "openQuestions": "Open questions",
+      "subjective": "Subjective",
+      "objective": "Objective",
+      "assessment": "Assessment",
+      "plan": "Plan"
+    },
+    "council": {
+      "consult": "Consult council",
+      "consulting": "Consulting…",
+      "synthesis": "Synthesis",
+      "convergences": "Convergences",
+      "divergences": "Divergences",
+      "target": "Council via {{url}}",
+      "warning": "The council endpoint is not local — session content will leave this machine.",
+      "lenses": "Lenses: {{selected}} of {{total}}",
+      "allLenses": "All lenses",
+      "consultN": "Consult council ({{n}})",
+      "stageLenses": "Council · lenses {{done}}/{{total}}",
+      "stageSynthesis": "Council · lenses {{done}}/{{total}} · synthesis",
+      "stageDone": "Council done · {{total}} lenses",
+      "stageError": "Council stopped",
+      "running": "now: {{names}}",
+      "parallel": "{{n}} in parallel"
+    },
+    "doc": {
+      "notesLabel": "Notes",
+      "notesGroup": "Notes",
+      "actionsGroup": "Actions",
+      "councilGroup": "Council",
+      "transcript": "Transcript",
+      "done": "Ended",
+      "emptyHint": "Analyze the transcript to generate notes and actions."
+    },
+    "chooseClient": "Choose a client",
+    "noClient": "No client (use Echo mode)",
+    "start": "Start",
+    "saved": "Session saved",
+    "notRetained": "Session not saved: the client did not consent to retention",
+    "remoteConfirmTitle": "Send content to the council?",
+    "remoteConfirmBody": "Session content will be sent to {{url}}.",
+    "clientRemoteConfirmBody": "The engine LLM is not local.",
+    "protectionBadge": "⊘ hidden from sharing",
+    "saveErrorTitle": "Save failed",
+    "saveRetry": "Retry saving",
+    "showTranscript": "Show transcript",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "newMeeting": "New meeting",
+    "newMeetingUnsaved": "Not saved — start a new one?",
+    "ask": {
+      "title": "Ask about the meeting",
+      "placeholder": "Ask anything about this meeting…",
+      "send": "Ask",
+      "recap5": "Last 5 minutes",
+      "missed": "What did I miss?",
+      "agreed": "What did we agree?",
+      "more": "Show {{count}} more"
+    },
+    "silence": {
+      "title": "Long silence — has the meeting ended?",
+      "continue": "Continue",
+      "seconds": "Stopping in {{count}} s"
+    },
+    "voiceActivity": "Who is speaking"
+  },
+  "agentPanel": {
+    "from": "Question from {{source}}",
+    "typeOrDictate": "Type — or answer by voice with your dictation hotkey",
+    "yes": "Yes",
+    "no": "No",
+    "dismiss": "Dismiss",
+    "timeLeft": "{{count}}s"
+  },
+  "shell": {
+    "modules": {
+      "dictate": "Diktering",
+      "assistant": "Assistent",
+      "vocal": "Sång",
+      "language": "Språk",
+      "clone": "Klon",
+      "studio": "Studio",
+      "consult": "Consult"
+    },
+    "rail": {
+      "clients": "Clients",
+      "mark": "m",
+      "meeting": "Meeting",
+      "navLabel": "Svit-moduler",
+      "settings": "Inställningar",
+      "backToSuite": "Back to journal"
+    },
+    "audioBar": {
+      "defaultDevice": "Standardmikrofon",
+      "noModel": "Ingen modell vald",
+      "model": "STT",
+      "hotkey": "Snabbtangent",
+      "loadingModel": "Läser in modell…",
+      "localOnly": "Allt på enheten · 0 byte ut"
+    },
+    "placeholder": {
+      "comingSoon": "Kommer snart"
+    },
+    "home": {
+      "greetingLead": "Studio",
+      "greetingEmphasis": "öppen",
+      "paletteHint": "Skriv eller säg ett kommando — ”starta diktering”, ”öppna historik”…",
+      "kbdHint": "Ctrl+K",
+      "breadcrumbHome": "Studions hem",
+      "soonTag": "Snart",
+      "cardSubtitle": {
+        "dictate": "Diktera i vilken app som helst",
+        "assistant": "Fråga, sammanfatta, summera",
+        "vocal": "Värm upp och träna rösten",
+        "language": "Träna uttal och accent",
+        "clone": "Din röst, klonad för berättarröst",
+        "studio": "Ljud- och låtproduktion"
+      }
+    },
+    "palette": {
+      "clients": "Clients",
+      "newClient": "New client",
+      "startMeeting": "Start meeting",
+      "theme": {
+        "system": "Theme: as system",
+        "day": "Theme: day",
+        "evening": "Theme: evening"
+      },
+      "placeholder": "Sök kommandon…",
+      "empty": "Inga matchande kommandon",
+      "goToModule": "Gå till {{module}}",
+      "switchShell": "Byt till {{shell}}-skalet",
+      "startDictation": "Starta diktering",
+      "history": "Historik",
+      "settings": "Inställningar",
+      "escHint": "Esc"
+    },
+    "deck": {
+      "transportLabel": "Transport",
+      "transport": {
+        "recIdleAria": "Starta diktering (global genväg: {{hotkey}})",
+        "recRecordingAria": "Spelar in — stoppa med den globala genvägen",
+        "recProcessingAria": "Bearbetar",
+        "timecodeLabel": "Sessionstid",
+        "inLabel": "IN",
+        "outLabel": "OUT",
+        "monitor": "Monitor"
+      }
+    }
+  },
+  "consult": {
+    "clients": {
+      "title": "Clients",
+      "subtitle": "Consent-aware consultation records",
+      "empty": "No clients yet"
+    },
+    "newClient": {
+      "title": "New client"
+    },
+    "form": {
+      "alias": "Alias",
+      "permissions": "Consent for data types",
+      "retention": "Retention period (days)",
+      "chooseRetention": "Choose a period",
+      "untilRevoke": "Until revoked",
+      "date": "Consent date",
+      "invalid": "Enter an alias and grant at least one permission"
+    },
+    "permissions": {
+      "transcript": "Transcript",
+      "video": "Video",
+      "council": "Psychology council",
+      "retain": "Retain session"
+    },
+    "actions": {
+      "newClient": "New client",
+      "create": "Create client",
+      "cancel": "Cancel",
+      "back": "Back to clients",
+      "export": "Export",
+      "downloadConsent": "Download consent text",
+      "revoke": "Revoke consent",
+      "delete": "Delete client",
+      "attachSigned": "Attach signed consent"
+    },
+    "status": {
+      "active": "Active",
+      "revoked": "Revoked"
+    },
+    "card": {
+      "template": "Note template",
+      "permissions": "Consent",
+      "none": "None",
+      "sessions": "Sessions",
+      "includeAnalysis": "Include analysis",
+      "confirmAlias": "Type the alias to confirm deletion",
+      "sessionsCount_one": "{{count}} session",
+      "sessionsCount_other": "{{count}} sessions",
+      "newSession": "New session",
+      "newSessionUnavailable": "Needs active consent to the transcript",
+      "sessionsToolbar": "Client sessions",
+      "selectAll": "Select all",
+      "selectSession": "Select session {{date}}",
+      "deleteSelected": "Delete selected ({{count}})",
+      "deleteConfirm_one": "Delete {{count}} session permanently?",
+      "deleteConfirm_other": "Delete {{count}} sessions permanently?",
+      "deleteOne": "Delete",
+      "deleteOneConfirm": "Delete permanently?",
+      "unmigrated": "Legacy session — not migrated to a structured note"
+    },
+    "warnings": {
+      "encryptionOff": "Disk encryption is off — client data on disk is not protected",
+      "encryptionUnknown": "Unable to check disk encryption",
+      "purged": "Purged expired records: {{count}}"
+    },
+    "errors": {
+      "request": "Consult engine request failed"
+    },
+    "journal": {
+      "volume": "Practice journal · volume I",
+      "engineDown": "engine unavailable",
+      "engineDownMessage": "Sessions can continue, but saving will resume when the engine is back.",
+      "diskOff": "disk is not encrypted",
+      "diskOffMessage": "Client data on this disk is not protected.",
+      "diskUnknown": "disk encryption unknown",
+      "diskUnknownMessage": "Disk encryption could not be checked.",
+      "purged": "expired data removed",
+      "purgedMessage": "Expired records removed: {{count}}",
+      "createDisabled": "Client creation is unavailable until the engine is ready.",
+      "loading": "Loading journal…",
+      "emptyLead": "The journal is empty.",
+      "emptyBody": "The first page will appear when you add a client and record what they consented to.",
+      "tableClient": "Client",
+      "tableConsent": "Consent",
+      "tableLastSession": "Last session",
+      "tableSessions": "Sessions",
+      "revoked": "consent revoked — new sessions closed",
+      "readOnly": "Saved sessions remain read-only until their retention period ends or the client requests deletion.",
+      "noNote": "No note recorded.",
+      "consent": "Consent",
+      "deleteTitle": "Delete all client data",
+      "deleteDescription": "The client folder will be erased completely. Type the alias to confirm.",
+      "deletePermanent": "Delete permanently",
+      "aliasHint": "Use an alias, not a real name.",
+      "preview": "Consent preview",
+      "engine": {
+        "starting": "engine starting",
+        "ready": "engine ready",
+        "down": "engine unavailable"
+      },
+      "disk": {
+        "on": "disk encrypted",
+        "off": "disk not encrypted",
+        "unknown": "disk status unknown"
+      },
+      "permissionHint": {
+        "transcript": "Text recognized on this computer",
+        "video": "Numbers only; video is never recorded",
+        "council": "Psychology council reading of the session text",
+        "retain": "Keep session material after the session"
+      },
+      "privacyNote": "Client data stays on this computer only. Audio and video are never recorded.",
+      "llm": {
+        "local": "● LLM on this computer",
+        "remote": "○ LLM on your server — you will be asked before sending"
+      }
+    },
+    "session": {
+      "back": "← {{alias}}",
+      "tabsLabel": "Session sections",
+      "tabs": {
+        "notes": "Notes",
+        "transcript": "Transcript",
+        "asks": "Questions",
+        "email": "Letter"
+      },
+      "status": {
+        "closed": "closed",
+        "open": "open",
+        "postponed": "postponed",
+        "unmigrated": "legacy"
+      },
+      "client": "Client",
+      "me": "Me",
+      "others": "Client",
+      "practitioner": "Practitioner",
+      "authors": {
+        "model": "model",
+        "practitioner": "practitioner",
+        "import": "import"
+      },
+      "emptyTranscript": "No transcript recorded.",
+      "emptyAsks": "Questions will appear here — Ask is a separate feature.",
+      "noNote": "No note yet.",
+      "writeNote": "Write note",
+      "noteTitle": "Note v{{n}}",
+      "regenerate": "Regenerate",
+      "saveEdit": "Save edit",
+      "versions": "Versions",
+      "version": "v{{n}}",
+      "takeAsBase": "Take as base",
+      "useCurrent": "Use current version",
+      "template": "Template",
+      "copyEmail": "Copy",
+      "clipboardFailure": "Could not copy the text — click “Copy” and paste it into the letter.",
+      "meetingTypes": {
+        "session": "session",
+        "business": "business"
+      },
+      "noCouncil": "The client has not consented to model analysis.",
+      "noNoteEmail": "Write a note before drafting a letter.",
+      "revokedReadOnly": "Consent was revoked — this session is read-only.",
+      "emailStale": "This letter was written from note v{{n}}; the note has since changed.",
+      "emailFromNote": "Based on note v{{n}}",
+      "subject": "Subject",
+      "body": "Message",
+      "writeEmail": "Draft letter",
+      "regenerateEmailConfirm": "Regenerate (replace edit)",
+      "saveEmail": "Save",
+      "openMail": "Open in mail",
+      "clipboardNotice": "The letter text is in the clipboard — paste it into the message.",
+      "provenance": {
+        "local": "on this computer",
+        "remote": "leaves this computer",
+        "transcriptInput_one": "transcript, {{count}} line",
+        "transcriptInput_other": "transcript, {{count}} lines",
+        "noteInput": "note, version {{n}}",
+        "sentChars": "chars sent: {{count}}",
+        "truncated": "beginning omitted"
+      },
+      "replaceWarning": "The practitioner edit will be replaced. Continue?",
+      "replaceConfirm": "Replace edit",
+      "askUntil": "transcript until {{time}}",
+      "diagnosisWarning": "Looks like a diagnosis: “{{phrase}}” — please check"
+    },
+    "memory": {
+      "tabsLabel": "Client memory",
+      "tabs": {
+        "sessions": "Sessions",
+        "search": "Search",
+        "chat": "Chat"
+      },
+      "recapTitle": "Last time",
+      "generate": "Summary of recent sessions",
+      "generating": "Summarizing…",
+      "empty": "No saved memory yet.",
+      "stale": "out of date",
+      "email": "Letter",
+      "today": "today",
+      "daysAgo_one": "{{count}} day ago",
+      "daysAgo_other": "{{count}} days ago",
+      "indexing": "indexing {{current}} of {{total}}",
+      "meaningUnavailable": "meaning search unavailable: {{reason}}",
+      "searchPlaceholder": "Search sessions",
+      "search": "Search",
+      "wordsOnly": "Only word search is available without council consent.",
+      "mode": {
+        "words": "Words",
+        "meaning": "Meaning",
+        "both": "Both"
+      },
+      "kind": {
+        "transcript": "Transcript",
+        "note": "Note",
+        "email": "Letter"
+      },
+      "chatConsent": "Chat is unavailable without council consent.",
+      "newChat": "New conversation",
+      "chatPlaceholder": "Ask about the records",
+      "ask": "Ask"
+    }
+  }
+}

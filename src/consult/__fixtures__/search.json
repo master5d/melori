@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "chunk_id": 2,
+      "session_id": "2026-09-29-01",
+      "kind": "note",
+      "label": "Заметка",
+      "start_ms": null,
+      "snippet": "# [[Session]]\n\nText.",
+      "score": -1.2825112107623318e-6
+    },
+    {
+      "chunk_id": 1,
+      "session_id": "2026-09-29-01",
+      "kind": "transcript",
+      "label": "",
+      "start_ms": 0,
+      "snippet": "Я: A [[session]] fact.",
+      "score": -1.032490974729242e-6
+    }
+  ],
+  "index": {
+    "sessions": 1,
+    "chunks": 3,
+    "vectors_missing": 3,
+    "meaning_available": false,
+    "meaning_error": null
+  }
+}

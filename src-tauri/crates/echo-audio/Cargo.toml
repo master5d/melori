@@ -1,0 +1,14 @@
+[package]
+name = "echo-audio"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+cpal = "0.16.0"
+hound = "3.5.1"
+rubato = "0.16.2"
+rustfft = "6.4.0"
+vad-rs = { git = "https://github.com/master5d/vad-rs", default-features = false }
+anyhow = "1.0.95"
+log = "0.4.25"

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Первый запуск (A)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>body{margin:0;background:#F4EFE6;color:#1F1B16;font-family:"IBM Plex Sans",sans-serif}</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; padding: 64px 96px; background: #F4EFE6; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 48px">
+  <ol aria-label="Шаги" style="grid-column: span 4; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0; border-top: 2px solid #1F1B16">
+    <li style="padding: 16px 0; border-bottom: 1px solid #D9CFBF; display: flex; gap: 14px; color: #5E554A"><span style="font-family: 'IBM Plex Mono', monospace">01</span><span>Движок — готов ✓</span></li>
+    <li style="padding: 16px 0; border-bottom: 1px solid #D9CFBF; display: flex; gap: 14px; color: #5E554A"><span style="font-family: 'IBM Plex Mono', monospace">02</span><span>Модель распознавания — готова ✓</span></li>
+    <li style="padding: 16px 0; border-bottom: 1px solid #D9CFBF; display: flex; gap: 14px; color: #5E554A"><span style="font-family: 'IBM Plex Mono', monospace">03</span><span>Микрофон и звук звонка ✓</span></li>
+    <li aria-current="step" style="padding: 16px 0; border-bottom: 1px solid #D9CFBF; display: flex; gap: 14px; color: #2448B8; font-weight: 600"><span style="font-family: 'IBM Plex Mono', monospace">04</span><span>Согласие клиента</span></li>
+  </ol>
+  <section style="grid-column: span 8; display: flex; flex-direction: column; gap: 20px">
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E554A">Шаг 4 из 4</div>
+    <h1 style="margin: 0; font-family: Literata, serif; font-weight: 600; font-size: 48px; line-height: 1.1">melori работает только с согласия клиента</h1>
+    <p style="margin: 0; max-width: 640px; font-family: Literata, serif; font-size: 19px; line-height: 1.6">Перед первой встречей вы заводите клиента под псевдонимом и отмечаете, что он разрешил: транскрипт, разбор, хранение. melori проверяет каждое разрешение в момент действия — без него запись не начнётся.</p>
+    <p style="margin: 0; max-width: 640px; font-family: Literata, serif; font-style: italic; font-size: 17px; line-height: 1.6; color: #5E554A">Звук и видео не сохраняются никогда. Всё остаётся на этом компьютере.</p>
+    <div style="display: flex; gap: 12px; margin-top: 12px">
+      <button type="button" style="height: 48px; padding: 0 24px; background: #2448B8; color: #FBF8F2; border: none; font-size: 16px; font-weight: 500">Завести первого клиента</button>
+      <button type="button" style="height: 48px; padding: 0 24px; background: transparent; border: 1px solid #1F1B16; color: #1F1B16; font-size: 16px">Позже</button>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

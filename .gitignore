@@ -1,0 +1,109 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+package-lock.json
+# bun is the canonical lockfile (CI/Nix). Don't commit other PMs' lockfiles —
+# a stray pnpm-lock.yaml makes tauri-action run `pnpm` (not installed in CI).
+pnpm-lock.yaml
+
+node_modules
+dist
+dist-ssr
+*.local
+*.local.*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.claude/
+
+/target/
+recording_*
+.crush/
+
+# Models (large binaries excluded; VAD + vocab tracked so the release bundles them)
+src-tauri/resources/models/*
+!src-tauri/resources/models/silero_vad_v4.onnx
+!src-tauri/resources/models/gigaam_vocab.txt
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+
+.direnv
+.envrc
+
+# Nix build output
+result
+
+# Local build helpers (machine-specific absolute paths)
+/build-echo.bat
+/dev-run-echo.bat
+/build_cli_elite.bat
+
+# Superpowers planning docs (kept local, not published)
+docs/superpowers/
+
+# Firecrawl skill artifacts
+.firecrawl/
+
+# Visual-companion brainstorm mockups
+.superpowers/
+
+# Local coding-agent scaffolding (Gemini CLI config + plan/notes copies)
+.gemini/
+agent-work/
+
+# Serena MCP project artifacts (created by delegate agents)
+.serena/
+
+# Multi-GB model staging directory for sovereignty tooling
+.sovereign-models/
+.ts-authkey
+
+# Tauri updater signing keys (private key — NEVER commit; pubkey lives in tauri.conf.json)
+src-tauri/.tauri-signing/
+
+# Tool-cache artifacts (Impeccable design-hook cache, Sentrux baseline) — machine-local
+**/.impeccable/hook.cache.json
+.sentrux/
+
+# Справочные клоны форков (master5d/speakrs, master5d/transcribe-rs) — лежат
+# рядом для чтения, сборкой не используются. Были ошибочно закоммичены как
+# gitlink-и БЕЗ .gitmodules: из-за этого checkout на CI падал
+# «No url found for submodule path», а git status вечно показывал их изменёнными.
+speakrs-fork/
+transcribe-rs-fork/
+.env.fish
+
+# --- секреты: канон лаборатории (аудит 2026-08-21) ---
+# Перечисление (.env / .env.local / .env.*.local) пропускает .env.bak-<stamp>,
+# .env.production и .dev.vars — в estate-hub так висел бэкап с живым ключом
+# гейтвея. Ловим семейства целиком, примеры возвращаем негацией.
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+
+# training/stress-lora: артефакты прогонов (адаптер 72МБ + батареи WAV) — не для git,
+# воспроизводимы конвейером за ~50 мин и <$1; в git только код и конфиг конвейера
+training/stress-lora/artifacts/
+
+# melori engine venv
+engine/.venv/
+__pycache__/

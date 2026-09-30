@@ -1,0 +1,110 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { ShowOverlay } from "./ShowOverlay";
+import { ModelUnloadTimeoutSetting } from "./ModelUnloadTimeout";
+import { CustomWords } from "./CustomWords";
+import { SettingsGroup } from "../../ui/SettingsGroup";
+import { StartHidden } from "../general/StartHidden";
+import { AutostartToggle } from "../general/AutostartToggle";
+import { AutoPunctuate } from "./AutoPunctuate";
+import { AutoCapitalize } from "./AutoCapitalize";
+import { ShowTrayIcon } from "../general/ShowTrayIcon";
+import { PasteMethodSetting } from "./PasteMethod";
+import { TypingToolSetting } from "./TypingTool";
+import { ClipboardHandlingSetting } from "./ClipboardHandling";
+import { AutoSubmit } from "./AutoSubmit";
+import { PostProcessingToggle } from "../post-processing/PostProcessingToggle";
+import { AppendTrailingSpace } from "./AppendTrailingSpace";
+import { HistoryLimit } from "../history/HistoryLimit";
+import { RecordingRetentionPeriodSelector } from "../history/RecordingRetentionPeriod";
+import { ExperimentalToggle } from "./ExperimentalToggle";
+import { useSettings } from "../../../hooks/useSettings";
+import { KeyboardImplementationSelector } from "../debug/KeyboardImplementationSelector";
+import { AccelerationSelector } from "./AccelerationSelector";
+import { LazyStreamClose } from "./LazyStreamClose";
+import { SubtitleOverlayToggle } from "./SubtitleOverlayToggle";
+import { SubtitleFontSizeSetting } from "./SubtitleFontSize";
+import { SubtitleMaxChars } from "./SubtitleMaxChars";
+import { SubtitleRefreshMs } from "./SubtitleRefreshMs";
+import { CommandMode } from "./CommandMode";
+import { Snippets } from "./Snippets";
+import { SelfCorrection } from "./SelfCorrection";
+import { TranslateDictation } from "./TranslateDictation";
+import { SpokenLists } from "./SpokenLists";
+import { DevDictionary } from "./DevDictionary";
+import { CaptureFolder } from "./CaptureFolder";
+
+export const AdvancedSettings: React.FC = () => {
+  const { t } = useTranslation();
+  const { getSetting } = useSettings();
+  const experimentalEnabled = getSetting("experimental_enabled") || false;
+  const subtitlesEnabled = getSetting("subtitle_overlay") || false;
+
+  return (
+    <div className="max-w-3xl w-full mx-auto space-y-6">
+      <SettingsGroup title={t("settings.advanced.groups.app")}>
+        <StartHidden descriptionMode="tooltip" grouped={true} />
+        <AutostartToggle descriptionMode="tooltip" grouped={true} />
+        <ShowTrayIcon descriptionMode="tooltip" grouped={true} />
+        <ShowOverlay descriptionMode="tooltip" grouped={true} />
+        <ModelUnloadTimeoutSetting descriptionMode="tooltip" grouped={true} />
+        <ExperimentalToggle descriptionMode="tooltip" grouped={true} />
+      </SettingsGroup>
+
+      <SettingsGroup title={t("settings.advanced.groups.output")}>
+        <PasteMethodSetting descriptionMode="tooltip" grouped={true} />
+        <CaptureFolder descriptionMode="tooltip" grouped={true} />
+        <TypingToolSetting descriptionMode="tooltip" grouped={true} />
+        <ClipboardHandlingSetting descriptionMode="tooltip" grouped={true} />
+        <AutoSubmit descriptionMode="tooltip" grouped={true} />
+      </SettingsGroup>
+
+      <SettingsGroup title={t("settings.advanced.groups.transcription")}>
+        <CustomWords descriptionMode="tooltip" grouped />
+        <DevDictionary descriptionMode="tooltip" grouped={true} />
+        <AutoPunctuate descriptionMode="tooltip" grouped={true} />
+        <AutoCapitalize descriptionMode="tooltip" grouped={true} />
+        <SelfCorrection descriptionMode="tooltip" grouped={true} />
+        <SpokenLists descriptionMode="tooltip" grouped={true} />
+        <TranslateDictation grouped={true} />
+        <AppendTrailingSpace descriptionMode="tooltip" grouped={true} />
+      </SettingsGroup>
+
+      <SettingsGroup title={t("settings.advanced.groups.voiceCommands")}>
+        <CommandMode descriptionMode="tooltip" grouped={true} />
+        <Snippets descriptionMode="tooltip" grouped={true} />
+      </SettingsGroup>
+
+      <SettingsGroup title={t("settings.advanced.groups.subtitles")}>
+        <SubtitleOverlayToggle descriptionMode="tooltip" grouped={true} />
+        {subtitlesEnabled && (
+          <>
+            <SubtitleFontSizeSetting descriptionMode="tooltip" grouped={true} />
+            <SubtitleMaxChars descriptionMode="tooltip" grouped={true} />
+            <SubtitleRefreshMs descriptionMode="tooltip" grouped={true} />
+          </>
+        )}
+      </SettingsGroup>
+
+      <SettingsGroup title={t("settings.advanced.groups.history")}>
+        <HistoryLimit descriptionMode="tooltip" grouped={true} />
+        <RecordingRetentionPeriodSelector
+          descriptionMode="tooltip"
+          grouped={true}
+        />
+      </SettingsGroup>
+
+      {experimentalEnabled && (
+        <SettingsGroup title={t("settings.advanced.groups.experimental")}>
+          <PostProcessingToggle descriptionMode="tooltip" grouped={true} />
+          <KeyboardImplementationSelector
+            descriptionMode="tooltip"
+            grouped={true}
+          />
+          <AccelerationSelector descriptionMode="tooltip" grouped={true} />
+          <LazyStreamClose descriptionMode="tooltip" grouped={true} />
+        </SettingsGroup>
+      )}
+    </div>
+  );
+};

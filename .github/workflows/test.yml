@@ -1,0 +1,37 @@
+name: "test"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src-tauri/**"
+  pull_request:
+    paths:
+      - "src-tauri/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rust-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev libasound2-dev libssl-dev libgtk-layer-shell-dev
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: "./src-tauri -> target"
+
+      # The old mock-swap hack died with the echo-core refactor (transcription
+      # manager + mock moved into the crate; src/managers/transcription.rs is
+      # gone). Test the Tauri-free leaf crates natively — no ML linkage; the
+      # full app crate is compiled by the pr-test-build / build workflows.
+      - name: Run Rust tests (leaf crates, no ML linkage)
+        working-directory: src-tauri
+        run: cargo test -p echo-config -p echo-text -p echo-audio -p echo-voice

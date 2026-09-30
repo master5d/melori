@@ -1,0 +1,31 @@
+Third-party component: eSpeak NG
+================================
+
+This directory bundles eSpeak NG version 1.52.0:
+
+  - espeak-ng.exe        (command-line phonemizer executable)
+  - libespeak-ng.dll     (used by espeak-ng.exe)
+  - espeak-ng-data/       (phoneme tables + English/Russian dictionaries)
+
+License
+-------
+eSpeak NG is licensed under the GNU General Public License, version 3 or
+later (GPL-3.0-or-later).
+
+  Full license text: https://www.gnu.org/licenses/gpl-3.0.txt
+  Upstream source:   https://github.com/espeak-ng/espeak-ng
+  Release:           https://github.com/espeak-ng/espeak-ng/releases/tag/1.52.0
+
+The complete corresponding source code for eSpeak NG 1.52.0 is available at the
+upstream release above. eSpeak NG is redistributed here unmodified (the bundled
+espeak-ng-data has only had unused non-English/Russian dictionaries removed to
+reduce size; no source or behavior of eSpeak NG itself is changed).
+
+Relationship to melori
+----------------------
+melori does NOT link libespeak-ng into its own program. melori invokes espeak-ng.exe
+only as a SEPARATE SUBPROCESS (an arm's-length "mere aggregation" of two
+independent programs on the same medium). melori's own source and binaries are
+distributed under the MIT License (see LICENSE) and are not a derivative work of
+eSpeak NG. The GPL-3.0-or-later terms above govern the eSpeak NG files in this
+directory only.

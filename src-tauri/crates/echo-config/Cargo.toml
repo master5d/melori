@@ -1,0 +1,16 @@
+[package]
+name = "echo-config"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+specta = { version = "=2.0.0-rc.22", features = ["derive"] }
+# Sanctioned exception to "compiler-named deps only": `tauri_plugin_os::locale()`
+# (used by default_app_language) is a thin wrapper over sys_locale::get_locale();
+# depending on sys-locale directly keeps this crate Tauri-free, behavior-identical.
+sys-locale = "0.3"
+
+[dev-dependencies]
+serde_json = "1"

@@ -1,0 +1,16 @@
+{
+  "audio": {
+    "sample_rate": 22050,
+    "quality": "medium"
+  },
+  "phoneme_id_map": {
+    "_": [0],
+    "^": [1],
+    "$": [2],
+    " ": [3],
+    "!": [4],
+    "'": [5]
+  },
+  "num_speakers": 1,
+  "piper_version": "1.0.0"
+}

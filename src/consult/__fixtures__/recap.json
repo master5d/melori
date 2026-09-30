@@ -1,0 +1,17 @@
+{
+  "recap": {
+    "created": "2026-09-29T16:55:43",
+    "sessions": ["2026-09-29-01"],
+    "points": ["shared view", "differing view"],
+    "provenance": {
+      "model": "local",
+      "endpoint_local": true,
+      "input": "notes",
+      "chars_sent": 16,
+      "language": "en",
+      "attempts": 1
+    }
+  },
+  "stored": true,
+  "model_stale": false
+}

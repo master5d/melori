@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Новый клиент (A)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>
+body{margin:0;background:#F4EFE6;color:#1F1B16;font-family:"IBM Plex Sans",sans-serif}
+a{color:#2448B8}a:hover{color:#1A3690}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; display: flex; background: #F4EFE6">
+  <nav aria-label="Разделы" style="width: 76px; box-sizing: border-box; padding: 28px 0; display: flex; flex-direction: column; align-items: center; border-right: 1px solid #D9CFBF">
+    <div style="font-family: Literata, serif; font-size: 30px; font-weight: 600; color: #2448B8">m</div>
+  </nav>
+  <main style="flex-grow: 1; box-sizing: border-box; padding: 40px 56px 32px 72px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 40px">
+    <form style="grid-column: span 6; display: flex; flex-direction: column; gap: 22px">
+      <h1 style="margin: 0; font-family: Literata, serif; font-weight: 600; font-size: 40px; border-bottom: 2px solid #1F1B16; padding-bottom: 14px">Новый клиент</h1>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #5E554A">Псевдоним — не настоящее имя
+        <input type="text" value="Анна" style="height: 44px; box-sizing: border-box; padding: 0 12px; border: none; border-bottom: 1px solid #1F1B16; background: transparent; font-family: Literata, serif; font-size: 22px; color: #1F1B16">
+      </label>
+      <fieldset style="margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 14px">
+        <legend style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E554A; margin-bottom: 10px">Что клиент разрешил</legend>
+        <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px"><input type="checkbox" checked style="width: 20px; height: 20px; margin-top: 2px; accent-color: #2448B8"><span>Транскрипт разговора<br><span style="font-size: 14px; color: #5E554A">Текст, распознанный на этом компьютере</span></span></label>
+        <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px"><input type="checkbox" style="width: 20px; height: 20px; margin-top: 2px; accent-color: #2448B8"><span>Видео-анализ поведения и выражения лица<br><span style="font-size: 14px; color: #5E554A">Только числа; видео не записывается</span></span></label>
+        <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px"><input type="checkbox" checked style="width: 20px; height: 20px; margin-top: 2px; accent-color: #2448B8"><span>Разбор языковой моделью<br><span style="font-size: 14px; color: #5E554A">Совет школ психологии по тексту сессии</span></span></label>
+        <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px"><input type="checkbox" checked style="width: 20px; height: 20px; margin-top: 2px; accent-color: #2448B8"><span>Хранение после сессии</span></label>
+      </fieldset>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #5E554A">Срок хранения
+        <select style="height: 44px; border: 1px solid #D9CFBF; background: #FBF8F2; font-size: 16px; padding: 0 10px; color: #1F1B16"><option>30 дней</option><option selected>90 дней</option><option>365 дней</option><option>До отзыва согласия</option></select>
+      </label>
+      <div style="display: flex; gap: 12px; margin-top: auto">
+        <button type="submit" style="height: 44px; padding: 0 22px; background: #2448B8; color: #FBF8F2; border: none; font-size: 15px; font-weight: 500">Создать клиента</button>
+        <button type="button" style="height: 44px; padding: 0 22px; background: transparent; border: 1px solid #1F1B16; color: #1F1B16; font-size: 15px">Отмена</button>
+      </div>
+    </form>
+    <section aria-label="Текст согласия" style="grid-column: span 6; background: #FBF8F2; border: 1px solid #D9CFBF; box-sizing: border-box; padding: 36px 40px; font-family: Literata, serif; font-size: 15px; line-height: 1.65; display: flex; flex-direction: column; gap: 12px">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E554A">Предпросмотр · шаблон v1</div>
+      <h2 style="margin: 0; font-size: 22px; font-weight: 600">Согласие на обработку данных консультации</h2>
+      <p style="margin: 0">Клиент (псевдоним): Анна</p>
+      <p style="margin: 0">Я разрешаю практику во время индивидуальной консультации:</p>
+      <p style="margin: 0">[x] Транскрипт разговора<br>[ ] Видео-анализ<br>[x] Разбор языковой моделью<br>[x] Хранение материалов после сессии</p>
+      <p style="margin: 0">Хранение после сессии: 90 дней.</p>
+      <p style="margin: 0; font-style: italic; color: #5E554A">Запись звука и видео не сохраняется никогда. Я могу отозвать согласие в любой момент.</p>
+      <div style="margin-top: auto; border-top: 1px solid #1F1B16; padding-top: 10px; font-size: 14px; color: #5E554A">Подпись клиента</div>
+    </section>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "retained": true,
+  "session": {
+    "id": "2026-09-29-01",
+    "client": "anna",
+    "date": "2026-09-29",
+    "created": "2026-09-29T16:55:43",
+    "status": "closed",
+    "meeting_type": "session",
+    "note": "# Session\n\nText.",
+    "runs": [
+      {
+        "index": 1,
+        "timestamp": "2026-09-29T16:55:43",
+        "mode": "practitioner",
+        "specialist_ids": ["cbt"],
+        "result": {
+          "opinions": [
+            {
+              "specialist_id": "cbt",
+              "name": "CBT",
+              "paradigm": "Cognitive-behavioral",
+              "text": "Opinion text.\nCONVERGENCES:\n- shared view\nDIVERGENCES:\n- differing view",
+              "citations": []
+            }
+          ],
+          "synthesis": {
+            "text": "Opinion text.\nCONVERGENCES:\n- shared view\nDIVERGENCES:\n- differing view",
+            "convergences": ["shared view"],
+            "divergences": ["differing view"]
+          }
+        }
+      }
+    ],
+    "template_id": null,
+    "duration_ms": 100,
+    "language": "en",
+    "transcript": [
+      {
+        "i": 1,
+        "source": "me",
+        "start_ms": 0,
+        "end_ms": 100,
+        "text": "A session fact."
+      }
+    ],
+    "notes": [
+      {
+        "n": 1,
+        "created": "2026-09-29T16:55:43",
+        "author": "model",
+        "template_id": "dap",
+        "parent": null,
+        "warnings": []
+      },
+      {
+        "n": 2,
+        "created": "2026-09-29T16:55:43",
+        "author": "practitioner",
+        "template_id": "free",
+        "parent": null,
+        "warnings": []
+      }
+    ],
+    "asks": [
+      {
+        "at": "2026-09-29T16:55:43",
+        "elapsed_ms": 100,
+        "kind": "free",
+        "question": "What was discussed?",
+        "answer": "Opinion text.\nCONVERGENCES:\n- shared view\nDIVERGENCES:\n- differing view",
+        "provenance": {
+          "model": "local",
+          "endpoint_local": true,
+          "input": "transcript",
+          "chars_sent": 18,
+          "until_ms": 100,
+          "truncated": false,
+          "language": "en",
+          "attempts": 1
+        }
+      }
+    ],
+    "migrated": false
+  }
+}

@@ -1,0 +1,31 @@
+# Окончания строк: LF везде — и в репозитории, и в рабочей копии.
+#
+# Зачем. В репо УЖЕ всё хранится как LF (839 из 839 файлов), а `.prettierrc`
+# требует `"endOfLine": "lf"`. Но на Windows-машине с `core.autocrlf=true` git
+# при checkout переписывает рабочую копию в CRLF — и локальный
+# `npm run format:check` начинает показывать десятки ЛОЖНЫХ нарушений после
+# каждого `git pull`, тогда как CI (ubuntu) видит те же файлы чистыми.
+# Вердикт, который зависит от ОС разработчика, вердиктом не является.
+#
+# `eol=lf` перебивает `core.autocrlf` для этих файлов, поэтому локальная проверка
+# и CI начинают совпадать. Содержимое в индексе НЕ меняется — там и так LF.
+* text=auto eol=lf
+
+# Бинарные — не трогать вовсе (перевод строк в них = порча файла).
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.icns binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.onnx binary
+*.bin binary
+*.gz binary
+*.bz2 binary
+*.zip binary
+*.pdf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary

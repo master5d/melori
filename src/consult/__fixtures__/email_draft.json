@@ -1,0 +1,16 @@
+{
+  "subject": "Следующая встреча",
+  "body": "Договорились о следующем шаге.",
+  "author": "model",
+  "from_note": 1,
+  "created": "2026-09-29T16:55:43",
+  "provenance": {
+    "model": "local",
+    "endpoint_local": true,
+    "input": "note",
+    "chars_sent": 71,
+    "language": "en",
+    "attempts": 1
+  },
+  "opened_in_mail_at": null
+}

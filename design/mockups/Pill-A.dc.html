@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Пилюля: состояния (A)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400&amp;family=IBM+Plex+Sans:wght@400;500&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>body{margin:0;background:#15161A;font-family:"IBM Plex Sans",sans-serif}</style>
+</helmet>
+<div style="width: 720px; height: 520px; box-sizing: border-box; padding: 40px; background: #15161A; display: flex; flex-direction: column; gap: 26px">
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8AC9A">слушает</span>
+    <div role="status" style="width: 360px; height: 48px; box-sizing: border-box; padding: 0 16px; background: #221C16; border: 1px solid #4A3F33; display: flex; align-items: center; gap: 12px; color: #EDE4D6">
+      <span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #8FA8F2"></span>
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px">Запись · 03:12</span>
+      <span aria-hidden="true" style="margin-left: auto; display: flex; gap: 3px; align-items: center"><span style="width: 3px; height: 10px; background: #EDE4D6"></span><span style="width: 3px; height: 18px; background: #EDE4D6"></span><span style="width: 3px; height: 12px; background: #EDE4D6"></span><span style="width: 3px; height: 6px; background: #EDE4D6"></span></span>
+    </div>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8AC9A">обработка</span>
+    <div role="status" style="width: 360px; height: 48px; box-sizing: border-box; padding: 0 16px; background: #221C16; border: 1px solid #4A3F33; display: flex; align-items: center; gap: 12px; color: #EDE4D6">
+      <span aria-hidden="true" style="width: 10px; height: 10px; border: 2px solid #8FA8F2; border-top-color: transparent; border-radius: 50%"></span>
+      <span style="font-size: 14px">Распознаю последнюю фразу…</span>
+    </div>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8AC9A">загрузка модели</span>
+    <div role="status" style="width: 360px; height: 48px; box-sizing: border-box; padding: 0 16px; background: #221C16; border: 1px solid #4A3F33; display: flex; align-items: center; gap: 12px; color: #EDE4D6">
+      <span style="font-size: 14px">Загружаю модель распознавания</span>
+      <span style="margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B8AC9A">62%</span>
+    </div>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8AC9A">тишина — автостоп</span>
+    <div role="alert" style="width: 520px; height: 48px; box-sizing: border-box; padding: 0 8px 0 16px; background: #221C16; border: 1px solid #8FA8F2; display: flex; align-items: center; gap: 12px; color: #EDE4D6">
+      <span style="font-size: 14px">Тишина 5 минут. Остановлю запись через</span>
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #8FA8F2">0:45</span>
+      <button type="button" style="margin-left: auto; height: 36px; padding: 0 14px; background: #8FA8F2; border: none; color: #221C16; font-size: 13px; font-weight: 600">Продолжить</button>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":720,"height":520}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

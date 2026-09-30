@@ -1,0 +1,32 @@
+# Dependencies
+node_modules
+bun.lock
+package-lock.json
+
+# Build outputs
+dist
+target
+*.bundle.*
+
+# Tauri
+src-tauri/target
+src-tauri/gen
+
+# Generated files
+src/bindings.ts
+# tokens.css — генерат scripts/build-tokens.mjs; стабильность держит `tokens:check`
+src/theme/tokens.css
+src/meeting/tokens.css
+src/overlay/tokens.css
+
+# Markdown — prettier ПОРТИТ здесь содержание, а не только оформление.
+# Доказанный случай: в AGENTS.md строка-продолжение, начинавшаяся с "+",
+# была переписана в пункт списка "-" с переотступом следующих строк. Это
+# файл-инструкция для агентов, то есть смысловая правка под видом форматирования.
+# Проза с "+"/"-" в начале строки, таблицы и вложенные списки страдают так же.
+# Markdown в этом репозитории правится руками.
+*.md
+
+# Misc
+.DS_Store
+*.log

@@ -1,0 +1,1592 @@
+{
+  "tray": {
+    "settings": "Settings...",
+    "checkUpdates": "Check for Updates...",
+    "copyLastTranscript": "Copy Last Transcript",
+    "unloadModel": "Unload Model",
+    "model": "Model",
+    "quit": "Quit",
+    "cancel": "Cancel"
+  },
+  "sidebar": {
+    "general": "General",
+    "audio": "Audio",
+    "models": "Models",
+    "advanced": "Advanced",
+    "postProcessing": "Post Process",
+    "history": "History",
+    "debug": "Debug",
+    "about": "About",
+    "coach": "Coach",
+    "assistant": "Assistant",
+    "transcribe": "Transcribe File",
+    "tts": "Voice",
+    "tutor": "Tutor",
+    "dictionTraining": "Diction & Clarity",
+    "menVoice": "Men's Voice",
+    "womenVoice": "Women's Voice",
+    "voiceTraining": "Voice Training",
+    "onlineTraining": "Online Speaking",
+    "oratoryTraining": "Public Speaking",
+    "speechImprov": "Improvise",
+    "toastTraining": "Toast Art",
+    "readingTraining": "Artistic Reading",
+    "rhetoricTraining": "Kids Rhetoric",
+    "cameraTraining": "On Camera",
+    "handpan": "Handpan",
+    "karaoke": "Karaoke",
+    "practice": "Daily Practice",
+    "linguaTutor": "Lingua Tutor",
+    "clients": "Clients"
+  },
+  "shell": {
+    "modules": {
+      "dictate": "Dictate",
+      "assistant": "Assistant",
+      "vocal": "Vocal",
+      "language": "Language",
+      "clone": "Clone",
+      "studio": "Studio",
+      "consult": "Consult"
+    },
+    "rail": {
+      "navLabel": "Suite modules",
+      "clients": "Clients",
+      "mark": "m",
+      "meeting": "Meeting",
+      "settings": "Settings",
+      "backToSuite": "Back to journal"
+    },
+    "audioBar": {
+      "defaultDevice": "Default microphone",
+      "noModel": "No model selected",
+      "model": "STT",
+      "hotkey": "Hotkey",
+      "loadingModel": "Loading model…",
+      "localOnly": "All on-device · 0 bytes out"
+    },
+    "placeholder": {
+      "comingSoon": "Coming soon"
+    },
+    "home": {
+      "greetingLead": "Studio",
+      "greetingEmphasis": "open",
+      "paletteHint": "Type or say a command — “start dictation”, “open history”…",
+      "kbdHint": "Ctrl+K",
+      "breadcrumbHome": "Studio home",
+      "soonTag": "Soon",
+      "cardSubtitle": {
+        "dictate": "Dictate anywhere, any app",
+        "assistant": "Ask, brief, and summarize",
+        "vocal": "Warm up and train your voice",
+        "language": "Practice pronunciation and accent",
+        "clone": "Your voice, cloned for narration",
+        "studio": "Sound and song engineering"
+      }
+    },
+    "palette": {
+      "placeholder": "Search commands…",
+      "empty": "No matching commands",
+      "clients": "Clients",
+      "newClient": "New client",
+      "startMeeting": "Start meeting",
+      "theme": {
+        "system": "Theme: as system",
+        "day": "Theme: day",
+        "evening": "Theme: evening"
+      },
+      "goToModule": "Go to {{module}}",
+      "switchShell": "Switch to {{shell}} shell",
+      "startDictation": "Start dictation",
+      "history": "History",
+      "settings": "Settings",
+      "escHint": "Esc"
+    },
+    "deck": {
+      "transportLabel": "Transport",
+      "transport": {
+        "recIdleAria": "Start dictation (global hotkey: {{hotkey}})",
+        "recRecordingAria": "Recording — stop with the global hotkey",
+        "recProcessingAria": "Processing",
+        "timecodeLabel": "Session time",
+        "inLabel": "IN",
+        "outLabel": "OUT",
+        "monitor": "Monitor"
+      }
+    }
+  },
+  "onboarding": {
+    "stepOf": "Step {{current}} of {{total}}",
+    "consult": {
+      "engine": "Engine",
+      "model": "Recognition model",
+      "audio": "Audio",
+      "consent": "Client consent",
+      "engineTitle": "Set up the consultation engine",
+      "modelTitle": "Choose a recognition model",
+      "audioTitle": "Check microphone and call sound",
+      "consentTitle": "melori works only with client consent",
+      "engineHint": "The local engine must be ready before you continue.",
+      "modelHint": "Choose and download the model you will use for consultations.",
+      "audioHint": "Select a microphone and call output device.",
+      "consentHint": "Create a client with the permissions they granted.",
+      "engineWait": "Wait for the engine to become ready. If it does not start, run scripts/setup-engine.",
+      "consentBody": "Before the first meeting, create a pseudonymous client and record their consent.",
+      "firstClient": "Create first client"
+    },
+    "subtitle": "Set up your speech-to-text workflow in a few quick steps.",
+    "recommended": "Recommended",
+    "download": "Download",
+    "downloading": "Downloading...",
+    "customModelDescription": "Not officially supported",
+    "downloadFailed": "Download failed. Please try again.",
+    "modelCard": {
+      "accuracy": "accuracy",
+      "speed": "speed"
+    },
+    "models": {
+      "small": {
+        "name": "Whisper Small",
+        "description": "Fast and fairly accurate."
+      },
+      "medium": {
+        "name": "Whisper Medium",
+        "description": "Good accuracy, medium speed"
+      },
+      "turbo": {
+        "name": "Whisper Turbo",
+        "description": "Balanced accuracy and speed."
+      },
+      "large": {
+        "name": "Whisper Large",
+        "description": "Good accuracy, but slow."
+      },
+      "parakeet-tdt-0.6b-v2": {
+        "name": "Parakeet V2",
+        "description": "English only. The best model for English speakers."
+      },
+      "parakeet-tdt-0.6b-v3": {
+        "name": "Parakeet V3",
+        "description": "Fast and accurate"
+      },
+      "moonshine-base": {
+        "name": "Moonshine Base",
+        "description": "Very fast, English only. Handles accents well."
+      },
+      "moonshine-tiny-streaming-en": {
+        "name": "Moonshine V2 Tiny",
+        "description": "Ultra-fast, English only"
+      },
+      "moonshine-small-streaming-en": {
+        "name": "Moonshine V2 Small",
+        "description": "Fast, English only. Good balance of speed and accuracy."
+      },
+      "moonshine-medium-streaming-en": {
+        "name": "Moonshine V2 Medium",
+        "description": "English only. High quality."
+      },
+      "breeze-asr": {
+        "name": "Breeze ASR",
+        "description": "Optimized for Taiwanese Mandarin. Code-switching support."
+      },
+      "sense-voice-int8": {
+        "name": "SenseVoice",
+        "description": "Very fast. Chinese, English, Japanese, Korean, Cantonese."
+      },
+      "gigaam-v3-e2e-ctc": {
+        "name": "GigaAM v3",
+        "description": "Russian speech recognition. Fast and accurate."
+      },
+      "canary-180m-flash": {
+        "name": "Canary 180M Flash",
+        "description": "Very fast. English, German, Spanish, French. Supports translation."
+      },
+      "canary-1b-v2": {
+        "name": "Canary 1B v2",
+        "description": "Accurate multilingual. 25 European languages. Supports translation."
+      },
+      "cohere-int8": {
+        "name": "Cohere",
+        "description": "A large, slower, but very accurate multilingual model."
+      }
+    },
+    "errors": {
+      "loadModels": "Failed to load available models",
+      "downloadModel": "Failed to download model: {{error}}",
+      "selectModel": "Failed to select the model"
+    },
+    "permissions": {
+      "title": "Permissions Required",
+      "description": "Echo needs a couple of permissions to work properly.",
+      "microphone": {
+        "title": "Microphone Access",
+        "description": "Required to hear your voice for transcription."
+      },
+      "accessibility": {
+        "title": "Accessibility Access",
+        "description": "Required to type transcribed text into your applications."
+      },
+      "grant": "Grant Permission",
+      "granted": "Granted",
+      "waiting": "Waiting...",
+      "allGranted": "All set!",
+      "errors": {
+        "checkFailed": "Failed to check permissions. Please try again.",
+        "requestFailed": "Failed to request permission. Please try again."
+      }
+    },
+    "title": "Welcome to Echo",
+    "next": "Next",
+    "back": "Back",
+    "skip": "Skip",
+    "finish": "Finish",
+    "openSettings": "Open Settings",
+    "step": {
+      "language": {
+        "title": "Dictation Language",
+        "hint": "Select your primary language for voice recognition and UI."
+      },
+      "model": {
+        "title": "Transcription Model",
+        "hint": "Choose an ASR model optimized for speed or accuracy."
+      },
+      "hotkey": {
+        "title": "Global Hotkey",
+        "hint": "Use this shortcut anywhere to start dictating."
+      },
+      "tryout": {
+        "title": "Try Dictation",
+        "hint": "Press your shortcut and speak a test phrase to verify."
+      },
+      "enhance": {
+        "title": "AI Post-Processing",
+        "hint": "Optionally configure AI refinement for clean thought formatting."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "Custom",
+    "active": "Active",
+    "switching": "Switching...",
+    "noModelsAvailable": "No models available",
+    "verifying": "Verifying {{modelName}}...",
+    "verifyingGeneric": "Verifying...",
+    "extracting": "Extracting {{modelName}}...",
+    "extractingMultiple": "Extracting {{count}} models...",
+    "extractingGeneric": "Extracting...",
+    "downloading": "Downloading {{percentage}}%",
+    "downloadingMultiple": "Downloading {{count}} models...",
+    "modelReady": "Model Ready",
+    "loading": "Loading {{modelName}}...",
+    "loadingGeneric": "Loading...",
+    "modelError": "Model Error",
+    "modelUnloaded": "Model Unloaded",
+    "noModelDownloadRequired": "No Model - Download Required",
+    "deleteModel": "Delete {{modelName}}",
+    "downloadSpeed": "{{speed}} MB/s",
+    "cancel": "Cancel",
+    "cancelDownload": "Cancel download",
+    "capabilities": {
+      "languageSelection": "Supports multiple input languages",
+      "singleLanguage": "Supports this language only",
+      "multiLanguage": "Multi-language",
+      "languageOnly": "{{language}} Only",
+      "translation": "Can translate to English",
+      "translate": "Translate to English"
+    }
+  },
+  "settings": {
+    "melori": {
+      "templates": {
+        "title": "Note templates",
+        "name": "Template name",
+        "section": "Section {{n}}",
+        "titleField": "Title",
+        "key": "Key",
+        "guidance": "Guidance",
+        "up": "Up",
+        "down": "Down",
+        "remove": "Remove",
+        "addSection": "Add section",
+        "save": "Save",
+        "new": "New template",
+        "copy": "Make a copy",
+        "edit": "Edit",
+        "locked": "Built-in template",
+        "deleteConflict_one": "This template is assigned to {{count}} client — they will switch to SOAP.",
+        "deleteConflict_other": "This template is assigned to {{count}} clients — they will switch to SOAP.",
+        "deleteConfirm": "Delete and switch clients",
+        "errors": {
+          "name": "Enter a template name (1–60 characters).",
+          "empty": "Add at least one section.",
+          "tooMany": "Use no more than 12 sections.",
+          "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+          "title": "Enter a section title (1–60 characters).",
+          "guidance": "Guidance must be 400 characters or fewer.",
+          "duplicate": "Section keys must be unique."
+        }
+      },
+      "apply": "Apply",
+      "engine": {
+        "title": "Engine and language model",
+        "baseUrl": "OpenAI-compatible server address",
+        "model": "Language model",
+        "corpus": "Corpus directory",
+        "embedModel": "Embedding model",
+        "embedModelHint": "empty — semantic search unavailable",
+        "mirror": "Recognition model mirror",
+        "mirrorHint": "Models without an official source are available only through the configured mirror.",
+        "local": "● Server on this computer — session data stays local.",
+        "remote": "● This server is outside this computer.",
+        "checking": "Checking server locality…",
+        "restarting": "Engine is restarting…"
+      },
+      "privacy": {
+        "templates": {
+          "title": "Note templates",
+          "name": "Template name",
+          "section": "Section {{n}}",
+          "titleField": "Title",
+          "key": "Key",
+          "guidance": "Guidance",
+          "up": "Up",
+          "down": "Down",
+          "remove": "Remove",
+          "addSection": "Add section",
+          "save": "Save",
+          "new": "New template",
+          "copy": "Make a copy",
+          "edit": "Edit",
+          "locked": "Built-in template",
+          "deleteConflict_one": "This template is assigned to {{count}} client — they will switch to SOAP.",
+          "deleteConflict_other": "This template is assigned to {{count}} clients — they will switch to SOAP.",
+          "deleteConfirm": "Delete and switch clients",
+          "errors": {
+            "name": "Enter a template name (1–60 characters).",
+            "empty": "Add at least one section.",
+            "tooMany": "Use no more than 12 sections.",
+            "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+            "title": "Enter a section title (1–60 characters).",
+            "guidance": "Guidance must be 400 characters or fewer.",
+            "duplicate": "Section keys must be unique."
+          }
+        },
+        "title": "Privacy",
+        "hideNotes": "Hide notes from screen sharing and call recording",
+        "hint": "Protects client data when you share your screen or record a call. The recording pill stays visible."
+      },
+      "appearance": {
+        "templates": {
+          "title": "Note templates",
+          "name": "Template name",
+          "section": "Section {{n}}",
+          "titleField": "Title",
+          "key": "Key",
+          "guidance": "Guidance",
+          "up": "Up",
+          "down": "Down",
+          "remove": "Remove",
+          "addSection": "Add section",
+          "save": "Save",
+          "new": "New template",
+          "copy": "Make a copy",
+          "edit": "Edit",
+          "locked": "Built-in template",
+          "deleteConflict": "This template is assigned to {{clients}} clients — they will switch to SOAP.",
+          "deleteConfirm": "Delete and switch clients",
+          "errors": {
+            "name": "Enter a template name (1–60 characters).",
+            "empty": "Add at least one section.",
+            "tooMany": "Use no more than 12 sections.",
+            "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+            "title": "Enter a section title (1–60 characters).",
+            "guidance": "Guidance must be 400 characters or fewer.",
+            "duplicate": "Section keys must be unique."
+          }
+        },
+        "title": "Appearance",
+        "system": "As system",
+        "day": "Day",
+        "evening": "Evening"
+      }
+    },
+    "karaoke": {
+      "title": "Karaoke",
+      "subtitle": "Import a track, sing along, get scored",
+      "custom": "Custom: {{name}}",
+      "import": "Import",
+      "lyricsLabel": "Lyrics (Space separated words for timing sync)",
+      "seconds": "{{val}}s",
+      "speedSlow": "0.75x (Slow)",
+      "speedNormal": "1.0x (Normal)",
+      "speedFast": "1.25x (Fast)",
+      "scoreTitle": "Pronunciation Score",
+      "match": "match",
+      "alignmentBreakdown": "Word Alignment breakdown",
+      "singAlong": "Sing along",
+      "singStop": "Stop singing",
+      "pitchScoreTitle": "Pitch accuracy",
+      "pitchScoreValue": "{{pct}}% on pitch",
+      "micError": "Couldn't access the microphone. Playing the reference only.",
+      "customApprox": "Pitch target for custom audio is approximate (best for solo voice)."
+    },
+    "course": {
+      "subtitle": "Personal mentorship & Echo guidance",
+      "tabCourse": "Course",
+      "tabDiary": "Diary",
+      "lesson": "Lesson {{n}}",
+      "completed": "Done",
+      "backToLessons": "Back to lessons",
+      "exercisesHeading": "Practice exercises:",
+      "backToExercises": "Back to exercises",
+      "instructionLabel": "Exercise instruction",
+      "howTo": "How to do it:",
+      "practiceHeading": "Practice & reporting",
+      "recordTitle": "Record exercise",
+      "recording": "Recording...",
+      "recordHint": "Record a fragment of your practice",
+      "listen": "Listen:",
+      "reportLabel": "Describe your experience (daily report)",
+      "reportPlaceholder": "Describe how it went and any difficulties you faced...",
+      "submitting": "Submitting...",
+      "submit": "Send to Echo mentor",
+      "recommendations": "Echo mentor recommendations",
+      "diaryEmptyTitle": "Diary is empty",
+      "diaryEmptyBody": "Complete any exercise in the Course tab and submit your first report to get Echo's feedback.",
+      "lessonReport": "Lesson {{n}}: {{name}}",
+      "task": "Exercise",
+      "reviewed": "Reviewed",
+      "myReport": "My report:",
+      "analysis": "Echo mentor analysis:",
+      "toastRecStart": "Recording started. Practise now!",
+      "toastMicFail": "Failed to access microphone.",
+      "toastRecStop": "Recording stopped.",
+      "toastFillReport": "Please fill in your report first.",
+      "toastLessonDone": "Congratulations! You completed: {{title}}",
+      "toastSubmitted": "Report submitted and analyzed by your mentor.",
+      "toastCoachFail": "Failed to query coach. Check your LLM settings."
+    },
+    "handpan": {
+      "subtitle": "Multi-Scale Hang Drum",
+      "selectScale": "Select scale",
+      "ringTime": "Ring Time (Sustain)",
+      "hardness": "Strike Hardness",
+      "reverb": "Reverb Space",
+      "help": "Press keyboard keys 1 to 9 to pluck the corresponding notes, or click/tap directly on the drum fields.",
+      "keyLabel": "Key {{k}}"
+    },
+    "modelSettings": {
+      "title": "{{model}} Settings",
+      "noSettingsNeeded": "This model works automatically with no configuration needed."
+    },
+    "general": {
+      "title": "General",
+      "shortcut": {
+        "title": "Echo Shortcuts",
+        "description": "Configure keyboard shortcuts to trigger speech-to-text recording",
+        "loading": "Loading shortcuts...",
+        "none": "No shortcuts configured",
+        "notFound": "Shortcut not found",
+        "pressKeys": "Press keys...",
+        "bindings": {
+          "transcribe": {
+            "name": "Transcribe Shortcut",
+            "description": "The keyboard shortcut to record and transcribe your voice."
+          },
+          "cancel": {
+            "name": "Cancel Shortcut",
+            "description": "The keyboard shortcut to cancel the current recording."
+          },
+          "transcribe_with_post_process": {
+            "name": "Post-Processing Hotkey",
+            "description": "Optional: A dedicated hotkey that always applies AI post-processing to your transcription."
+          },
+          "meeting_toggle": {
+            "name": "Toggle meeting",
+            "description": "Start or stop the meeting."
+          },
+          "meeting_window": {
+            "name": "Meeting window",
+            "description": "Show or focus the meeting window."
+          },
+          "meeting_ask_focus": {
+            "name": "Focus meeting question",
+            "description": "Focus the Ask field in the meeting window."
+          },
+          "meeting_ask_recap5": {
+            "name": "Ask for last 5 minutes",
+            "description": "Ask what was discussed in the last five minutes."
+          },
+          "meeting_ask_missed": {
+            "name": "Ask what was missed",
+            "description": "Ask what important client speech may have been missed."
+          },
+          "meeting_ask_agreed": {
+            "name": "Ask what was agreed",
+            "description": "Ask what was agreed during the meeting."
+          },
+          "meeting_analyze": {
+            "name": "Analyze meeting",
+            "description": "Generate the meeting note."
+          },
+          "meeting_copy_note": {
+            "name": "Copy meeting note",
+            "description": "Copy the generated meeting note."
+          },
+          "meeting_council": {
+            "name": "Consult council",
+            "description": "Ask the psychology council about the meeting."
+          },
+          "meeting_mark": {
+            "name": "Mark moment",
+            "description": "Mark the current moment in the meeting."
+          }
+        },
+        "errors": {
+          "restore": "Failed to restore original shortcut",
+          "set": "Failed to set shortcut: {{error}}",
+          "reset": "Failed to reset shortcut to original value"
+        }
+      },
+      "language": {
+        "title": "Language",
+        "description": "Select the language for speech recognition. Auto will automatically determine the language, while selecting a specific language can improve accuracy for that language.",
+        "descriptionUnsupported": "Parakeet model automatically detects the language. No manual selection is needed.",
+        "searchPlaceholder": "Search languages...",
+        "noResults": "No languages found",
+        "auto": "Auto"
+      },
+      "pushToTalk": {
+        "label": "Push To Talk",
+        "description": "Hold to record, release to stop"
+      }
+    },
+    "models": {
+      "title": "Transcription Models",
+      "description": "Select a transcription model or download additional models. Different models offer varying levels of accuracy and speed.",
+      "yourModels": "Downloaded Models",
+      "availableModels": "Available to Download",
+      "downloaded": "Downloaded",
+      "available": "Available to Download",
+      "deleteConfirm": "Are you sure you want to delete {{modelName}}? You will need to download it again to use it.",
+      "deleteActiveConfirm": "{{modelName}} is your active model. Deleting it will stop transcriptions until you select a new model. Are you sure?",
+      "deleteTitle": "Delete Model",
+      "filters": {
+        "all": "All",
+        "multiLanguage": "Multi-language",
+        "translation": "Translation",
+        "allLanguages": "All Languages"
+      },
+      "noModelsMatch": "No models match this filter."
+    },
+    "sound": {
+      "title": "Sound",
+      "microphone": {
+        "title": "Microphone",
+        "description": "Select your preferred microphone device",
+        "placeholder": "Select microphone...",
+        "loading": "Loading..."
+      },
+      "audioFeedback": {
+        "label": "Audio Feedback",
+        "description": "Play sound when recording starts and stops"
+      },
+      "outputDevice": {
+        "title": "Output Device",
+        "description": "Select your preferred audio output device for feedback sounds",
+        "placeholder": "Select output device...",
+        "loading": "Loading..."
+      },
+      "volume": {
+        "title": "Volume",
+        "description": "Adjust the volume of audio feedback sounds"
+      }
+    },
+    "audio": {
+      "title": "Audio",
+      "meter": {
+        "title": "Input Level",
+        "clip": "Clip",
+        "noDevice": "No input device — select a microphone to see levels.",
+        "idle": "Waiting for input…"
+      },
+      "gain": {
+        "title": "Input Gain",
+        "description": "Boost or cut the microphone signal before it is metered and dictated (0 dB = no change)."
+      },
+      "monitor": {
+        "title": "Monitor input",
+        "description": "Hear your microphone live in headphones to tune gain and mic position. Use headphones — monitoring through speakers can cause feedback.",
+        "device": "Monitor output",
+        "deviceDescription": "Where you hear yourself. Route to headphones to avoid feedback.",
+        "volume": "Monitor volume",
+        "volumeDescription": "How loud you hear yourself. Does not change the captured or dictated audio.",
+        "feedbackWarning": "Monitoring off: feedback detected.",
+        "deviceError": "Monitoring stopped: audio output unavailable.",
+        "inputLost": "Monitoring stopped: input device lost."
+      },
+      "spectrum": {
+        "title": "Spectrum",
+        "peakHold": "Hold",
+        "freeze": "Freeze",
+        "idle": "Waiting for input…"
+      },
+      "deviceHealth": {
+        "title": "Device",
+        "noDevice": "No input device",
+        "noFacts": "Stream not open",
+        "noSignal": "No signal",
+        "reconnect": "Reconnect",
+        "reconnectFailed": "Could not reopen the input device",
+        "status": {
+          "ok": "Signal present",
+          "starting": "Waiting for the first frame…",
+          "silent": "Microphone is silent — check if it is muted",
+          "stalled": "Device stopped delivering audio",
+          "unavailable": "Device unavailable",
+          "unknown": "Checking…"
+        }
+      },
+      "autoStopSilence": {
+        "title": "Auto-stop after silence, min",
+        "description": "0 disables automatic stop."
+      }
+    },
+    "advanced": {
+      "title": "Advanced",
+      "groups": {
+        "shell": "Shell",
+        "app": "App",
+        "output": "Output",
+        "transcription": "Transcription",
+        "history": "History",
+        "experimental": "Experimental",
+        "subtitles": "Subtitles",
+        "voiceCommands": "Voice commands"
+      },
+      "shellSkin": {
+        "title": "Suite shell",
+        "description": "Choose how the audio suite's modules are laid out: Rail is a focused side rail, Home is a studio overview with module cards, and Deck is a DAW-style layout with top module tabs and a persistent transport bar.",
+        "options": {
+          "rail": "Rail",
+          "home": "Home",
+          "deck": "Deck"
+        }
+      },
+      "experimentalToggle": {
+        "label": "Experimental Features",
+        "description": "Enable experimental features that are still in development."
+      },
+      "lazyStreamClose": {
+        "label": "Keep Mic Open Between Transcriptions",
+        "description": "Keeps the microphone stream open for 30 seconds after recording stops, reducing latency for back-to-back transcriptions. May degrade Bluetooth audio quality while active."
+      },
+      "acceleration": {
+        "whisper": {
+          "title": "Whisper Acceleration",
+          "description": "Hardware acceleration for Whisper models. Auto uses GPU if available (Metal on macOS, Vulkan on Windows/Linux)."
+        },
+        "ort": {
+          "title": "ONNX Acceleration",
+          "description": "Hardware acceleration for ONNX models (Parakeet, Canary, Moonshine, etc.). DirectML on Windows is experimental. Models may fail to transcribe."
+        },
+        "gpuDevice": {
+          "title": "GPU Device",
+          "description": "Select which GPU to use for Whisper inference. Auto picks the dedicated GPU.",
+          "auto": "Auto"
+        }
+      },
+      "startHidden": {
+        "label": "Start Hidden",
+        "description": "Launch to system tray without opening the window."
+      },
+      "autostart": {
+        "label": "Launch on Startup",
+        "description": "Automatically start Echo when you log in to your computer."
+      },
+      "showTrayIcon": {
+        "label": "Show Tray Icon",
+        "description": "Display the Echo icon in the system tray."
+      },
+      "overlay": {
+        "title": "Overlay Position",
+        "description": "Display visual feedback overlay during recording and transcription. On Linux 'None' is recommended.",
+        "options": {
+          "none": "None",
+          "bottom": "Bottom",
+          "top": "Top"
+        }
+      },
+      "pasteMethod": {
+        "title": "Paste Method",
+        "description": "Choose how text is inserted. Direct: simulates typing via system input. None: skips paste, only updates history/clipboard.",
+        "options": {
+          "clipboard": "Clipboard ({{modifier}}+V)",
+          "clipboardCtrlShiftV": "Clipboard (Ctrl+Shift+V)",
+          "clipboardShiftInsert": "Clipboard (Shift+Insert)",
+          "direct": "Direct",
+          "none": "None",
+          "externalScript": "External Script"
+        },
+        "externalScriptPlaceholder": "/path/to/your/script.sh"
+      },
+      "typingTool": {
+        "title": "Typing Tool",
+        "description": "Choose which Linux typing tool to use for Direct paste method. Auto will automatically detect and use the best available tool for your system.",
+        "options": {
+          "auto": "Auto (Recommended)"
+        }
+      },
+      "clipboardHandling": {
+        "title": "Clipboard Handling",
+        "description": "Don't Modify Clipboard preserves your current clipboard contents after transcription. Copy to Clipboard leaves the transcription result in your clipboard after pasting.",
+        "options": {
+          "dontModify": "Don't Modify Clipboard",
+          "copyToClipboard": "Copy to Clipboard"
+        }
+      },
+      "autoSubmit": {
+        "title": "Auto Submit",
+        "description": "Automatically send the selected key combination after text insertion. Cmd+Enter applies on macOS, while Windows/Linux use Super+Enter.",
+        "options": {
+          "off": "Off",
+          "enter": "Enter",
+          "cmdEnter": "Cmd+Enter",
+          "superEnter": "Super+Enter",
+          "ctrlEnter": "Ctrl+Enter"
+        }
+      },
+      "translateToEnglish": {
+        "label": "Translate to English",
+        "description": "Automatically translate speech from other languages to English during transcription.",
+        "descriptionUnsupported": "Translation is not supported by the {{model}} model."
+      },
+      "modelUnload": {
+        "title": "Unload Model",
+        "description": "Automatically free GPU/CPU memory when the model hasn't been used for the specified time",
+        "options": {
+          "never": "Never",
+          "immediately": "Immediately",
+          "min2": "After 2 minutes",
+          "min5": "After 5 minutes",
+          "min10": "After 10 minutes",
+          "min15": "After 15 minutes",
+          "hour1": "After 1 hour",
+          "sec15": "After 15 seconds (Debug)"
+        }
+      },
+      "customWords": {
+        "title": "Custom Words",
+        "description": "Add words that are often misheard or misspelled during transcription. The system will automatically correct similar-sounding words to match your list.",
+        "placeholder": "Add a word",
+        "add": "Add",
+        "remove": "Remove {{word}}",
+        "duplicate": "\"{{word}}\" already exists"
+      },
+      "autoPunctuate": {
+        "label": "Auto-Punctuate",
+        "description": "Automatically insert commas and ending punctuation based on sentence structure (RU/EN support)."
+      },
+      "autoCapitalize": {
+        "label": "Auto-Capitalize",
+        "description": "Automatically capitalize the first letter of sentences."
+      },
+      "subtitles": {
+        "enable": {
+          "label": "Live subtitles",
+          "description": "Show transcribed text in real time below the recording orb."
+        },
+        "fontSize": {
+          "label": "Subtitle size",
+          "description": "Text size of the on-screen subtitles.",
+          "options": {
+            "small": "Small",
+            "medium": "Medium",
+            "large": "Large"
+          }
+        },
+        "maxChars": {
+          "label": "Subtitle length",
+          "description": "Maximum number of characters kept on screen."
+        },
+        "refreshMs": {
+          "label": "Refresh interval",
+          "description": "How often the live subtitles update while you speak."
+        }
+      },
+      "commandMode": {
+        "label": "Command Mode",
+        "description": "Start dictation with a spoken instruction (\"translate to English\", \"make shorter\") to transform the text, or end with \"press enter\" to submit. Transform commands need a post-processing provider."
+      },
+      "selfCorrection": {
+        "label": "Self-correction",
+        "description": "When you restate yourself (\"at 2, no, at 3\"), keep only the corrected version."
+      },
+      "spokenLists": {
+        "label": "Spoken lists",
+        "description": "Turn dictated enumerations (\"first… second… third…\") into a numbered list."
+      },
+      "devDictionary": {
+        "label": "Developer dictionary",
+        "description": "Bias transcription toward the correct spelling of common dev tools and jargon (GitHub, Vercel, TypeScript…)."
+      },
+      "snippets": {
+        "title": "Snippets",
+        "description": "Spoken trigger phrases that expand into canned text (signatures, links).",
+        "triggerPlaceholder": "Trigger phrase",
+        "textPlaceholder": "Expands to…",
+        "add": "Add",
+        "duplicate": "Snippet \"{{trigger}}\" already exists",
+        "remove": "Remove snippet {{trigger}}"
+      }
+    },
+    "postProcessing": {
+      "title": "Post Process",
+      "hotkey": {
+        "title": "Hotkey"
+      },
+      "api": {
+        "title": "API (OpenAI Compatible)",
+        "provider": {
+          "title": "Provider",
+          "description": "Select an OpenAI-compatible provider."
+        },
+        "appleIntelligence": {
+          "title": "Apple Intelligence",
+          "description": "Runs fully on-device. No API key or network access is required.",
+          "requirements": "Requires an Apple Silicon Mac running macOS Tahoe (26.0) or later. Apple Intelligence must be enabled in System Settings.",
+          "unavailable": "Apple Intelligence is not available on this device. Requires an Apple Silicon Mac running macOS Tahoe (26.0) or later with Apple Intelligence enabled in System Settings."
+        },
+        "baseUrl": {
+          "title": "Base URL",
+          "description": "API base URL for the selected provider. Only the custom provider can be edited.",
+          "placeholder": "https://api.openai.com/v1"
+        },
+        "apiKey": {
+          "title": "API Key",
+          "description": "API key for the selected provider.",
+          "placeholder": "sk-..."
+        },
+        "model": {
+          "title": "Model",
+          "descriptionApple": "Provide an optional numeric token limit or keep the default on-device preset.",
+          "descriptionCustom": "Provide the model identifier expected by your custom endpoint.",
+          "descriptionDefault": "Choose a model exposed by the selected provider.",
+          "placeholderApple": "Apple Intelligence",
+          "placeholderWithOptions": "Search or select a model",
+          "placeholderNoOptions": "Type a model name",
+          "refreshModels": "Refresh models"
+        }
+      },
+      "prompts": {
+        "title": "Prompt",
+        "selectedPrompt": {
+          "title": "Selected Prompt",
+          "description": "Select a template for refining transcriptions or create a new one. Use ${output} inside the prompt text to reference the captured transcript."
+        },
+        "noPrompts": "No prompts available",
+        "selectPrompt": "Select a prompt",
+        "createNew": "Create New Prompt",
+        "promptLabel": "Prompt Label",
+        "promptLabelPlaceholder": "Enter prompt name",
+        "promptInstructions": "Prompt Instructions",
+        "promptInstructionsPlaceholder": "Write the instructions to run after transcription. Example: Improve grammar and clarity for the following text: ${output}",
+        "promptTip": "Tip: Use <code>${output}</code> to insert the transcribed text in your prompt.",
+        "updatePrompt": "Update Prompt",
+        "deletePrompt": "Delete Prompt",
+        "createPrompt": "Create Prompt",
+        "cancel": "Cancel",
+        "selectToEdit": "Select a prompt above to view and edit its details.",
+        "createFirst": "Click 'Create New Prompt' above to create your first post-processing prompt."
+      }
+    },
+    "history": {
+      "title": "History",
+      "openFolder": "Open Recordings Folder",
+      "loading": "Loading history...",
+      "empty": "No transcriptions yet. Start recording to build your history!",
+      "copyToClipboard": "Copy transcription to clipboard",
+      "save": "Save transcription",
+      "unsave": "Remove from saved",
+      "delete": "Delete entry",
+      "deleteError": "Failed to delete entry. Please try again.",
+      "retranscribe": "Re-transcribe",
+      "retranscribeError": "Failed to re-transcribe. Please try again.",
+      "transcribing": "Transcribing...",
+      "transcriptionFailed": "Transcription failed. You can re-transcribe using the retry icon."
+    },
+    "debug": {
+      "title": "Debug",
+      "logDirectory": {
+        "title": "Log Directory",
+        "description": "Location where log files are stored"
+      },
+      "logLevel": {
+        "title": "Log Level",
+        "description": "Set the verbosity of logging"
+      },
+      "updateChecks": {
+        "label": "Check for Updates",
+        "description": "Automatically check for new versions of Echo"
+      },
+      "soundTheme": {
+        "label": "Sound Theme",
+        "description": "Choose a sound theme for recording start and stop feedback"
+      },
+      "wordCorrectionThreshold": {
+        "title": "Word Correction Threshold",
+        "description": "Sensitivity for custom word corrections"
+      },
+      "historyLimit": {
+        "title": "History Limit",
+        "description": "Maximum number of history entries to keep",
+        "entries": "entries"
+      },
+      "recordingRetention": {
+        "title": "Auto-Delete Recordings",
+        "description": "Automatically delete old recordings to save space",
+        "never": "Never",
+        "preserveLimit": "Keep latest {{count}}",
+        "days3": "After 3 days",
+        "weeks2": "After 2 weeks",
+        "months3": "After 3 months",
+        "placeholder": "Select retention period..."
+      },
+      "alwaysOnMicrophone": {
+        "label": "Always-On Microphone",
+        "description": "Keep microphone active for faster response"
+      },
+      "clamshellMicrophone": {
+        "title": "Clamshell Microphone",
+        "description": "Microphone to use when laptop lid is closed"
+      },
+      "postProcessingToggle": {
+        "label": "Post Processing",
+        "description": "Enable AI-powered text refinement after transcription"
+      },
+      "muteWhileRecording": {
+        "label": "Mute While Recording",
+        "description": "Mute system audio during recording"
+      },
+      "appendTrailingSpace": {
+        "label": "Append Trailing Space",
+        "description": "Add a space after pasted transcription"
+      },
+      "keyboardImplementation": {
+        "title": "Keyboard Implementation",
+        "description": "Choose the keyboard shortcut backend.",
+        "bindingsReset": "Keyboard shortcuts were incompatible and reset to defaults"
+      },
+      "paths": {
+        "appData": "App Data:",
+        "models": "Models:",
+        "settings": "Settings:"
+      },
+      "pasteDelay": {
+        "title": "Paste Delay",
+        "description": "Delay before sending paste keystroke (in milliseconds). Increase if wrong text is being pasted."
+      },
+      "recordingBuffer": {
+        "title": "Extra Recording Buffer",
+        "description": "Extra time (in milliseconds) to keep recording after you release the key, to capture trailing audio. 0 = no extra buffer."
+      }
+    },
+    "capture": {
+      "captureSuccess": "Saved to capture folder",
+      "captureError": "Voice capture failed — check the folder",
+      "dirLabel": "Voice capture folder",
+      "dirDescription": "Folder where dictated notes are saved when you start with a capture phrase (empty = off)",
+      "dirPlaceholder": "/path/to/your/notes/inbox",
+      "phrasesLabel": "Capture trigger phrases",
+      "phrasesDescription": "Comma-separated phrases that start a capture (e.g. capture note, save note)",
+      "phrasesPlaceholder": "capture note, save note"
+    },
+    "about": {
+      "title": "About",
+      "eliteEdition": "Local-first bilingual dictation",
+      "version": {
+        "title": "Version",
+        "description": "Current version of Echo"
+      },
+      "appDataDirectory": {
+        "title": "App Data Directory",
+        "description": "Location where Echo stores its data"
+      },
+      "sourceCode": {
+        "title": "Source Code",
+        "description": "View source code and contribute",
+        "button": "View on GitHub"
+      },
+      "acknowledgments": {
+        "title": "Acknowledgments",
+        "whisper": {
+          "title": "Whisper.cpp",
+          "description": "High-performance inference of OpenAI's Whisper automatic speech recognition model",
+          "details": "Echo uses Whisper.cpp for fast, local speech-to-text processing. Thanks to the amazing work by Georgi Gerganov and contributors."
+        }
+      }
+    },
+    "coach": {
+      "wpm": "WPM",
+      "fillers": "Fillers",
+      "pace": {
+        "slow": "slow",
+        "good": "good pace",
+        "fast": "fast"
+      },
+      "aggregate": "This view: avg {{wpm}} WPM · {{rate}}% fillers",
+      "toastEnabled": {
+        "title": "Coach toast",
+        "description": "Show a brief delivery summary after each dictation"
+      },
+      "title": "Coach",
+      "thisWeek": "this week",
+      "avgWpm": "avg WPM",
+      "fillerRate": "fillers",
+      "sessions": "dictations",
+      "vsPrev": "vs last week",
+      "trend": "Trend",
+      "windowDays7": "7d",
+      "windowDays30": "30d",
+      "windowAll": "All",
+      "streak": "Streak",
+      "streakDays": "{{count}}-day streak",
+      "streakBest": "best {{count}}",
+      "empty": "No sessions yet — dictate something to see progress.",
+      "belowAvg": "below your avg",
+      "aboveAvg": "above your avg"
+    },
+    "assistant": {
+      "title": "Assistant",
+      "description": "Personal AI assistant that can answer questions and help with tasks.",
+      "enable": {
+        "label": "Enable Assistant",
+        "description": "Toggle assistant mode on or off."
+      },
+      "systemPrompt": {
+        "label": "System Prompt",
+        "description": "The base personality and instructions for the assistant. If empty, uses the default instructions."
+      },
+      "systemPromptPlaceholder": "You are Echo, a concise, friendly voice assistant...",
+      "tryIt": "Try it",
+      "ask": "Ask",
+      "speakReply": "Speak reply"
+    },
+    "tts": {
+      "title": "Voice (Text-to-Speech)",
+      "description": "Echo can speak agent questions and replies aloud.",
+      "speakAnswers": "Speak agent questions aloud",
+      "voice": "Voice",
+      "voiceAuto": "Auto (by language)",
+      "localEngine": "Local engine",
+      "localEngineSupertonic": "Supertonic (neural, 31 languages)",
+      "localEnginePiper": "Piper (legacy)",
+      "supertonicVoice": "Supertonic voice",
+      "downloadVoices": "Download Supertonic voices (~384 MB)",
+      "downloadingVoices": "Downloading… {{percent}}%",
+      "rate": "Speaking rate",
+      "testVoice": "Test voice",
+      "localEngineKitten": "Kitten (English only, compact)"
+    },
+    "tutor": {
+      "enable": {
+        "label": "Language Tutor",
+        "description": "Enable scoring and feedback for pronunciation practice."
+      },
+      "practice": "Practice",
+      "reference": "Reference Phrase",
+      "spoken": "What you said",
+      "score": "Score",
+      "overall": "Overall",
+      "note": "Note",
+      "language": "Language",
+      "record": "Record",
+      "stopRecording": "Stop",
+      "transcribing": "Transcribing…",
+      "spokenHeard": "Heard: “{{spoken}}”",
+      "phonemeUnavailable": "Per-phoneme compare needs the bundled espeak (Windows). Showing word-level match.",
+      "micError": "Couldn't access the microphone.",
+      "youSaid": "you said {{ipa}}"
+    },
+    "transcribe": {
+      "tab": "Transcribe",
+      "title": "Transcribe File",
+      "pickFile": "Pick Audio/Video File",
+      "noFile": "No file selected",
+      "timestamps": "Include timestamps",
+      "fmtInline": "Inline [MM:SS]",
+      "fmtJson": "JSON (Word-level)",
+      "fmtKaraoke": "Karaoke VTT",
+      "diarize": "Speaker diarization",
+      "speakersPlaceholder": "Speaker count hint",
+      "run": "Transcribe",
+      "working": "Transcribing...",
+      "copy": "Copy All",
+      "saveAs": "Save As...",
+      "cancel": "Cancel",
+      "cancelled": "Cancelled",
+      "progress": {
+        "decoding": "Decoding audio…",
+        "loadingModel": "Loading model…",
+        "transcribing": "Transcribing…",
+        "diarizing": "Identifying speakers…",
+        "formatting": "Formatting…",
+        "done": "Done"
+      },
+      "saveTo": "Save to…",
+      "savedTo": "Saved to {{path}}",
+      "diarizeCliNote": "Diarization runs on CPU and is slow for long files — and an in-app run can stop if you switch tabs. For reliable speaker-labelled output, use the CLI:\necho --transcribe-file \"FILE\" -o \"OUT.txt\" --diarize --format speaker",
+      "translate": "Translate to",
+      "translateNone": "No translation"
+    },
+    "practice": {
+      "title": "Daily Practice",
+      "day": "Day {{day}}",
+      "streak": "streak: {{count}}",
+      "tab": {
+        "session": "Session",
+        "beforeAfter": "Before / After"
+      },
+      "record": "Record",
+      "stop": "Stop",
+      "done": "Done",
+      "oneMore": "One more",
+      "sessionDone": "Today's session complete!",
+      "sessionDoneHint": "Streak: {{count}} day(s). Come back tomorrow.",
+      "courseDone": "Course complete!",
+      "courseDoneHint": "Pick another course to keep practicing.",
+      "beforeAfterTitle": "Before / After",
+      "beforeAfterHint": "Record a 60-second free reading — the same check every time. Your first take is Point A; later takes show the progress you can hear.",
+      "recordBaseline": "Record Point A",
+      "recordCheck": "Record a new check",
+      "baseline": "Point A",
+      "latest": "Now",
+      "latestPending": "Now — not yet",
+      "latestHint": "Record a second take after a few sessions to compare.",
+      "noTakes": "No takes yet — record your Point A to start.",
+      "allTakes": "{{count}} takes total"
+    },
+    "lingua": {
+      "wizardTitle": "Linguistic profile",
+      "pickLanguage": "Which language are you entering?",
+      "multiHint": "multiple answers welcome",
+      "back": "Back",
+      "next": "Next",
+      "finish": "Begin",
+      "newSession": "New session",
+      "redoProfile": "Redo profile",
+      "emptyHint": "Say hello — the tutor will open the first cycle from your profile.",
+      "thinking": "the field is tuning…",
+      "inputPlaceholder": "Write to the tutor…"
+    }
+  },
+  "footer": {
+    "downloadingModel": "Downloading {{model}}...",
+    "checkingUpdates": "Checking for updates...",
+    "updateAvailable": "Update available: {{version}}",
+    "updateAvailableShort": "Update available",
+    "upToDate": "Up to date",
+    "downloadUpdate": "Download Update",
+    "restart": "Restart",
+    "updateCheckingDisabled": "Update Checking Disabled",
+    "downloading": "Downloading... {{progress}}%",
+    "installing": "Installing...",
+    "preparing": "Preparing...",
+    "checkForUpdates": "Check for updates",
+    "portableUpdateTitle": "Manual update required",
+    "portableUpdateMessage": "Portable installs cannot be updated automatically. To update: download the latest NSIS installer from GitHub Releases, install it to the same folder, then copy your Data/ folder (settings, models, recordings) from the old version to the new one.",
+    "portableUpdateButton": "Open GitHub Releases"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "add": "Add",
+    "remove": "Remove",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update",
+    "close": "Close",
+    "open": "Open",
+    "default": "Default",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "on": "On",
+    "off": "Off",
+    "yes": "Yes",
+    "no": "No",
+    "noOptionsFound": "No options found"
+  },
+  "accessibility": {
+    "permissionsRequired": "Accessibility Permissions Required",
+    "permissionsDescription": "Echo needs accessibility permissions to type transcribed text.",
+    "openSettings": "Open System Settings",
+    "dismiss": "Dismiss"
+  },
+  "errors": {
+    "renderingSettingsTitle": "Error Rendering Settings",
+    "renderingSettingsDescription": "Component for section \"{{section}}\" is missing.",
+    "loadDirectory": "Error loading directory: {{error}}",
+    "micPermissionDeniedTitle": "Microphone Access Denied",
+    "micPermissionDenied": {
+      "generic": "Microphone access was denied by the operating system. Please grant microphone permission in your system settings.",
+      "windows": "Enable microphone access in Settings → Privacy & security → Microphone (including desktop app access).",
+      "macos": "Grant microphone access in System Settings → Privacy & Security → Microphone.",
+      "linux": "Grant microphone access in your system's sound or privacy settings."
+    },
+    "noInputDeviceTitle": "No Microphone Found",
+    "noInputDevice": "No audio input device was detected. Please connect a microphone or headset and try again.",
+    "recordingFailed": "Failed to start recording: {{error}}",
+    "modelLoadFailed": "Failed to load model: {{model}}",
+    "modelLoadFailedUnknown": "unknown model",
+    "pasteFailedTitle": "Failed to Paste Text",
+    "pasteFailed": "Text could not be pasted into the active application."
+  },
+  "appLanguage": {
+    "title": "Application Language",
+    "description": "Change the language of the Echo interface"
+  },
+  "overlay": {
+    "transcribing": "Transcribing...",
+    "processing": "Processing...",
+    "cancel": "Cancel recording",
+    "preparing": "Preparing…",
+    "movingToWindow": "moving to active window",
+    "loadingModel": "loading model…",
+    "localBadge": "local",
+    "recording": "Recording"
+  },
+  "meetingCopilot": {
+    "launch": "Meeting",
+    "recording": "REC",
+    "idle": "Idle",
+    "both": "me + others",
+    "micOnly": "mic only",
+    "stop": "Stop",
+    "close": "Close",
+    "me": "me",
+    "others": "others",
+    "waiting": "Listening…",
+    "error": "Couldn't start capture. Check your microphone and try again.",
+    "consentTitle": "This records all participants",
+    "consentBody": "You are responsible for obtaining consent from everyone in the meeting before recording.",
+    "consentCancel": "Cancel",
+    "consentAccept": "I will",
+    "save": {
+      "save": "Save",
+      "saving": "Saving…",
+      "savedTo": "Saved to {{path}}"
+    },
+    "analysis": {
+      "soap": "SOAP",
+      "business": "Business",
+      "template": "Template",
+      "session": "Session",
+      "analyze": "Analyze",
+      "analyzing": "Analyzing…",
+      "copy": "Copy",
+      "copied": "Copied",
+      "retry": "Retry",
+      "destination": "Sends transcript to {{label}}",
+      "sessionWarning": "This Session analysis will be sent to a non-local LLM.",
+      "summary": "Summary",
+      "keyPoints": "Key points",
+      "actionItems": "Action items",
+      "openQuestions": "Open questions",
+      "subjective": "Subjective",
+      "objective": "Objective",
+      "assessment": "Assessment",
+      "plan": "Plan"
+    },
+    "council": {
+      "consult": "Consult council",
+      "consulting": "Consulting…",
+      "synthesis": "Synthesis",
+      "convergences": "Convergences",
+      "divergences": "Divergences",
+      "target": "Council via {{url}}",
+      "warning": "The council endpoint is not local — session content will leave this machine.",
+      "lenses": "Lenses: {{selected}} of {{total}}",
+      "allLenses": "All lenses",
+      "consultN": "Consult council ({{n}})",
+      "stageLenses": "Council · lenses {{done}}/{{total}}",
+      "stageSynthesis": "Council · lenses {{done}}/{{total}} · synthesis",
+      "stageDone": "Council done · {{total}} lenses",
+      "stageError": "Council stopped",
+      "running": "now: {{names}}",
+      "parallel": "{{n}} in parallel"
+    },
+    "doc": {
+      "notesLabel": "Notes",
+      "notesGroup": "Notes",
+      "actionsGroup": "Actions",
+      "councilGroup": "Council",
+      "transcript": "Transcript",
+      "done": "Ended",
+      "emptyHint": "Analyze the transcript to generate notes and actions."
+    },
+    "chooseClient": "Choose a client",
+    "noClient": "No client (use Echo mode)",
+    "start": "Start",
+    "saved": "Session saved",
+    "notRetained": "Session not saved: the client did not consent to retention",
+    "remoteConfirmTitle": "Send content to the council?",
+    "remoteConfirmBody": "Session content will be sent to {{url}}.",
+    "clientRemoteConfirmBody": "The engine LLM is not local.",
+    "protectionBadge": "⊘ hidden from sharing",
+    "saveErrorTitle": "Save failed",
+    "saveRetry": "Retry saving",
+    "showTranscript": "Show transcript",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "newMeeting": "New meeting",
+    "newMeetingUnsaved": "Not saved — start a new one?",
+    "ask": {
+      "title": "Ask about the meeting",
+      "placeholder": "Ask anything about this meeting…",
+      "send": "Ask",
+      "recap5": "Last 5 minutes",
+      "missed": "What did I miss?",
+      "agreed": "What did we agree?",
+      "more": "Show {{count}} more"
+    },
+    "silence": {
+      "title": "Long silence — has the meeting ended?",
+      "continue": "Continue",
+      "seconds": "Stopping in {{count}} s"
+    },
+    "voiceActivity": "Who is speaking"
+  },
+  "agentPanel": {
+    "from": "Question from {{source}}",
+    "typeOrDictate": "Type — or answer by voice with your dictation hotkey",
+    "yes": "Yes",
+    "no": "No",
+    "dismiss": "Dismiss",
+    "timeLeft": "{{count}}s"
+  },
+  "consult": {
+    "clients": {
+      "title": "Clients",
+      "subtitle": "Consent-aware consultation records",
+      "empty": "No clients yet"
+    },
+    "newClient": {
+      "title": "New client"
+    },
+    "form": {
+      "alias": "Alias",
+      "permissions": "Consent for data types",
+      "retention": "Retention period (days)",
+      "chooseRetention": "Choose a period",
+      "untilRevoke": "Until revoked",
+      "date": "Consent date",
+      "invalid": "Enter an alias and grant at least one permission"
+    },
+    "permissions": {
+      "transcript": "Transcript",
+      "video": "Video",
+      "council": "Psychology council",
+      "retain": "Retain session"
+    },
+    "actions": {
+      "newClient": "New client",
+      "create": "Create client",
+      "cancel": "Cancel",
+      "back": "Back to clients",
+      "export": "Export",
+      "downloadConsent": "Download consent text",
+      "attachSigned": "Attach signed consent",
+      "revoke": "Revoke consent",
+      "delete": "Delete client"
+    },
+    "status": {
+      "active": "Active",
+      "revoked": "Revoked"
+    },
+    "card": {
+      "template": "Note template",
+      "permissions": "Consent",
+      "none": "None",
+      "sessions": "Sessions",
+      "includeAnalysis": "Include analysis",
+      "confirmAlias": "Type the alias to confirm deletion",
+      "sessionsCount_one": "{{count}} session",
+      "sessionsCount_other": "{{count}} sessions",
+      "newSession": "New session",
+      "newSessionUnavailable": "Needs active consent to the transcript",
+      "sessionsToolbar": "Client sessions",
+      "selectAll": "Select all",
+      "selectSession": "Select session {{date}}",
+      "deleteSelected": "Delete selected ({{count}})",
+      "deleteConfirm_one": "Delete {{count}} session permanently?",
+      "deleteConfirm_other": "Delete {{count}} sessions permanently?",
+      "deleteOne": "Delete",
+      "deleteOneConfirm": "Delete permanently?",
+      "unmigrated": "Legacy session — not migrated to a structured note"
+    },
+    "warnings": {
+      "encryptionOff": "Disk encryption is off — client data on disk is not protected",
+      "encryptionUnknown": "Unable to check disk encryption",
+      "purged": "Purged expired records: {{count}}"
+    },
+    "errors": {
+      "request": "Consult engine request failed"
+    },
+    "journal": {
+      "volume": "Practice journal · volume I",
+      "engineDown": "engine unavailable",
+      "engineDownMessage": "Sessions can continue, but saving will resume when the engine is back.",
+      "diskOff": "disk is not encrypted",
+      "diskOffMessage": "Client data on this disk is not protected.",
+      "diskUnknown": "disk encryption unknown",
+      "diskUnknownMessage": "Disk encryption could not be checked.",
+      "purged": "expired data removed",
+      "purgedMessage": "Expired records removed: {{count}}",
+      "createDisabled": "Client creation is unavailable until the engine is ready.",
+      "loading": "Loading journal…",
+      "emptyLead": "The journal is empty.",
+      "emptyBody": "The first page will appear when you add a client and record what they consented to.",
+      "tableClient": "Client",
+      "tableConsent": "Consent",
+      "tableLastSession": "Last session",
+      "tableSessions": "Sessions",
+      "revoked": "consent revoked — new sessions closed",
+      "readOnly": "Saved sessions remain read-only until their retention period ends or the client requests deletion.",
+      "noNote": "No note recorded.",
+      "consent": "Consent",
+      "deleteTitle": "Delete all client data",
+      "deleteDescription": "The client folder will be erased completely. Type the alias to confirm.",
+      "deletePermanent": "Delete permanently",
+      "aliasHint": "Use an alias, not a real name.",
+      "preview": "Consent preview",
+      "engine": {
+        "starting": "engine starting",
+        "ready": "engine ready",
+        "down": "engine unavailable"
+      },
+      "disk": {
+        "on": "disk encrypted",
+        "off": "disk not encrypted",
+        "unknown": "disk status unknown"
+      },
+      "permissionHint": {
+        "transcript": "Text recognized on this computer",
+        "video": "Numbers only; video is never recorded",
+        "council": "Psychology council reading of the session text",
+        "retain": "Keep session material after the session"
+      },
+      "privacyNote": "Client data stays on this computer only. Audio and video are never recorded.",
+      "llm": {
+        "local": "● LLM on this computer",
+        "remote": "○ LLM on your server — you will be asked before sending"
+      }
+    },
+    "memory": {
+      "tabsLabel": "Client memory",
+      "tabs": {
+        "sessions": "Sessions",
+        "search": "Search",
+        "chat": "Chat"
+      },
+      "recapTitle": "Last time",
+      "generate": "Summary of recent sessions",
+      "generating": "Summarizing…",
+      "empty": "No saved memory yet.",
+      "stale": "out of date",
+      "email": "Letter",
+      "today": "today",
+      "daysAgo_one": "{{count}} day ago",
+      "daysAgo_other": "{{count}} days ago",
+      "indexing": "indexing {{current}} of {{total}}",
+      "meaningUnavailable": "meaning search unavailable: {{reason}}",
+      "searchPlaceholder": "Search sessions",
+      "search": "Search",
+      "wordsOnly": "Only word search is available without council consent.",
+      "mode": {
+        "words": "Words",
+        "meaning": "Meaning",
+        "both": "Both"
+      },
+      "kind": {
+        "transcript": "Transcript",
+        "note": "Note",
+        "email": "Letter"
+      },
+      "chatConsent": "Chat is unavailable without council consent.",
+      "newChat": "New conversation",
+      "chatPlaceholder": "Ask about the records",
+      "ask": "Ask"
+    },
+    "session": {
+      "back": "← {{alias}}",
+      "tabsLabel": "Session sections",
+      "tabs": {
+        "notes": "Notes",
+        "transcript": "Transcript",
+        "asks": "Questions",
+        "email": "Letter"
+      },
+      "status": {
+        "closed": "closed",
+        "open": "open",
+        "postponed": "postponed",
+        "unmigrated": "legacy"
+      },
+      "client": "Client",
+      "me": "Me",
+      "others": "Client",
+      "practitioner": "Practitioner",
+      "authors": {
+        "model": "model",
+        "practitioner": "practitioner",
+        "import": "import"
+      },
+      "emptyTranscript": "No transcript recorded.",
+      "emptyAsks": "Questions will appear here — Ask is a separate feature.",
+      "noNote": "No note yet.",
+      "writeNote": "Write note",
+      "noteTitle": "Note v{{n}}",
+      "regenerate": "Regenerate",
+      "saveEdit": "Save edit",
+      "versions": "Versions",
+      "version": "v{{n}}",
+      "takeAsBase": "Take as base",
+      "useCurrent": "Use current version",
+      "template": "Template",
+      "copyEmail": "Copy",
+      "clipboardFailure": "Could not copy the text — click “Copy” and paste it into the letter.",
+      "meetingTypes": {
+        "session": "session",
+        "business": "business"
+      },
+      "noCouncil": "The client has not consented to model analysis.",
+      "noNoteEmail": "Write a note before drafting a letter.",
+      "revokedReadOnly": "Consent was revoked — this session is read-only.",
+      "emailStale": "This letter was written from note v{{n}}; the note has since changed.",
+      "emailFromNote": "Based on note v{{n}}",
+      "subject": "Subject",
+      "body": "Message",
+      "writeEmail": "Draft letter",
+      "regenerateEmailConfirm": "Regenerate (replace edit)",
+      "saveEmail": "Save",
+      "openMail": "Open in mail",
+      "clipboardNotice": "The letter text is in the clipboard — paste it into the message.",
+      "provenance": {
+        "local": "on this computer",
+        "remote": "leaves this computer",
+        "transcriptInput_one": "transcript, {{count}} line",
+        "transcriptInput_other": "transcript, {{count}} lines",
+        "noteInput": "note, version {{n}}",
+        "sentChars": "chars sent: {{count}}",
+        "truncated": "beginning omitted"
+      },
+      "replaceWarning": "The practitioner edit will be replaced. Continue?",
+      "replaceConfirm": "Replace edit",
+      "askUntil": "transcript until {{time}}",
+      "diagnosisWarning": "Looks like a diagnosis: “{{phrase}}” — please check"
+    }
+  }
+}

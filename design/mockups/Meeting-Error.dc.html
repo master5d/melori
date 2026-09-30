@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Встреча: сохранить не удалось</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>body{margin:0;background:#111315;font-family:"IBM Plex Sans",sans-serif}</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; position: relative; background: #111315">
+  <div aria-hidden="true" style="position: absolute; inset: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 12px; box-sizing: border-box">
+    <div style="background: #2A2E33"></div><div style="background: #23272B"></div>
+  </div>
+  <div style="position: absolute; top: 24px; left: 50%; transform: translateX(-50%); width: 540px; display: flex; flex-direction: column; gap: 8px">
+    <div role="status" style="height: 52px; box-sizing: border-box; padding: 0 18px; background: #221C16; border: 1px solid #4A3F33; display: flex; align-items: center; gap: 14px; color: #EDE4D6">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px">Встреча завершена · 51:02</span>
+      <span style="font-family: Literata, serif; font-size: 17px">Анна</span>
+    </div>
+    <section aria-label="Панель встречи" style="background: #2B241D; border: 1px solid #F0A59A; box-sizing: border-box; padding: 20px 22px; color: #EDE4D6; display: flex; flex-direction: column; gap: 14px">
+      <div role="alert" style="display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #F0A59A">сохранить не удалось — движок перезапускается</span>
+        <p style="margin: 0; font-family: Literata, serif; font-size: 17px; line-height: 1.55">Транскрипт цел и остаётся в панели. Как только движок поднимется, нажмите «Повторить».</p>
+      </div>
+      <div style="display: flex; gap: 10px; border-top: 1px solid #4A3F33; padding-top: 14px">
+        <button type="button" style="height: 40px; padding: 0 16px; background: #8FA8F2; border: none; color: #221C16; font-size: 14px; font-weight: 600">Повторить сохранение</button>
+        <button type="button" style="height: 40px; padding: 0 16px; background: transparent; border: 1px solid #EDE4D6; color: #EDE4D6; font-size: 14px">Показать транскрипт</button>
+      </div>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "soap",
+    "name": "SOAP",
+    "builtin": true,
+    "sections": [
+      {
+        "key": "subjective",
+        "title": "Subjective",
+        "guidance": "what the client told about themselves, in their own words"
+      },
+      {
+        "key": "objective",
+        "title": "Objective",
+        "guidance": "what was observed in the session (behavior, speech), without interpretations"
+      },
+      {
+        "key": "assessment",
+        "title": "Assessment",
+        "guidance": "the practitioner's working formulation from what was said, without diagnoses"
+      },
+      {
+        "key": "plan",
+        "title": "Plan",
+        "guidance": "agreements and next steps"
+      }
+    ]
+  },
+  {
+    "id": "dap",
+    "name": "DAP",
+    "builtin": true,
+    "sections": [
+      {
+        "key": "data",
+        "title": "Data",
+        "guidance": "session observations and facts"
+      },
+      {
+        "key": "assessment",
+        "title": "Assessment",
+        "guidance": "the practitioner's working formulation from what was said, without diagnoses"
+      },
+      {
+        "key": "plan",
+        "title": "Plan",
+        "guidance": "agreements and next steps"
+      }
+    ]
+  },
+  {
+    "id": "grow",
+    "name": "GROW",
+    "builtin": true,
+    "sections": [
+      {
+        "key": "goal",
+        "title": "Goal",
+        "guidance": "what the client wants to achieve"
+      },
+      {
+        "key": "reality",
+        "title": "Reality",
+        "guidance": "what is happening now"
+      },
+      {
+        "key": "options",
+        "title": "Options",
+        "guidance": "possible paths and solutions"
+      },
+      {
+        "key": "will",
+        "title": "Will",
+        "guidance": "chosen actions and commitments"
+      }
+    ]
+  }
+]

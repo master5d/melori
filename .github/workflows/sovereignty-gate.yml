@@ -1,0 +1,25 @@
+name: Sovereignty Gate
+
+# Fails the build if the model layer regresses off its sovereign rails:
+# a re-introduced Handy-CDN reference, or a malformed / non-sovereign
+# models.json. Fast (no Rust build) — just Node. Runs the same script you can run
+# locally: `node scripts/sovereignty-gate.mjs`.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      # submodules intentionally NOT fetched: the vendored *-fork upstreams carry
+      # their own (harmless) blob refs and are out of scope for this gate.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Sovereignty invariants (no blob coupling + manifest well-formed)
+        run: node scripts/sovereignty-gate.mjs
+      - name: Fetch-script unit test
+        run: node --test scripts/sovereign-models.test.mjs

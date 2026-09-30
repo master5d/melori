@@ -1,0 +1,1592 @@
+{
+  "tray": {
+    "settings": "Настройки...",
+    "checkUpdates": "Проверка за актуализации...",
+    "copyLastTranscript": "Копиране на последния транскрипт",
+    "unloadModel": "Разтоварване на модела",
+    "model": "Модел",
+    "quit": "Изход",
+    "cancel": "Отказ"
+  },
+  "sidebar": {
+    "general": "Общи",
+    "models": "Модели",
+    "advanced": "Разширени",
+    "postProcessing": "Постобработка",
+    "history": "История",
+    "debug": "Отстраняване",
+    "about": "За приложението",
+    "coach": "Coach",
+    "transcribe": "Transcribe File",
+    "assistant": "Assistant",
+    "tts": "Voice",
+    "tutor": "Tutor",
+    "dictionTraining": "Diction & Clarity",
+    "menVoice": "Men's Voice",
+    "womenVoice": "Women's Voice",
+    "voiceTraining": "Voice Training",
+    "onlineTraining": "Online Speaking",
+    "oratoryTraining": "Public Speaking",
+    "speechImprov": "Improvise",
+    "toastTraining": "Toast Art",
+    "readingTraining": "Artistic Reading",
+    "rhetoricTraining": "Kids Rhetoric",
+    "cameraTraining": "On Camera",
+    "handpan": "Handpan",
+    "karaoke": "Karaoke",
+    "audio": "Audio",
+    "practice": "Daily Practice",
+    "linguaTutor": "Lingua Tutor",
+    "clients": "Clients"
+  },
+  "onboarding": {
+    "stepOf": "Step {{current}} of {{total}}",
+    "consult": {
+      "engine": "Engine",
+      "model": "Recognition model",
+      "audio": "Audio",
+      "consent": "Client consent",
+      "engineTitle": "Set up the consultation engine",
+      "modelTitle": "Choose a recognition model",
+      "audioTitle": "Check microphone and call sound",
+      "consentTitle": "melori works only with client consent",
+      "engineHint": "The local engine must be ready before you continue.",
+      "modelHint": "Choose and download the model you will use for consultations.",
+      "audioHint": "Select a microphone and call output device.",
+      "consentHint": "Create a client with the permissions they granted.",
+      "engineWait": "Wait for the engine to become ready. If it does not start, run scripts/setup-engine.",
+      "consentBody": "Before the first meeting, create a pseudonymous client and record their consent.",
+      "firstClient": "Create first client"
+    },
+    "subtitle": "Настройте разпознаването на реч в няколко бързи стъпки.",
+    "recommended": "Препоръчан",
+    "download": "Изтегляне",
+    "downloading": "Изтегля се...",
+    "customModelDescription": "Не се поддържа официално",
+    "downloadFailed": "Изтеглянето не бе успешно. Опитайте отново.",
+    "modelCard": {
+      "accuracy": "точност",
+      "speed": "скорост"
+    },
+    "models": {
+      "small": {
+        "name": "Whisper Small",
+        "description": "Бърз и доста точен."
+      },
+      "medium": {
+        "name": "Whisper Medium",
+        "description": "Добра точност, средна скорост."
+      },
+      "turbo": {
+        "name": "Whisper Turbo",
+        "description": "Баланс между точност и скорост."
+      },
+      "large": {
+        "name": "Whisper Large",
+        "description": "Добра точност, но по-бавен."
+      },
+      "parakeet-tdt-0.6b-v2": {
+        "name": "Parakeet V2",
+        "description": "Само английски. Най-добрият модел за носители на английски."
+      },
+      "parakeet-tdt-0.6b-v3": {
+        "name": "Parakeet V3",
+        "description": "Бърз и точен."
+      },
+      "moonshine-base": {
+        "name": "Moonshine Base",
+        "description": "Много бърз, само английски. Добре обработва акценти."
+      },
+      "moonshine-tiny-streaming-en": {
+        "name": "Moonshine V2 Tiny",
+        "description": "Ултрабърз, само английски."
+      },
+      "moonshine-small-streaming-en": {
+        "name": "Moonshine V2 Small",
+        "description": "Бърз, само английски. Добър баланс между скорост и точност."
+      },
+      "moonshine-medium-streaming-en": {
+        "name": "Moonshine V2 Medium",
+        "description": "Само английски. Високо качество."
+      },
+      "breeze-asr": {
+        "name": "Breeze ASR",
+        "description": "Оптимизиран за тайвански мандарин. Поддръжка на смесване на езици."
+      },
+      "sense-voice-int8": {
+        "name": "SenseVoice",
+        "description": "Много бърз. Китайски, английски, японски, корейски, кантонски."
+      },
+      "gigaam-v3-e2e-ctc": {
+        "name": "GigaAM v3",
+        "description": "Разпознаване на руска реч. Бърз и точен."
+      },
+      "canary-180m-flash": {
+        "name": "Canary 180M Flash",
+        "description": "Много бърз. Английски, немски, испански, френски. Поддържа превод."
+      },
+      "canary-1b-v2": {
+        "name": "Canary 1B v2",
+        "description": "Точен многоезичен. 25 европейски езика. Поддържа превод."
+      },
+      "cohere-int8": {
+        "name": "Cohere",
+        "description": "Голям, по-бавен, но много точен многоезичен модел."
+      }
+    },
+    "errors": {
+      "loadModels": "Неуспешно зареждане на наличните модели",
+      "downloadModel": "Неуспешно изтегляне на модела: {{error}}",
+      "selectModel": "Failed to select the model"
+    },
+    "permissions": {
+      "title": "Необходими разрешения",
+      "description": "Echo се нуждае от няколко разрешения, за да работи правилно.",
+      "microphone": {
+        "title": "Достъп до микрофон",
+        "description": "Необходим е, за да чуе гласа ви при транскрипция."
+      },
+      "accessibility": {
+        "title": "Достъп за достъпност",
+        "description": "Необходим е, за да въвежда транскрибирания текст във вашите приложения."
+      },
+      "grant": "Даване на разрешение",
+      "granted": "Разрешено",
+      "waiting": "Изчакване...",
+      "allGranted": "Готово!",
+      "errors": {
+        "checkFailed": "Проверката на разрешенията не бе успешна. Опитайте отново.",
+        "requestFailed": "Заявката за разрешение не бе успешна. Опитайте отново."
+      }
+    },
+    "title": "Добре дошли в Echo",
+    "next": "Напред",
+    "back": "Назад",
+    "skip": "Пропусни",
+    "finish": "Готово",
+    "openSettings": "Отвори настройките",
+    "step": {
+      "language": {
+        "title": "Език на диктовка",
+        "hint": "Изберете основния си език за гласово разпознаване и интерфейс."
+      },
+      "model": {
+        "title": "Модел за транскрипция",
+        "hint": "Изберете ASR модел, оптимизиран за скорост или точност."
+      },
+      "hotkey": {
+        "title": "Глобален клавишен пряк път",
+        "hint": "Използвайте този пряк път навсякъде за диктуване."
+      },
+      "tryout": {
+        "title": "Пробвайте диктовка",
+        "hint": "Натиснете прекия път и кажете тестова фраза."
+      },
+      "enhance": {
+        "title": "ИИ постобработка",
+        "hint": "Настройте форматирането с изкуствен интелект по избор."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "Персонализиран",
+    "active": "Активен",
+    "switching": "Превключване...",
+    "noModelsAvailable": "Няма налични модели",
+    "verifying": "Проверка на {{modelName}}...",
+    "verifyingGeneric": "Проверка...",
+    "extracting": "Разархивиране на {{modelName}}...",
+    "extractingMultiple": "Разархивиране на {{count}} модела...",
+    "extractingGeneric": "Разархивиране...",
+    "downloading": "Изтегляне {{percentage}}%",
+    "downloadingMultiple": "Изтегляне на {{count}} модела...",
+    "modelReady": "Моделът е готов",
+    "loading": "Зареждане на {{modelName}}...",
+    "loadingGeneric": "Зареждане...",
+    "modelError": "Грешка в модела",
+    "modelUnloaded": "Моделът е разтоварен",
+    "noModelDownloadRequired": "Няма модел – необходимо е изтегляне",
+    "deleteModel": "Изтриване на {{modelName}}",
+    "downloadSpeed": "{{speed}} MB/s",
+    "cancel": "Отказ",
+    "cancelDownload": "Отказ на изтеглянето",
+    "capabilities": {
+      "languageSelection": "Поддържа няколко входни езика",
+      "singleLanguage": "Поддържа само този език",
+      "multiLanguage": "Многоезичен",
+      "languageOnly": "Само {{language}}",
+      "translation": "Може да превежда на английски",
+      "translate": "Превод на английски"
+    }
+  },
+  "settings": {
+    "melori": {
+      "templates": {
+        "title": "Note templates",
+        "name": "Template name",
+        "section": "Section {{n}}",
+        "titleField": "Title",
+        "key": "Key",
+        "guidance": "Guidance",
+        "up": "Up",
+        "down": "Down",
+        "remove": "Remove",
+        "addSection": "Add section",
+        "save": "Save",
+        "new": "New template",
+        "copy": "Make a copy",
+        "edit": "Edit",
+        "locked": "Built-in template",
+        "deleteConflict_one": "This template is assigned to {{count}} client — they will switch to SOAP.",
+        "deleteConflict_other": "This template is assigned to {{count}} clients — they will switch to SOAP.",
+        "deleteConfirm": "Delete and switch clients",
+        "errors": {
+          "name": "Enter a template name (1–60 characters).",
+          "empty": "Add at least one section.",
+          "tooMany": "Use no more than 12 sections.",
+          "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+          "title": "Enter a section title (1–60 characters).",
+          "guidance": "Guidance must be 400 characters or fewer.",
+          "duplicate": "Section keys must be unique."
+        }
+      },
+      "apply": "Apply",
+      "engine": {
+        "title": "Engine and language model",
+        "baseUrl": "OpenAI-compatible server address",
+        "model": "Language model",
+        "corpus": "Corpus directory",
+        "embedModel": "Embedding model",
+        "embedModelHint": "empty — semantic search unavailable",
+        "mirror": "Recognition model mirror",
+        "mirrorHint": "Models without an official source are available only through the configured mirror.",
+        "local": "● Server on this computer — session data stays local.",
+        "remote": "● This server is outside this computer.",
+        "checking": "Checking server locality…",
+        "restarting": "Engine is restarting…"
+      },
+      "privacy": {
+        "templates": {
+          "title": "Note templates",
+          "name": "Template name",
+          "section": "Section {{n}}",
+          "titleField": "Title",
+          "key": "Key",
+          "guidance": "Guidance",
+          "up": "Up",
+          "down": "Down",
+          "remove": "Remove",
+          "addSection": "Add section",
+          "save": "Save",
+          "new": "New template",
+          "copy": "Make a copy",
+          "edit": "Edit",
+          "locked": "Built-in template",
+          "deleteConflict_one": "This template is assigned to {{count}} client — they will switch to SOAP.",
+          "deleteConflict_other": "This template is assigned to {{count}} clients — they will switch to SOAP.",
+          "deleteConfirm": "Delete and switch clients",
+          "errors": {
+            "name": "Enter a template name (1–60 characters).",
+            "empty": "Add at least one section.",
+            "tooMany": "Use no more than 12 sections.",
+            "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+            "title": "Enter a section title (1–60 characters).",
+            "guidance": "Guidance must be 400 characters or fewer.",
+            "duplicate": "Section keys must be unique."
+          }
+        },
+        "title": "Privacy",
+        "hideNotes": "Hide notes from screen sharing and call recording",
+        "hint": "Protects client data when you share your screen or record a call. The recording pill stays visible."
+      },
+      "appearance": {
+        "templates": {
+          "title": "Note templates",
+          "name": "Template name",
+          "section": "Section {{n}}",
+          "titleField": "Title",
+          "key": "Key",
+          "guidance": "Guidance",
+          "up": "Up",
+          "down": "Down",
+          "remove": "Remove",
+          "addSection": "Add section",
+          "save": "Save",
+          "new": "New template",
+          "copy": "Make a copy",
+          "edit": "Edit",
+          "locked": "Built-in template",
+          "deleteConflict": "This template is assigned to {{clients}} clients — they will switch to SOAP.",
+          "deleteConfirm": "Delete and switch clients",
+          "errors": {
+            "name": "Enter a template name (1–60 characters).",
+            "empty": "Add at least one section.",
+            "tooMany": "Use no more than 12 sections.",
+            "key": "Use 1–32 lowercase Latin letters, numbers, or underscores; start with a letter.",
+            "title": "Enter a section title (1–60 characters).",
+            "guidance": "Guidance must be 400 characters or fewer.",
+            "duplicate": "Section keys must be unique."
+          }
+        },
+        "title": "Appearance",
+        "system": "As system",
+        "day": "Day",
+        "evening": "Evening"
+      }
+    },
+    "modelSettings": {
+      "title": "Настройки на {{model}}",
+      "noSettingsNeeded": "Този модел работи автоматично без нужда от конфигурация."
+    },
+    "general": {
+      "title": "Общи",
+      "shortcut": {
+        "title": "Бързи клавиши на Echo",
+        "description": "Настройте клавишни комбинации за стартиране на запис за реч към текст",
+        "loading": "Зареждане на бързите клавиши...",
+        "none": "Няма настроени бързи клавиши",
+        "notFound": "Бързият клавиш не е намерен",
+        "pressKeys": "Натиснете клавишите...",
+        "bindings": {
+          "transcribe": {
+            "name": "Бърз клавиш за транскрипция",
+            "description": "Клавишната комбинация за запис и транскрибиране на гласа ви."
+          },
+          "cancel": {
+            "name": "Бърз клавиш за отказ",
+            "description": "Клавишната комбинация за отмяна на текущия запис."
+          },
+          "transcribe_with_post_process": {
+            "name": "Бърз клавиш за постобработка",
+            "description": "По избор: отделна комбинация, която винаги прилага ИИ постобработка върху транскрипцията."
+          },
+          "meeting_toggle": {
+            "name": "Toggle meeting",
+            "description": "Start or stop the meeting."
+          },
+          "meeting_window": {
+            "name": "Meeting window",
+            "description": "Show or focus the meeting window."
+          },
+          "meeting_ask_focus": {
+            "name": "Focus meeting question",
+            "description": "Focus the Ask field in the meeting window."
+          },
+          "meeting_ask_recap5": {
+            "name": "Ask for last 5 minutes",
+            "description": "Ask what was discussed in the last five minutes."
+          },
+          "meeting_ask_missed": {
+            "name": "Ask what was missed",
+            "description": "Ask what important client speech may have been missed."
+          },
+          "meeting_ask_agreed": {
+            "name": "Ask what was agreed",
+            "description": "Ask what was agreed during the meeting."
+          },
+          "meeting_analyze": {
+            "name": "Analyze meeting",
+            "description": "Generate the meeting note."
+          },
+          "meeting_copy_note": {
+            "name": "Copy meeting note",
+            "description": "Copy the generated meeting note."
+          },
+          "meeting_council": {
+            "name": "Consult council",
+            "description": "Ask the psychology council about the meeting."
+          },
+          "meeting_mark": {
+            "name": "Mark moment",
+            "description": "Mark the current moment in the meeting."
+          }
+        },
+        "errors": {
+          "restore": "Неуспешно възстановяване на оригиналния бърз клавиш",
+          "set": "Неуспешно задаване на бързия клавиш: {{error}}",
+          "reset": "Неуспешно нулиране на бързия клавиш към първоначалната стойност"
+        }
+      },
+      "language": {
+        "title": "Език",
+        "description": "Изберете езика за разпознаване на реч. „Автоматично“ определя езика сам, а изборът на конкретен език може да подобри точността за него.",
+        "descriptionUnsupported": "Моделът Parakeet автоматично открива езика. Ръчен избор не е необходим.",
+        "searchPlaceholder": "Търсене на езици...",
+        "noResults": "Няма намерени езици",
+        "auto": "Автоматично"
+      },
+      "pushToTalk": {
+        "label": "Натискане за говорене",
+        "description": "Задръжте за запис, пуснете за спиране"
+      }
+    },
+    "models": {
+      "title": "Модели за транскрипция",
+      "description": "Изберете модел за транскрипция или изтеглете допълнителни. Различните модели предлагат различна точност и скорост.",
+      "yourModels": "Изтеглени модели",
+      "availableModels": "Налични за изтегляне",
+      "downloaded": "Изтеглен",
+      "available": "Наличен за изтегляне",
+      "deleteConfirm": "Сигурни ли сте, че искате да изтриете {{modelName}}? Ще трябва да го изтеглите отново, за да го използвате.",
+      "deleteActiveConfirm": "{{modelName}} е вашият активен модел. Изтриването му ще спре транскрипциите, докато не изберете нов модел. Сигурни ли сте?",
+      "deleteTitle": "Изтриване на модел",
+      "filters": {
+        "all": "Всички",
+        "multiLanguage": "Многоезични",
+        "translation": "Превод",
+        "allLanguages": "Всички езици"
+      },
+      "noModelsMatch": "Няма модели, отговарящи на този филтър."
+    },
+    "sound": {
+      "title": "Звук",
+      "microphone": {
+        "title": "Микрофон",
+        "description": "Изберете предпочитано микрофонно устройство",
+        "placeholder": "Изберете микрофон...",
+        "loading": "Зареждане..."
+      },
+      "audioFeedback": {
+        "label": "Звукова обратна връзка",
+        "description": "Възпроизвеждане на звук при старт и край на записа"
+      },
+      "outputDevice": {
+        "title": "Изходно устройство",
+        "description": "Изберете предпочитано изходно аудио устройство за звуци за обратна връзка",
+        "placeholder": "Изберете изходно устройство...",
+        "loading": "Зареждане..."
+      },
+      "volume": {
+        "title": "Сила на звука",
+        "description": "Регулирайте силата на звуците за обратна връзка"
+      }
+    },
+    "advanced": {
+      "title": "Разширени",
+      "groups": {
+        "app": "Приложение",
+        "output": "Изход",
+        "transcription": "Транскрипция",
+        "history": "История",
+        "experimental": "Експериментални",
+        "subtitles": "Субтитри",
+        "voiceCommands": "Гласови команди",
+        "shell": "Обвивка"
+      },
+      "experimentalToggle": {
+        "label": "Експериментални функции",
+        "description": "Включване на експериментални функции, които са още в разработка."
+      },
+      "lazyStreamClose": {
+        "label": "Държане на микрофона отворен между транскрипции",
+        "description": "Държи потокът от микрофона отворен 30 секунди след спиране на записа, което намалява забавянето при поредни транскрипции. Може да влоши качеството на Bluetooth аудио, докато е активно."
+      },
+      "acceleration": {
+        "whisper": {
+          "title": "Ускорение за Whisper",
+          "description": "Хардуерно ускорение за моделите Whisper. „Автоматично“ използва GPU при наличност (Metal на macOS, Vulkan на Windows/Linux)."
+        },
+        "ort": {
+          "title": "Ускорение за ONNX",
+          "description": "Хардуерно ускорение за ONNX модели (Parakeet, Canary, Moonshine и др.). DirectML на Windows е експериментален. Моделите може да не транскрибират."
+        },
+        "gpuDevice": {
+          "title": "GPU устройство",
+          "description": "Изберете кой GPU да се използва за Whisper. Автоматично избира специализирания GPU.",
+          "auto": "Автоматично"
+        }
+      },
+      "startHidden": {
+        "label": "Стартиране скрито",
+        "description": "Стартиране в системната област без отваряне на прозореца."
+      },
+      "autostart": {
+        "label": "Стартиране със системата",
+        "description": "Автоматично стартиране на Echo при влизане в профила ви."
+      },
+      "showTrayIcon": {
+        "label": "Икона в системната област",
+        "description": "Показване на иконата на Echo в системната област."
+      },
+      "overlay": {
+        "title": "Позиция на наслагването",
+        "description": "Показване на визуална обратна връзка при запис и транскрипция. На Linux се препоръчва „Няма“.",
+        "options": {
+          "none": "Няма",
+          "bottom": "Долу",
+          "top": "Горе"
+        }
+      },
+      "pasteMethod": {
+        "title": "Начин на поставяне",
+        "description": "Изберете как се вмъква текстът. Директно: симулира писане чрез системния вход. Няма: пропуска поставянето, актуализира само историята/клипборда.",
+        "options": {
+          "clipboard": "Клипборд ({{modifier}}+V)",
+          "clipboardCtrlShiftV": "Клипборд (Ctrl+Shift+V)",
+          "clipboardShiftInsert": "Клипборд (Shift+Insert)",
+          "direct": "Директно",
+          "none": "Няма",
+          "externalScript": "Външен скрипт"
+        },
+        "externalScriptPlaceholder": "/път/към/вашия/script.sh"
+      },
+      "typingTool": {
+        "title": "Инструмент за писане",
+        "description": "Изберете кой Linux инструмент за писане да се използва при директно поставяне. „Автоматично“ открива и използва най-подходящия за вашата система.",
+        "options": {
+          "auto": "Автоматично (препоръчително)"
+        }
+      },
+      "clipboardHandling": {
+        "title": "Работа с клипборда",
+        "description": "„Без промяна на клипборда“ запазва съдържанието на клипборда след транскрипция. „Копиране в клипборда“ оставя резултата в клипборда след поставяне.",
+        "options": {
+          "dontModify": "Без промяна на клипборда",
+          "copyToClipboard": "Копиране в клипборда"
+        }
+      },
+      "autoSubmit": {
+        "title": "Автоматично изпращане",
+        "description": "Автоматично изпращане на избраната клавишна комбинация след вмъкване на текста. Cmd+Enter важи за macOS, а Windows/Linux използват Super+Enter.",
+        "options": {
+          "off": "Изкл.",
+          "enter": "Enter",
+          "cmdEnter": "Cmd+Enter",
+          "superEnter": "Super+Enter",
+          "ctrlEnter": "Ctrl+Enter"
+        }
+      },
+      "translateToEnglish": {
+        "label": "Превод на английски",
+        "description": "Автоматичен превод на реч от други езици на английски по време на транскрипция.",
+        "descriptionUnsupported": "Моделът {{model}} не поддържа превод."
+      },
+      "modelUnload": {
+        "title": "Разтоварване на модела",
+        "description": "Автоматично освобождаване на памет на GPU/CPU, ако моделът не е използван за зададеното време",
+        "options": {
+          "never": "Никога",
+          "immediately": "Веднага",
+          "min2": "След 2 минути",
+          "min5": "След 5 минути",
+          "min10": "След 10 минути",
+          "min15": "След 15 минути",
+          "hour1": "След 1 час",
+          "sec15": "След 15 секунди (отстраняване)"
+        }
+      },
+      "customWords": {
+        "title": "Персонализирани думи",
+        "description": "Добавете думи, които често се чуват или изписват грешно при транскрипция. Системата автоматично ще коригира близки по звучене думи според вашия списък.",
+        "placeholder": "Добавете дума",
+        "add": "Добавяне",
+        "remove": "Премахване на {{word}}",
+        "duplicate": "„{{word}}“ вече съществува"
+      },
+      "autoPunctuate": {
+        "label": "Авто-пунктуация",
+        "description": "Автоматично вмъкване на запетаи и крайна пунктуация според структурата на изречението (поддръжка на RU/EN)."
+      },
+      "autoCapitalize": {
+        "label": "Авто-главни букви",
+        "description": "Автоматично изписва първата буква на изреченията с главна буква."
+      },
+      "subtitles": {
+        "enable": {
+          "label": "Субтитри на живо",
+          "description": "Показвай транскрибирания текст в реално време под кълбото за запис."
+        },
+        "fontSize": {
+          "label": "Размер на субтитрите",
+          "description": "Размер на текста на субтитрите на екрана.",
+          "options": {
+            "small": "Малък",
+            "medium": "Среден",
+            "large": "Голям"
+          }
+        },
+        "maxChars": {
+          "label": "Дължина на субтитрите",
+          "description": "Максимален брой знаци, запазени на екрана."
+        },
+        "refreshMs": {
+          "label": "Интервал на обновяване",
+          "description": "Колко често субтитрите на живо се обновяват, докато говорите."
+        }
+      },
+      "commandMode": {
+        "label": "Команден режим",
+        "description": "Започнете диктовката с команда („преведи на английски\", „съкрати\"), за да преобразувате текста, или завършете с „натисни enter\" за изпращане. Преобразуващите команди изискват доставчик за допълнителна обработка."
+      },
+      "selfCorrection": {
+        "label": "Самокорекция",
+        "description": "Когато се поправяте („в 2, не, в 3\"), се запазва само поправеният вариант."
+      },
+      "spokenLists": {
+        "label": "Гласови списъци",
+        "description": "Превръща продиктувани изброявания („първо… второ… трето…\") в номериран списък."
+      },
+      "devDictionary": {
+        "label": "Речник за разработчици",
+        "description": "Насочва транскрипцията към правилния правопис на популярни инструменти и жаргон (GitHub, Vercel, TypeScript…)."
+      },
+      "snippets": {
+        "title": "Шаблони",
+        "description": "Гласови задействащи фрази, които се разгръщат в готов текст (подписи, връзки).",
+        "triggerPlaceholder": "Задействаща фраза",
+        "textPlaceholder": "Разгръща се в…",
+        "add": "Добави",
+        "duplicate": "Шаблонът „{{trigger}}\" вече съществува",
+        "remove": "Премахни шаблон {{trigger}}"
+      },
+      "shellSkin": {
+        "title": "Обвивка на пакета",
+        "description": "Изберете как да са подредени модулите на аудио пакета: „Rail“ е тесен страничен панел, „Home“ е преглед на студиото с карти на модулите, а „Deck“ е оформление в стил DAW с раздели на модулите отгоре и постоянна транспортна лента.",
+        "options": {
+          "rail": "Rail",
+          "home": "Начало",
+          "deck": "Дек"
+        }
+      }
+    },
+    "postProcessing": {
+      "title": "Постобработка",
+      "hotkey": {
+        "title": "Бърз клавиш"
+      },
+      "api": {
+        "title": "API (съвместим с OpenAI)",
+        "provider": {
+          "title": "Доставчик",
+          "description": "Изберете доставчик, съвместим с OpenAI."
+        },
+        "appleIntelligence": {
+          "title": "Apple Intelligence",
+          "description": "Работи изцяло на устройството. Не са нужни API ключ или мрежов достъп.",
+          "requirements": "Изисква Mac с Apple Silicon и macOS Tahoe (26.0) или по-нова. Apple Intelligence трябва да е включена в Системните настройки.",
+          "unavailable": "Apple Intelligence не е налична на това устройство. Необходим е Mac с Apple Silicon и macOS Tahoe (26.0) или по-нова с включена Apple Intelligence в Системните настройки."
+        },
+        "baseUrl": {
+          "title": "Базов URL",
+          "description": "Базов API URL за избрания доставчик. Редактируем е само при персонализиран доставчик.",
+          "placeholder": "https://api.openai.com/v1"
+        },
+        "apiKey": {
+          "title": "API ключ",
+          "description": "API ключ за избрания доставчик.",
+          "placeholder": "sk-..."
+        },
+        "model": {
+          "title": "Модел",
+          "descriptionApple": "Задайте по избор числен лимит на токени или запазете стандартната настройка на устройството.",
+          "descriptionCustom": "Въведете идентификатора на модела, очакван от вашия персонализиран краен адрес.",
+          "descriptionDefault": "Изберете модел, предлаган от избрания доставчик.",
+          "placeholderApple": "Apple Intelligence",
+          "placeholderWithOptions": "Търсене или избор на модел",
+          "placeholderNoOptions": "Въведете име на модел",
+          "refreshModels": "Опресняване на моделите"
+        }
+      },
+      "prompts": {
+        "title": "Подкана",
+        "selectedPrompt": {
+          "title": "Избрана подкана",
+          "description": "Изберете шаблон за подобряване на транскрипции или създайте нов. Използвайте ${output} в текста на подканата, за да препратите към уловения транскрипт."
+        },
+        "noPrompts": "Няма налични подкани",
+        "selectPrompt": "Изберете подкана",
+        "createNew": "Нова подкана",
+        "promptLabel": "Етикет на подканата",
+        "promptLabelPlaceholder": "Въведете име на подканата",
+        "promptInstructions": "Инструкции за подканата",
+        "promptInstructionsPlaceholder": "Напишете инструкциите за изпълнение след транскрипция. Пример: Подобрете граматиката и яснотата на следния текст: ${output}",
+        "promptTip": "Съвет: Използвайте <code>${output}</code>, за да вмъкнете транскрибирания текст в подканата.",
+        "updatePrompt": "Обновяване на подканата",
+        "deletePrompt": "Изтриване на подканата",
+        "createPrompt": "Създаване на подкана",
+        "cancel": "Отказ",
+        "selectToEdit": "Изберете подкана по-горе, за да видите и редактирате подробностите ѝ.",
+        "createFirst": "Натиснете „Нова подкана“ по-горе, за да създадете първата си подкана за постобработка."
+      }
+    },
+    "history": {
+      "title": "История",
+      "openFolder": "Отваряне на папката с записи",
+      "loading": "Зареждане на историята...",
+      "empty": "Все още няма транскрипции. Започнете запис, за да изградите история!",
+      "copyToClipboard": "Копиране на транскрипцията в клипборда",
+      "save": "Запазване на транскрипцията",
+      "unsave": "Премахване от запазените",
+      "delete": "Изтриване на записа",
+      "deleteError": "Изтриването на записа не бе успешно. Опитайте отново.",
+      "retranscribe": "Повторна транскрипция",
+      "retranscribeError": "Повторната транскрипция не бе успешна. Опитайте отново.",
+      "transcribing": "Транскрибиране...",
+      "transcriptionFailed": "Транскрипцията не бе успешна. Можете да опитате отново с иконата за повторен опит."
+    },
+    "debug": {
+      "title": "Отстраняване",
+      "logDirectory": {
+        "title": "Папка с логове",
+        "description": "Мястото, където се съхраняват лог файловете"
+      },
+      "logLevel": {
+        "title": "Ниво на логване",
+        "description": "Задаване на подробността на логовете"
+      },
+      "updateChecks": {
+        "label": "Проверка за актуализации",
+        "description": "Автоматична проверка за нови версии на Echo"
+      },
+      "soundTheme": {
+        "label": "Звукова тема",
+        "description": "Избор на звукова тема за сигнал при старт и край на записа"
+      },
+      "wordCorrectionThreshold": {
+        "title": "Праг за корекция на думи",
+        "description": "Чувствителност при корекция на персонализирани думи"
+      },
+      "historyLimit": {
+        "title": "Лимит на историята",
+        "description": "Максимален брой записи в историята за пазене",
+        "entries": "записа"
+      },
+      "recordingRetention": {
+        "title": "Автоматично изтриване на записи",
+        "description": "Автоматично изтриване на стари записи за пестене на място",
+        "never": "Никога",
+        "preserveLimit": "Запазване на последните {{count}}",
+        "days3": "След 3 дни",
+        "weeks2": "След 2 седмици",
+        "months3": "След 3 месеца",
+        "placeholder": "Изберете период на съхранение..."
+      },
+      "alwaysOnMicrophone": {
+        "label": "Постоянно активен микрофон",
+        "description": "Държане на микрофона активен за по-бърз отговор"
+      },
+      "clamshellMicrophone": {
+        "title": "Микрофон при затворен капак",
+        "description": "Микрофон за използване, когато капакът на лаптопа е затворен"
+      },
+      "postProcessingToggle": {
+        "label": "Постобработка",
+        "description": "Включване на подобряване на текста с ИИ след транскрипция"
+      },
+      "muteWhileRecording": {
+        "label": "Заглушаване при запис",
+        "description": "Заглушаване на системния звук по време на запис"
+      },
+      "appendTrailingSpace": {
+        "label": "Интервал в края",
+        "description": "Добавяне на интервал след поставената транскрипция"
+      },
+      "keyboardImplementation": {
+        "title": "Реализация на клавиатурата",
+        "description": "Избор на бекенд за глобалните бързи клавиши.",
+        "bindingsReset": "Бързите клавиши бяха несъвместими и са нулирани към подразбираните"
+      },
+      "paths": {
+        "appData": "Данни на приложението:",
+        "models": "Модели:",
+        "settings": "Настройки:"
+      },
+      "pasteDelay": {
+        "title": "Забавяне при поставяне",
+        "description": "Забавяне преди симулацията на поставяне (в милисекунди). Увеличете, ако се поставя грешен текст."
+      },
+      "recordingBuffer": {
+        "title": "Допълнителен буфер на записа",
+        "description": "Допълнително време (в милисекунди) за запис след пускане на клавиша, за да се улови краят на аудиото. 0 = без допълнителен буфер."
+      }
+    },
+    "about": {
+      "title": "За приложението",
+      "version": {
+        "title": "Версия",
+        "description": "Текуща версия на Echo"
+      },
+      "appDataDirectory": {
+        "title": "Папка с данни на приложението",
+        "description": "Мястото, където Echo съхранява данните си"
+      },
+      "sourceCode": {
+        "title": "Изходен код",
+        "description": "Преглед на изходния код и принос",
+        "button": "Вижте в GitHub"
+      },
+      "acknowledgments": {
+        "title": "Благодарности",
+        "whisper": {
+          "title": "Whisper.cpp",
+          "description": "Високопроизводително изпълнение на автоматичния модел за разпознаване на реч Whisper на OpenAI",
+          "details": "Echo използва Whisper.cpp за бързо локално реч-към-текст. Благодарности на Georgi Gerganov и сътрудниците за отличната работа."
+        }
+      },
+      "eliteEdition": "Локална двуезична диктовка"
+    },
+    "coach": {
+      "wpm": "WPM",
+      "fillers": "Fillers",
+      "pace": {
+        "slow": "slow",
+        "good": "good pace",
+        "fast": "fast"
+      },
+      "aggregate": "This view: avg {{wpm}} WPM · {{rate}}% fillers",
+      "toastEnabled": {
+        "title": "Coach toast",
+        "description": "Show a brief delivery summary after each dictation"
+      },
+      "title": "Coach",
+      "thisWeek": "this week",
+      "avgWpm": "avg WPM",
+      "fillerRate": "fillers",
+      "sessions": "dictations",
+      "vsPrev": "vs last week",
+      "trend": "Trend",
+      "windowDays7": "7d",
+      "windowDays30": "30d",
+      "windowAll": "All",
+      "streak": "Streak",
+      "streakDays": "{{count}}-day streak",
+      "streakBest": "best {{count}}",
+      "empty": "No sessions yet — dictate something to see progress.",
+      "belowAvg": "below your avg",
+      "aboveAvg": "above your avg"
+    },
+    "capture": {
+      "captureSuccess": "Saved to capture folder",
+      "captureError": "Voice capture failed — check the folder",
+      "dirLabel": "Voice capture folder",
+      "dirDescription": "Folder where dictated notes are saved when you start with a capture phrase (empty = off)",
+      "dirPlaceholder": "/path/to/your/notes/inbox",
+      "phrasesLabel": "Capture trigger phrases",
+      "phrasesDescription": "Comma-separated phrases that start a capture (e.g. capture note, save note)",
+      "phrasesPlaceholder": "capture note, save note"
+    },
+    "transcribe": {
+      "tab": "Transcribe",
+      "title": "Transcribe File",
+      "pickFile": "Pick Audio/Video File",
+      "noFile": "No file selected",
+      "timestamps": "Include timestamps",
+      "fmtInline": "Inline [MM:SS]",
+      "fmtJson": "JSON (Word-level)",
+      "fmtKaraoke": "Karaoke VTT",
+      "diarize": "Speaker diarization",
+      "speakersPlaceholder": "Speaker count hint",
+      "run": "Transcribe",
+      "working": "Transcribing...",
+      "copy": "Copy All",
+      "saveAs": "Save As...",
+      "cancel": "Cancel",
+      "cancelled": "Cancelled",
+      "progress": {
+        "decoding": "Decoding audio…",
+        "loadingModel": "Loading model…",
+        "transcribing": "Transcribing…",
+        "diarizing": "Identifying speakers…",
+        "formatting": "Formatting…",
+        "done": "Done"
+      },
+      "saveTo": "Save to…",
+      "savedTo": "Saved to {{path}}",
+      "diarizeCliNote": "Diarization runs on CPU and is slow for long files — and an in-app run can stop if you switch tabs. For reliable speaker-labelled output, use the CLI:\necho --transcribe-file \"FILE\" -o \"OUT.txt\" --diarize --format speaker",
+      "translate": "Превод на",
+      "translateNone": "Без превод"
+    },
+    "assistant": {
+      "title": "Assistant",
+      "description": "Personal AI assistant that can answer questions and help with tasks.",
+      "enable": {
+        "label": "Enable Assistant",
+        "description": "Toggle assistant mode on or off."
+      },
+      "systemPrompt": {
+        "label": "System Prompt",
+        "description": "The base personality and instructions for the assistant. If empty, uses the default instructions."
+      },
+      "systemPromptPlaceholder": "You are Echo, a concise, friendly voice assistant...",
+      "tryIt": "Try it",
+      "ask": "Ask",
+      "speakReply": "Speak reply"
+    },
+    "tts": {
+      "title": "Voice (Text-to-Speech)",
+      "description": "Echo can speak agent questions and replies aloud.",
+      "speakAnswers": "Speak agent questions aloud",
+      "voice": "Voice",
+      "voiceAuto": "Auto (by language)",
+      "localEngine": "Локален двигател",
+      "localEngineSupertonic": "Supertonic (невронен, 31 езика)",
+      "localEnginePiper": "Piper (остарял)",
+      "supertonicVoice": "Глас Supertonic",
+      "downloadVoices": "Изтегляне на гласове Supertonic (~384 MB)",
+      "downloadingVoices": "Изтегляне… {{percent}}%",
+      "rate": "Speaking rate",
+      "testVoice": "Test voice",
+      "localEngineKitten": "Kitten (English only, compact)"
+    },
+    "tutor": {
+      "enable": {
+        "label": "Language Tutor",
+        "description": "Enable scoring and feedback for pronunciation practice."
+      },
+      "practice": "Practice",
+      "reference": "Reference Phrase",
+      "spoken": "What you said",
+      "score": "Score",
+      "overall": "Overall",
+      "note": "Note",
+      "language": "Language",
+      "record": "Record",
+      "stopRecording": "Stop",
+      "transcribing": "Transcribing…",
+      "spokenHeard": "Heard: “{{spoken}}”",
+      "phonemeUnavailable": "Per-phoneme compare needs the bundled espeak (Windows). Showing word-level match.",
+      "micError": "Couldn't access the microphone.",
+      "youSaid": "you said {{ipa}}"
+    },
+    "karaoke": {
+      "title": "Караоке",
+      "subtitle": "Импортирайте песен, пейте и получете оценка",
+      "custom": "Custom: {{name}}",
+      "import": "Import",
+      "lyricsLabel": "Lyrics (Space separated words for timing sync)",
+      "seconds": "{{val}}s",
+      "speedSlow": "0.75x (Slow)",
+      "speedNormal": "1.0x (Normal)",
+      "speedFast": "1.25x (Fast)",
+      "scoreTitle": "Pronunciation Score",
+      "match": "match",
+      "alignmentBreakdown": "Word Alignment breakdown",
+      "singAlong": "Sing along",
+      "singStop": "Stop singing",
+      "pitchScoreTitle": "Pitch accuracy",
+      "pitchScoreValue": "{{pct}}% on pitch",
+      "micError": "Couldn't access the microphone. Playing the reference only.",
+      "customApprox": "Pitch target for custom audio is approximate (best for solo voice)."
+    },
+    "course": {
+      "subtitle": "Personal mentorship & Echo guidance",
+      "tabCourse": "Course",
+      "tabDiary": "Diary",
+      "lesson": "Lesson {{n}}",
+      "completed": "Done",
+      "backToLessons": "Back to lessons",
+      "exercisesHeading": "Practice exercises:",
+      "backToExercises": "Back to exercises",
+      "instructionLabel": "Exercise instruction",
+      "howTo": "How to do it:",
+      "practiceHeading": "Practice & reporting",
+      "recordTitle": "Record exercise",
+      "recording": "Recording...",
+      "recordHint": "Record a fragment of your practice",
+      "listen": "Listen:",
+      "reportLabel": "Describe your experience (daily report)",
+      "reportPlaceholder": "Describe how it went and any difficulties you faced...",
+      "submitting": "Submitting...",
+      "submit": "Send to Echo mentor",
+      "recommendations": "Echo mentor recommendations",
+      "diaryEmptyTitle": "Diary is empty",
+      "diaryEmptyBody": "Complete any exercise in the Course tab and submit your first report to get Echo's feedback.",
+      "lessonReport": "Lesson {{n}}: {{name}}",
+      "task": "Exercise",
+      "reviewed": "Reviewed",
+      "myReport": "My report:",
+      "analysis": "Echo mentor analysis:",
+      "toastRecStart": "Recording started. Practise now!",
+      "toastMicFail": "Failed to access microphone.",
+      "toastRecStop": "Recording stopped.",
+      "toastFillReport": "Please fill in your report first.",
+      "toastLessonDone": "Congratulations! You completed: {{title}}",
+      "toastSubmitted": "Report submitted and analyzed by your mentor.",
+      "toastCoachFail": "Failed to query coach. Check your LLM settings."
+    },
+    "handpan": {
+      "subtitle": "Multi-Scale Hang Drum",
+      "selectScale": "Select scale",
+      "ringTime": "Ring Time (Sustain)",
+      "hardness": "Strike Hardness",
+      "reverb": "Reverb Space",
+      "help": "Press keyboard keys 1 to 9 to pluck the corresponding notes, or click/tap directly on the drum fields.",
+      "keyLabel": "Key {{k}}"
+    },
+    "audio": {
+      "title": "Audio",
+      "meter": {
+        "title": "Input Level",
+        "clip": "Clip",
+        "noDevice": "No input device — select a microphone to see levels.",
+        "idle": "Waiting for input…"
+      },
+      "gain": {
+        "title": "Input Gain",
+        "description": "Boost or cut the microphone signal before it is metered and dictated (0 dB = no change)."
+      },
+      "monitor": {
+        "title": "Monitor input",
+        "description": "Hear your microphone live in headphones to tune gain and mic position. Use headphones — monitoring through speakers can cause feedback.",
+        "device": "Monitor output",
+        "deviceDescription": "Where you hear yourself. Route to headphones to avoid feedback.",
+        "volume": "Monitor volume",
+        "volumeDescription": "How loud you hear yourself. Does not change the captured or dictated audio.",
+        "feedbackWarning": "Monitoring off: feedback detected.",
+        "deviceError": "Monitoring stopped: audio output unavailable.",
+        "inputLost": "Monitoring stopped: input device lost."
+      },
+      "spectrum": {
+        "title": "Spectrum",
+        "peakHold": "Hold",
+        "freeze": "Freeze",
+        "idle": "Waiting for input…"
+      },
+      "deviceHealth": {
+        "title": "Устройство",
+        "noDevice": "Няма избрано входно устройство",
+        "noFacts": "Потокът не е отворен",
+        "noSignal": "Няма сигнал",
+        "reconnect": "Повторно свързване",
+        "reconnectFailed": "Входното устройство не можа да бъде отворено отново",
+        "status": {
+          "ok": "Има сигнал",
+          "starting": "Waiting for the first frame…",
+          "silent": "Микрофонът мълчи — проверете дали не е заглушен",
+          "stalled": "Устройството спря да предава звук",
+          "unavailable": "Устройството не е налично",
+          "unknown": "Проверка…"
+        }
+      },
+      "autoStopSilence": {
+        "title": "Auto-stop after silence, min",
+        "description": "0 disables automatic stop."
+      }
+    },
+    "practice": {
+      "title": "Daily Practice",
+      "day": "Day {{day}}",
+      "streak": "streak: {{count}}",
+      "tab": {
+        "session": "Session",
+        "beforeAfter": "Before / After"
+      },
+      "record": "Record",
+      "stop": "Stop",
+      "done": "Done",
+      "oneMore": "One more",
+      "sessionDone": "Today's session complete!",
+      "sessionDoneHint": "Streak: {{count}} day(s). Come back tomorrow.",
+      "courseDone": "Course complete!",
+      "courseDoneHint": "Pick another course to keep practicing.",
+      "beforeAfterTitle": "Before / After",
+      "beforeAfterHint": "Record a 60-second free reading — the same check every time. Your first take is Point A; later takes show the progress you can hear.",
+      "recordBaseline": "Record Point A",
+      "recordCheck": "Record a new check",
+      "baseline": "Point A",
+      "latest": "Now",
+      "latestPending": "Now — not yet",
+      "latestHint": "Record a second take after a few sessions to compare.",
+      "noTakes": "No takes yet — record your Point A to start.",
+      "allTakes": "{{count}} takes total"
+    },
+    "lingua": {
+      "wizardTitle": "Linguistic profile",
+      "pickLanguage": "Which language are you entering?",
+      "multiHint": "multiple answers welcome",
+      "back": "Back",
+      "next": "Next",
+      "finish": "Begin",
+      "newSession": "New session",
+      "redoProfile": "Redo profile",
+      "emptyHint": "Say hello — the tutor will open the first cycle from your profile.",
+      "thinking": "the field is tuning…",
+      "inputPlaceholder": "Write to the tutor…"
+    }
+  },
+  "footer": {
+    "downloadingModel": "Изтегляне на {{model}}...",
+    "checkingUpdates": "Проверка за актуализации...",
+    "updateAvailable": "Налична актуализация: {{version}}",
+    "updateAvailableShort": "Налична актуализация",
+    "upToDate": "Актуална версия",
+    "downloadUpdate": "Изтегляне на актуализацията",
+    "restart": "Рестартиране",
+    "updateCheckingDisabled": "Проверката за актуализации е изключена",
+    "downloading": "Изтегля се... {{progress}}%",
+    "installing": "Инсталиране...",
+    "preparing": "Подготовка...",
+    "checkForUpdates": "Проверка за актуализации",
+    "portableUpdateTitle": "Необходима е ръчна актуализация",
+    "portableUpdateMessage": "Преносимите инсталации не могат да бъдат актуализирани автоматично. За актуализация: изтеглете най-новия NSIS инсталатор от GitHub Releases, инсталирайте го в същата папка, след което копирайте папката Data/ (настройки, модели, записи) от старата версия в новата.",
+    "portableUpdateButton": "Отвори GitHub Releases"
+  },
+  "common": {
+    "loading": "Зареждане...",
+    "save": "Запазване",
+    "cancel": "Отказ",
+    "reset": "Нулиране",
+    "add": "Добавяне",
+    "remove": "Премахване",
+    "delete": "Изтриване",
+    "edit": "Редактиране",
+    "create": "Създаване",
+    "update": "Обновяване",
+    "close": "Затваряне",
+    "open": "Отваряне",
+    "default": "По подразбиране",
+    "enabled": "Включено",
+    "disabled": "Изключено",
+    "on": "Вкл.",
+    "off": "Изкл.",
+    "yes": "Да",
+    "no": "Не",
+    "noOptionsFound": "Няма намерени опции"
+  },
+  "accessibility": {
+    "permissionsRequired": "Необходими са разрешения за достъпност",
+    "permissionsDescription": "Echo се нуждае от разрешения за достъпност, за да въвежда транскрибирания текст.",
+    "openSettings": "Отваряне на системните настройки",
+    "dismiss": "Затваряне"
+  },
+  "errors": {
+    "loadDirectory": "Грешка при зареждане на папката: {{error}}",
+    "micPermissionDeniedTitle": "Достъпът до микрофона е отказан",
+    "micPermissionDenied": {
+      "generic": "Операционната система отказа достъп до микрофона. Моля, дайте разрешение за микрофон в системните настройки.",
+      "windows": "Включете достъп до микрофона в Настройки → Поверителност и сигурност → Микрофон (включително за настолни приложения).",
+      "macos": "Дайте достъп до микрофона в Системни настройки → Поверителност и сигурност → Микрофон.",
+      "linux": "Дайте достъп до микрофона в настройките за звук или поверителност на системата."
+    },
+    "noInputDeviceTitle": "Не е намерен микрофон",
+    "noInputDevice": "Не е открито аудио входно устройство. Свържете микрофон или слушалки и опитайте отново.",
+    "recordingFailed": "Стартирането на записа не бе успешно: {{error}}",
+    "modelLoadFailed": "Зареждането на модела не бе успешно: {{model}}",
+    "modelLoadFailedUnknown": "неизвестен модел",
+    "pasteFailedTitle": "Неуспешно поставяне на текст",
+    "pasteFailed": "Текстът не можа да бъде поставен в активното приложение.",
+    "renderingSettingsTitle": "Грешка при изобразяване на настройките",
+    "renderingSettingsDescription": "Компонентът за раздел „{{section}}“ липсва."
+  },
+  "appLanguage": {
+    "title": "Език на приложението",
+    "description": "Промяна на езика на интерфейса на Echo"
+  },
+  "overlay": {
+    "transcribing": "Транскрибиране...",
+    "processing": "Обработка...",
+    "cancel": "Отказ на записа",
+    "preparing": "Подготовка…",
+    "movingToWindow": "прехвърляне в активния прозорец",
+    "loadingModel": "зареждане на модела…",
+    "localBadge": "локално",
+    "recording": "Recording"
+  },
+  "meetingCopilot": {
+    "launch": "Meeting",
+    "recording": "REC",
+    "idle": "Idle",
+    "both": "me + others",
+    "micOnly": "mic only",
+    "stop": "Stop",
+    "close": "Close",
+    "me": "me",
+    "others": "others",
+    "waiting": "Listening…",
+    "error": "Couldn't start capture. Check your microphone and try again.",
+    "consentTitle": "This records all participants",
+    "consentBody": "You are responsible for obtaining consent from everyone in the meeting before recording.",
+    "consentCancel": "Cancel",
+    "consentAccept": "I will",
+    "save": {
+      "save": "Save",
+      "saving": "Saving…",
+      "savedTo": "Saved to {{path}}"
+    },
+    "analysis": {
+      "soap": "SOAP",
+      "business": "Business",
+      "template": "Template",
+      "session": "Session",
+      "analyze": "Analyze",
+      "analyzing": "Analyzing…",
+      "copy": "Copy",
+      "copied": "Copied",
+      "retry": "Retry",
+      "destination": "Sends transcript to {{label}}",
+      "sessionWarning": "This Session analysis will be sent to a non-local LLM.",
+      "summary": "Summary",
+      "keyPoints": "Key points",
+      "actionItems": "Action items",
+      "openQuestions": "Open questions",
+      "subjective": "Subjective",
+      "objective": "Objective",
+      "assessment": "Assessment",
+      "plan": "Plan"
+    },
+    "council": {
+      "consult": "Consult council",
+      "consulting": "Consulting…",
+      "synthesis": "Synthesis",
+      "convergences": "Convergences",
+      "divergences": "Divergences",
+      "target": "Council via {{url}}",
+      "warning": "The council endpoint is not local — session content will leave this machine.",
+      "lenses": "Lenses: {{selected}} of {{total}}",
+      "allLenses": "All lenses",
+      "consultN": "Consult council ({{n}})",
+      "stageLenses": "Council · lenses {{done}}/{{total}}",
+      "stageSynthesis": "Council · lenses {{done}}/{{total}} · synthesis",
+      "stageDone": "Council done · {{total}} lenses",
+      "stageError": "Council stopped",
+      "running": "now: {{names}}",
+      "parallel": "{{n}} in parallel"
+    },
+    "doc": {
+      "notesLabel": "Notes",
+      "notesGroup": "Notes",
+      "actionsGroup": "Actions",
+      "councilGroup": "Council",
+      "transcript": "Transcript",
+      "done": "Ended",
+      "emptyHint": "Analyze the transcript to generate notes and actions."
+    },
+    "chooseClient": "Choose a client",
+    "noClient": "No client (use Echo mode)",
+    "start": "Start",
+    "saved": "Session saved",
+    "notRetained": "Session not saved: the client did not consent to retention",
+    "remoteConfirmTitle": "Send content to the council?",
+    "remoteConfirmBody": "Session content will be sent to {{url}}.",
+    "clientRemoteConfirmBody": "The engine LLM is not local.",
+    "protectionBadge": "⊘ hidden from sharing",
+    "saveErrorTitle": "Save failed",
+    "saveRetry": "Retry saving",
+    "showTranscript": "Show transcript",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "newMeeting": "New meeting",
+    "newMeetingUnsaved": "Not saved — start a new one?",
+    "ask": {
+      "title": "Ask about the meeting",
+      "placeholder": "Ask anything about this meeting…",
+      "send": "Ask",
+      "recap5": "Last 5 minutes",
+      "missed": "What did I miss?",
+      "agreed": "What did we agree?",
+      "more": "Show {{count}} more"
+    },
+    "silence": {
+      "title": "Long silence — has the meeting ended?",
+      "continue": "Continue",
+      "seconds": "Stopping in {{count}} s"
+    },
+    "voiceActivity": "Who is speaking"
+  },
+  "agentPanel": {
+    "from": "Question from {{source}}",
+    "typeOrDictate": "Type — or answer by voice with your dictation hotkey",
+    "yes": "Yes",
+    "no": "No",
+    "dismiss": "Dismiss",
+    "timeLeft": "{{count}}s"
+  },
+  "shell": {
+    "modules": {
+      "dictate": "Диктовка",
+      "assistant": "Асистент",
+      "vocal": "Вокал",
+      "language": "Език",
+      "clone": "Клониране",
+      "studio": "Студио",
+      "consult": "Consult"
+    },
+    "rail": {
+      "clients": "Clients",
+      "mark": "m",
+      "meeting": "Meeting",
+      "navLabel": "Модули на пакета",
+      "settings": "Настройки",
+      "backToSuite": "Back to journal"
+    },
+    "audioBar": {
+      "defaultDevice": "Микрофон по подразбиране",
+      "noModel": "Няма избран модел",
+      "model": "STT",
+      "hotkey": "Клавишна комбинация",
+      "loadingModel": "Зареждане на модела…",
+      "localOnly": "Всичко на устройството · 0 байта навън"
+    },
+    "placeholder": {
+      "comingSoon": "Очаквайте скоро"
+    },
+    "home": {
+      "greetingLead": "Студио",
+      "greetingEmphasis": "отворено",
+      "paletteHint": "Въведете или кажете команда — „започни диктовка“, „отвори историята“…",
+      "kbdHint": "Ctrl+K",
+      "breadcrumbHome": "Начало на студиото",
+      "soonTag": "Скоро",
+      "cardSubtitle": {
+        "dictate": "Диктувайте във всяко приложение",
+        "assistant": "Питайте, обобщавайте, резюмирайте",
+        "vocal": "Загрейте и тренирайте гласа си",
+        "language": "Тренирайте произношение и акцент",
+        "clone": "Вашият глас, клониран за озвучаване",
+        "studio": "Звуков и музикален инженеринг"
+      }
+    },
+    "palette": {
+      "clients": "Clients",
+      "newClient": "New client",
+      "startMeeting": "Start meeting",
+      "theme": {
+        "system": "Theme: as system",
+        "day": "Theme: day",
+        "evening": "Theme: evening"
+      },
+      "placeholder": "Търсене на команди…",
+      "empty": "Няма съвпадащи команди",
+      "goToModule": "Отиди в {{module}}",
+      "switchShell": "Превключи на обвивка {{shell}}",
+      "startDictation": "Започни диктовка",
+      "history": "История",
+      "settings": "Настройки",
+      "escHint": "Esc"
+    },
+    "deck": {
+      "transportLabel": "Транспорт",
+      "transport": {
+        "recIdleAria": "Започни диктовка (глобален бърз клавиш: {{hotkey}})",
+        "recRecordingAria": "Записва се — спрете с глобалния бърз клавиш",
+        "recProcessingAria": "Обработка",
+        "timecodeLabel": "Време на сесията",
+        "inLabel": "IN",
+        "outLabel": "OUT",
+        "monitor": "Монитор"
+      }
+    }
+  },
+  "consult": {
+    "clients": {
+      "title": "Clients",
+      "subtitle": "Consent-aware consultation records",
+      "empty": "No clients yet"
+    },
+    "newClient": {
+      "title": "New client"
+    },
+    "form": {
+      "alias": "Alias",
+      "permissions": "Consent for data types",
+      "retention": "Retention period (days)",
+      "chooseRetention": "Choose a period",
+      "untilRevoke": "Until revoked",
+      "date": "Consent date",
+      "invalid": "Enter an alias and grant at least one permission"
+    },
+    "permissions": {
+      "transcript": "Transcript",
+      "video": "Video",
+      "council": "Psychology council",
+      "retain": "Retain session"
+    },
+    "actions": {
+      "newClient": "New client",
+      "create": "Create client",
+      "cancel": "Cancel",
+      "back": "Back to clients",
+      "export": "Export",
+      "downloadConsent": "Download consent text",
+      "revoke": "Revoke consent",
+      "delete": "Delete client",
+      "attachSigned": "Attach signed consent"
+    },
+    "status": {
+      "active": "Active",
+      "revoked": "Revoked"
+    },
+    "card": {
+      "template": "Note template",
+      "permissions": "Consent",
+      "none": "None",
+      "sessions": "Sessions",
+      "includeAnalysis": "Include analysis",
+      "confirmAlias": "Type the alias to confirm deletion",
+      "sessionsCount_one": "{{count}} session",
+      "sessionsCount_other": "{{count}} sessions",
+      "newSession": "New session",
+      "newSessionUnavailable": "Needs active consent to the transcript",
+      "sessionsToolbar": "Client sessions",
+      "selectAll": "Select all",
+      "selectSession": "Select session {{date}}",
+      "deleteSelected": "Delete selected ({{count}})",
+      "deleteConfirm_one": "Delete {{count}} session permanently?",
+      "deleteConfirm_other": "Delete {{count}} sessions permanently?",
+      "deleteOne": "Delete",
+      "deleteOneConfirm": "Delete permanently?",
+      "unmigrated": "Legacy session — not migrated to a structured note"
+    },
+    "warnings": {
+      "encryptionOff": "Disk encryption is off — client data on disk is not protected",
+      "encryptionUnknown": "Unable to check disk encryption",
+      "purged": "Purged expired records: {{count}}"
+    },
+    "errors": {
+      "request": "Consult engine request failed"
+    },
+    "journal": {
+      "volume": "Practice journal · volume I",
+      "engineDown": "engine unavailable",
+      "engineDownMessage": "Sessions can continue, but saving will resume when the engine is back.",
+      "diskOff": "disk is not encrypted",
+      "diskOffMessage": "Client data on this disk is not protected.",
+      "diskUnknown": "disk encryption unknown",
+      "diskUnknownMessage": "Disk encryption could not be checked.",
+      "purged": "expired data removed",
+      "purgedMessage": "Expired records removed: {{count}}",
+      "createDisabled": "Client creation is unavailable until the engine is ready.",
+      "loading": "Loading journal…",
+      "emptyLead": "The journal is empty.",
+      "emptyBody": "The first page will appear when you add a client and record what they consented to.",
+      "tableClient": "Client",
+      "tableConsent": "Consent",
+      "tableLastSession": "Last session",
+      "tableSessions": "Sessions",
+      "revoked": "consent revoked — new sessions closed",
+      "readOnly": "Saved sessions remain read-only until their retention period ends or the client requests deletion.",
+      "noNote": "No note recorded.",
+      "consent": "Consent",
+      "deleteTitle": "Delete all client data",
+      "deleteDescription": "The client folder will be erased completely. Type the alias to confirm.",
+      "deletePermanent": "Delete permanently",
+      "aliasHint": "Use an alias, not a real name.",
+      "preview": "Consent preview",
+      "engine": {
+        "starting": "engine starting",
+        "ready": "engine ready",
+        "down": "engine unavailable"
+      },
+      "disk": {
+        "on": "disk encrypted",
+        "off": "disk not encrypted",
+        "unknown": "disk status unknown"
+      },
+      "permissionHint": {
+        "transcript": "Text recognized on this computer",
+        "video": "Numbers only; video is never recorded",
+        "council": "Psychology council reading of the session text",
+        "retain": "Keep session material after the session"
+      },
+      "privacyNote": "Client data stays on this computer only. Audio and video are never recorded.",
+      "llm": {
+        "local": "● LLM on this computer",
+        "remote": "○ LLM on your server — you will be asked before sending"
+      }
+    },
+    "session": {
+      "back": "← {{alias}}",
+      "tabsLabel": "Session sections",
+      "tabs": {
+        "notes": "Notes",
+        "transcript": "Transcript",
+        "asks": "Questions",
+        "email": "Letter"
+      },
+      "status": {
+        "closed": "closed",
+        "open": "open",
+        "postponed": "postponed",
+        "unmigrated": "legacy"
+      },
+      "client": "Client",
+      "me": "Me",
+      "others": "Client",
+      "practitioner": "Practitioner",
+      "authors": {
+        "model": "model",
+        "practitioner": "practitioner",
+        "import": "import"
+      },
+      "emptyTranscript": "No transcript recorded.",
+      "emptyAsks": "Questions will appear here — Ask is a separate feature.",
+      "noNote": "No note yet.",
+      "writeNote": "Write note",
+      "noteTitle": "Note v{{n}}",
+      "regenerate": "Regenerate",
+      "saveEdit": "Save edit",
+      "versions": "Versions",
+      "version": "v{{n}}",
+      "takeAsBase": "Take as base",
+      "useCurrent": "Use current version",
+      "template": "Template",
+      "copyEmail": "Copy",
+      "clipboardFailure": "Could not copy the text — click “Copy” and paste it into the letter.",
+      "meetingTypes": {
+        "session": "session",
+        "business": "business"
+      },
+      "noCouncil": "The client has not consented to model analysis.",
+      "noNoteEmail": "Write a note before drafting a letter.",
+      "revokedReadOnly": "Consent was revoked — this session is read-only.",
+      "emailStale": "This letter was written from note v{{n}}; the note has since changed.",
+      "emailFromNote": "Based on note v{{n}}",
+      "subject": "Subject",
+      "body": "Message",
+      "writeEmail": "Draft letter",
+      "regenerateEmailConfirm": "Regenerate (replace edit)",
+      "saveEmail": "Save",
+      "openMail": "Open in mail",
+      "clipboardNotice": "The letter text is in the clipboard — paste it into the message.",
+      "provenance": {
+        "local": "on this computer",
+        "remote": "leaves this computer",
+        "transcriptInput_one": "transcript, {{count}} line",
+        "transcriptInput_other": "transcript, {{count}} lines",
+        "noteInput": "note, version {{n}}",
+        "sentChars": "chars sent: {{count}}",
+        "truncated": "beginning omitted"
+      },
+      "replaceWarning": "The practitioner edit will be replaced. Continue?",
+      "replaceConfirm": "Replace edit",
+      "askUntil": "transcript until {{time}}",
+      "diagnosisWarning": "Looks like a diagnosis: “{{phrase}}” — please check"
+    },
+    "memory": {
+      "tabsLabel": "Client memory",
+      "tabs": {
+        "sessions": "Sessions",
+        "search": "Search",
+        "chat": "Chat"
+      },
+      "recapTitle": "Last time",
+      "generate": "Summary of recent sessions",
+      "generating": "Summarizing…",
+      "empty": "No saved memory yet.",
+      "stale": "out of date",
+      "email": "Letter",
+      "today": "today",
+      "daysAgo_one": "{{count}} day ago",
+      "daysAgo_other": "{{count}} days ago",
+      "indexing": "indexing {{current}} of {{total}}",
+      "meaningUnavailable": "meaning search unavailable: {{reason}}",
+      "searchPlaceholder": "Search sessions",
+      "search": "Search",
+      "wordsOnly": "Only word search is available without council consent.",
+      "mode": {
+        "words": "Words",
+        "meaning": "Meaning",
+        "both": "Both"
+      },
+      "kind": {
+        "transcript": "Transcript",
+        "note": "Note",
+        "email": "Letter"
+      },
+      "chatConsent": "Chat is unavailable without council consent.",
+      "newChat": "New conversation",
+      "chatPlaceholder": "Ask about the records",
+      "ask": "Ask"
+    }
+  }
+}

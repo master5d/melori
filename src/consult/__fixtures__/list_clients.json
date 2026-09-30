@@ -1,0 +1,18 @@
+[
+  {
+    "id": "anna",
+    "alias": "Анна",
+    "tags": [],
+    "created": "2026-09-29T16:55:43",
+    "template_id": null,
+    "consent": {
+      "permissions": ["council", "retain", "transcript"],
+      "date": "2026-09-27",
+      "retain_days": 90,
+      "template_version": null,
+      "signed_sha256": null,
+      "revoked": null,
+      "active": true
+    }
+  }
+]

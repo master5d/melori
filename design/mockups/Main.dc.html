@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Клиенты (A)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>
+body{margin:0;background:#F4EFE6;color:#1F1B16;font-family:"IBM Plex Sans",sans-serif}
+a{color:#2448B8}a:hover{color:#1A3690}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; display: flex; background: #F4EFE6">
+  <nav aria-label="Разделы" style="width: 76px; box-sizing: border-box; padding: 28px 0; display: flex; flex-direction: column; align-items: center; gap: 28px; border-right: 1px solid #D9CFBF">
+    <div style="font-family: Literata, serif; font-size: 30px; font-weight: 600; color: #2448B8">m</div>
+    <a href="Main.dc.html" aria-label="Клиенты" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-bottom: 2px solid #2448B8">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F1B16" stroke-width="1.6"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14.8c1.7.8 2.7 2.5 3 5.2"/></svg>
+    </a>
+    <a href="Meeting-A.dc.html" aria-label="Встреча" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5E554A" stroke-width="1.6"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+    </a>
+    <a href="Settings-A.dc.html" aria-label="Настройки" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; margin-top: auto">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5E554A" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>
+    </a>
+  </nav>
+  <main style="flex-grow: 1; box-sizing: border-box; padding: 48px 72px; display: flex; flex-direction: column; gap: 28px">
+    <header style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; border-bottom: 2px solid #1F1B16; padding-bottom: 18px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E554A">Журнал практики · том I</div>
+        <h1 style="margin: 0; font-family: Literata, serif; font-weight: 600; font-size: 52px; line-height: 1.05">Клиенты</h1>
+      </div>
+      <button type="button" style="height: 44px; padding: 0 20px; background: #2448B8; color: #FBF8F2; border: none; font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; font-weight: 500; cursor: pointer">Новый клиент</button>
+    </header>
+    <div role="status" style="display: flex; gap: 28px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5E554A">
+      <span>● движок работает</span>
+      <span>● диск зашифрован</span>
+      <span>○ LLM на своём сервере — перед отправкой спросим</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5E554A; border-bottom: 1px solid #D9CFBF; padding-bottom: 10px">
+      <span style="grid-column: span 4">Клиент</span>
+      <span style="grid-column: span 5">Согласие</span>
+      <span style="grid-column: span 2">Последняя сессия</span>
+      <span style="grid-column: span 1; text-align: right">Сессий</span>
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <a href="ClientCard-A.dc.html" style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid #D9CFBF; color: #1F1B16; text-decoration: none">
+        <span style="grid-column: span 4; font-family: Literata, serif; font-size: 24px">Анна</span>
+        <span style="grid-column: span 5; font-size: 15px; color: #1F1B16">транскрипт · совет · хранение 90 дн.</span>
+        <span style="grid-column: span 2; font-family: 'IBM Plex Mono', monospace; font-size: 14px">24.09.2026</span>
+        <span style="grid-column: span 1; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 14px">7</span>
+      </a>
+      <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid #D9CFBF">
+        <span style="grid-column: span 4; font-family: Literata, serif; font-size: 24px">Борис</span>
+        <span style="grid-column: span 5; font-size: 15px">транскрипт · без хранения</span>
+        <span style="grid-column: span 2; font-family: 'IBM Plex Mono', monospace; font-size: 14px">19.09.2026</span>
+        <span style="grid-column: span 1; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 14px">0</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid #D9CFBF; color: #5E554A">
+        <span style="grid-column: span 4; font-family: Literata, serif; font-size: 24px; text-decoration: line-through">Вера</span>
+        <span style="grid-column: span 5; font-size: 15px; color: #A3342A">согласие отозвано 02.09.2026 — новые сессии закрыты</span>
+        <span style="grid-column: span 2; font-family: 'IBM Plex Mono', monospace; font-size: 14px">28.08.2026</span>
+        <span style="grid-column: span 1; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 14px">4</span>
+      </div>
+    </div>
+    <p style="margin: auto 0 0; max-width: 620px; font-family: Literata, serif; font-style: italic; font-size: 15px; line-height: 1.55; color: #5E554A">Данные клиентов хранятся только на этом компьютере. Запись звука и видео не сохраняется никогда.</p>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

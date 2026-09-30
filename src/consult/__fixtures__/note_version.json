@@ -1,0 +1,26 @@
+{
+  "n": 1,
+  "created": "2026-09-29T16:55:43",
+  "author": "model",
+  "template_id": "dap",
+  "sections": [
+    ["data", "Data"],
+    ["assessment", "Assessment"],
+    ["plan", "Plan"]
+  ],
+  "fields": {
+    "data": "Session data.",
+    "assessment": "Working formulation.",
+    "plan": "Next step."
+  },
+  "parent": null,
+  "provenance": {
+    "model": "local",
+    "endpoint_local": true,
+    "input": "transcript",
+    "chars_sent": 19,
+    "language": "en",
+    "attempts": 1
+  },
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Встреча, дневная тема</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>body{margin:0;background:#E9ECEF;font-family:"IBM Plex Sans",sans-serif}</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; position: relative; background: #DDE1E6">
+  <div aria-hidden="true" style="position: absolute; inset: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 12px; box-sizing: border-box">
+    <div style="background: #C9CED4; display: flex; align-items: center; justify-content: center; color: #5F6368; font-size: 64px">А</div>
+    <div style="background: #D2D6DB; display: flex; align-items: center; justify-content: center; color: #5F6368; font-size: 64px">Вы</div>
+  </div>
+  <div style="position: absolute; top: 24px; left: 50%; transform: translateX(-50%); width: 540px; display: flex; flex-direction: column; gap: 8px">
+    <div role="status" style="height: 52px; box-sizing: border-box; padding: 0 8px 0 18px; background: #F4EFE6; border: 1px solid #D9CFBF; display: flex; align-items: center; gap: 14px; color: #1F1B16">
+      <span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #2448B8"></span>
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px">Запись · 08:41</span>
+      <span style="font-family: Literata, serif; font-size: 17px">Анна · сессия №8</span>
+      <span style="margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E554A">⊘ скрыто из показа</span>
+      <button type="button" aria-label="Остановить запись" style="width: 44px; height: 36px; background: transparent; border: 1px solid #2448B8; color: #2448B8">■</button>
+    </div>
+    <section aria-label="Панель встречи" style="background: #FBF8F2; border: 1px solid #D9CFBF; box-sizing: border-box; padding: 18px 22px 16px; color: #1F1B16; display: flex; flex-direction: column; gap: 14px">
+      <div role="tablist" style="display: flex; gap: 22px; border-bottom: 1px solid #D9CFBF">
+        <button type="button" role="tab" aria-selected="false" style="background: none; border: none; color: #5E554A; padding: 0 0 8px; font-size: 14px">Транскрипт</button>
+        <button type="button" role="tab" aria-selected="true" style="background: none; border: none; border-bottom: 2px solid #2448B8; color: #1F1B16; padding: 0 0 8px; font-size: 14px">Разбор</button>
+        <button type="button" role="tab" aria-selected="false" style="background: none; border: none; color: #5E554A; padding: 0 0 8px; font-size: 14px">Совет</button>
+      </div>
+      <div style="font-family: Literata, serif; font-size: 16px; line-height: 1.6; display: flex; flex-direction: column; gap: 8px">
+        <p style="margin: 0"><strong>S.</strong> Тревога перед сменой работы, страх «подвести команду».</p>
+        <p style="margin: 0"><strong>O.</strong> Темп речи выше обычного, частые паузы перед ответом.</p>
+        <p style="margin: 0"><strong>A.</strong> [ваша формулировка]</p>
+        <p style="margin: 0"><strong>P.</strong> Дневник мыслей на неделю; обсудить разговор с руководителем.</p>
+      </div>
+      <div style="display: flex; gap: 10px; border-top: 1px solid #D9CFBF; padding-top: 14px">
+        <button type="button" style="height: 40px; padding: 0 16px; background: transparent; border: 1px solid #1F1B16; font-size: 14px">Перегенерировать</button>
+        <button type="button" style="height: 40px; padding: 0 16px; margin-left: auto; background: #2448B8; border: none; color: #FBF8F2; font-size: 14px; font-weight: 600">Сохранить сессию</button>
+      </div>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

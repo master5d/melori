@@ -1,0 +1,20 @@
+{
+  "ask": {
+    "at": "2026-09-29T16:55:43",
+    "elapsed_ms": 100,
+    "kind": "free",
+    "question": "What was discussed?",
+    "answer": "Opinion text.\nCONVERGENCES:\n- shared view\nDIVERGENCES:\n- differing view",
+    "provenance": {
+      "model": "local",
+      "endpoint_local": true,
+      "input": "transcript",
+      "chars_sent": 18,
+      "until_ms": 100,
+      "truncated": false,
+      "language": "en",
+      "attempts": 1
+    }
+  },
+  "stored": true
+}

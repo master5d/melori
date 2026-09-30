@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Настройки (A)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>
+body{margin:0;background:#F4EFE6;color:#1F1B16;font-family:"IBM Plex Sans",sans-serif}
+a{color:#2448B8}a:hover{color:#1A3690}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; display: flex; background: #F4EFE6">
+  <nav aria-label="Разделы" style="width: 76px; box-sizing: border-box; padding: 28px 0; display: flex; flex-direction: column; align-items: center; border-right: 1px solid #D9CFBF">
+    <div style="font-family: Literata, serif; font-size: 30px; font-weight: 600; color: #2448B8">m</div>
+  </nav>
+  <main style="flex-grow: 1; box-sizing: border-box; padding: 40px 72px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 40px; row-gap: 26px; align-content: start">
+    <h1 style="grid-column: span 12; margin: 0; font-family: Literata, serif; font-weight: 600; font-size: 44px; border-bottom: 2px solid #1F1B16; padding-bottom: 14px">Настройки</h1>
+    <section style="grid-column: span 6; display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-family: Literata, serif; font-size: 22px; font-weight: 600">Движок и языковая модель</h2>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #5E554A">Адрес OpenAI-совместимого сервера
+        <input type="text" value="http://127.0.0.1:11434/v1" style="height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #D9CFBF; background: #FBF8F2; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #1F1B16">
+      </label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #5E554A">Модель
+        <input type="text" value="local" style="height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #D9CFBF; background: #FBF8F2; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #1F1B16">
+      </label>
+      <p style="margin: 0; font-size: 14px; color: #1F1B16">● Сервер на этом компьютере — данные сессий не покидают машину.</p>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #5E554A">Зеркало моделей распознавания
+        <input type="text" placeholder="https://…" style="height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #D9CFBF; background: #FBF8F2; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #1F1B16">
+      </label>
+    </section>
+    <section style="grid-column: span 6; display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-family: Literata, serif; font-size: 22px; font-weight: 600">Приватность</h2>
+      <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px"><input type="checkbox" checked style="width: 20px; height: 20px; margin-top: 2px; accent-color: #2448B8"><span>Скрывать окно заметок из показа экрана<br><span style="font-size: 14px; color: #5E554A">Защищает данные клиента, если вы делитесь экраном. Пилюля записи остаётся видна.</span></span></label>
+      <h2 style="margin: 12px 0 0; font-family: Literata, serif; font-size: 22px; font-weight: 600">Оформление</h2>
+      <div role="radiogroup" aria-label="Тема" style="display: flex; gap: 0; border: 1px solid #1F1B16; width: max-content">
+        <button type="button" role="radio" aria-checked="false" style="height: 40px; padding: 0 16px; background: transparent; border: none; font-size: 14px">Как в системе</button>
+        <button type="button" role="radio" aria-checked="true" style="height: 40px; padding: 0 16px; background: #1F1B16; color: #F4EFE6; border: none; font-size: 14px">Дневная</button>
+        <button type="button" role="radio" aria-checked="false" style="height: 40px; padding: 0 16px; background: transparent; border: none; font-size: 14px">Вечерняя</button>
+      </div>
+      <h2 style="margin: 12px 0 0; font-family: Literata, serif; font-size: 22px; font-weight: 600">Горячие клавиши</h2>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 8px; font-size: 14px">
+        <span>Показать или скрыть панель</span><span style="font-family: 'IBM Plex Mono', monospace">Ctrl + \</span>
+        <span>Начать или закончить встречу</span><span style="font-family: 'IBM Plex Mono', monospace">Ctrl + Shift + \</span>
+        <span>Сохранить сессию</span><span style="font-family: 'IBM Plex Mono', monospace">Ctrl + S</span>
+      </div>
+    </section>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

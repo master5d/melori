@@ -1,0 +1,79 @@
+name: "code quality"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "package.json"
+      - "bun.lock"
+      - ".eslintrc*"
+      - "eslint.config.*"
+      - ".prettierrc*"
+      - "tsconfig*"
+      - "tailwind.config.*"
+      - ".github/workflows/**"
+      # Версия живёт и на стороне Rust — без этих путей гейт синхронизации
+      # не проснётся ровно на том коммите, который версию и двигает.
+      - "src-tauri/Cargo.toml"
+      - "src-tauri/tauri.conf.json"
+  pull_request:
+    paths:
+      - "src/**"
+      - "package.json"
+      - "bun.lock"
+      - ".eslintrc*"
+      - "eslint.config.*"
+      - ".prettierrc*"
+      - "tsconfig*"
+      - "tailwind.config.*"
+      - ".github/workflows/**"
+      # Версия живёт и на стороне Rust — без этих путей гейт синхронизации
+      # не проснётся ровно на том коммите, который версию и двигает.
+      - "src-tauri/Cargo.toml"
+      - "src-tauri/tauri.conf.json"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Check translation consistency
+        run: bun run check:translations
+
+      # Версия приложения должна быть синхронной в трёх файлах, но
+      # требование никем не проверялось — и они разъехались (package.json 1.1.7
+      # против Cargo.toml/tauri.conf.json 1.1.8), причём заметить это можно было
+      # только руками в момент выпуска.
+      - name: Check version sync
+        run: bun run check:version
+
+      - name: Run ESLint
+        run: bun run lint
+
+      - name: Run prettier
+        run: bun run format:check
+
+      # Фронтовые тесты НИ РАЗУ не гонялись в CI — 187 тестов жили только на машине
+      # разработчика. Из-за этого расхождение bun.lock и package-lock.json оставалось
+      # невидимым: CI ставит по bun.lock (там был zustand 5.0.8), а тесты, которые на
+      # нём падают, здесь просто не запускались. Шаг дешёвый и ловит ровно этот класс.
+      - name: Run frontend tests
+        run: bun run test:unit
+
+      # Типы отдельным шагом: vitest их НЕ проверяет (трансформирует, не тайпчекает),
+      # поэтому зелёные тесты при красном tsc — штатная ловушка.
+      - name: Typecheck
+        run: bun x tsc --noEmit

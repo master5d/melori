@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>melori — Клиентов нет, движок недоступен</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>
+body{margin:0;background:#F4EFE6;color:#1F1B16;font-family:"IBM Plex Sans",sans-serif}
+a{color:#2448B8}a:hover{color:#1A3690}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; display: flex; background: #F4EFE6">
+  <nav aria-label="Разделы" style="width: 76px; box-sizing: border-box; padding: 28px 0; display: flex; flex-direction: column; align-items: center; border-right: 1px solid #D9CFBF">
+    <div style="font-family: Literata, serif; font-size: 30px; font-weight: 600; color: #2448B8">m</div>
+  </nav>
+  <main style="flex-grow: 1; box-sizing: border-box; padding: 48px 72px; display: flex; flex-direction: column; gap: 28px">
+    <div role="alert" style="display: flex; align-items: center; gap: 16px; padding: 14px 18px; border: 1px solid #A3342A; background: #FBF1EE; color: #1F1B16">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #A3342A">движок недоступен</span>
+      <span style="font-size: 15px">Перезапускаю… Запись встречи продолжится, но сохранить её можно будет после восстановления.</span>
+      <button type="button" style="margin-left: auto; height: 36px; padding: 0 14px; background: transparent; border: 1px solid #1F1B16; font-size: 14px">Подробнее</button>
+    </div>
+    <div role="alert" style="display: flex; align-items: center; gap: 16px; padding: 14px 18px; border: 1px solid #B07A12; background: #FBF5E6">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #7A5308">диск не зашифрован</span>
+      <span style="font-size: 15px">Данные клиентов на этом диске не защищены. Включите BitLocker или FileVault.</span>
+    </div>
+    <header style="border-bottom: 2px solid #1F1B16; padding-bottom: 18px">
+      <h1 style="margin: 0; font-family: Literata, serif; font-weight: 600; font-size: 52px">Клиенты</h1>
+    </header>
+    <section style="margin-top: 40px; max-width: 560px; display: flex; flex-direction: column; gap: 18px">
+      <p style="margin: 0; font-family: Literata, serif; font-size: 24px; line-height: 1.4">Журнал пока пуст.</p>
+      <p style="margin: 0; font-family: Literata, serif; font-size: 17px; line-height: 1.6; color: #5E554A">Первая страница появится, когда вы заведёте клиента и отметите, на что он дал согласие.</p>
+      <button type="button" style="align-self: flex-start; height: 44px; padding: 0 20px; background: #2448B8; color: #FBF8F2; border: none; font-size: 15px; font-weight: 500">Завести клиента</button>
+    </section>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+name: "Main Branch Build"
+
+# Собирает push в main, чтобы поломка ловилась до ручного релиза. Артефакты
+# хранятся 30 дней — у любого коммита в main есть скачиваемая сборка.
+#
+# 2026-07-28: матрица сведена к ОДНОЙ Windows. Причина — деньги и польза.
+# Множители минут GitHub: Linux ×1, Windows ×2, macOS ×10. Пятиплатформенная
+# матрица давала ~270 биллинг-минут за push, из них ~94% съедала macOS,
+# и бесплатный лимит 2000 мин/мес выгорал. При этом кросс-сборка НИ РАЗУ
+# не прошла успешно за всю историю (39 прогонов с 2026-06-30, 0 успехов):
+# платили минутами за воркфлоу, который не собирался.
+# Разработка идёт на Windows; остальные платформы — балласт активной фазы.
+# Вернуть их к стабильному релизу: восстановить include-блоки ниже.
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Единственная платформа активной фазы. Остальные — законсервированы
+          # ниже, расконсервировать к стабильному релизу (см. шапку файла).
+          - platform: "windows-latest"
+            args: ""
+            target: "x86_64-pc-windows-msvc"
+          # --- законсервировано 2026-07-28 (стоимость минут, см. шапку) ---
+          # - platform: "macos-26"
+          #   args: "--target aarch64-apple-darwin"
+          #   target: "aarch64-apple-darwin"
+          # - platform: "ubuntu-22.04"
+          #   args: "--bundles deb"
+          #   target: "x86_64-unknown-linux-gnu"
+          # - platform: "ubuntu-24.04"
+          #   args: "--bundles appimage,rpm"
+          #   target: "x86_64-unknown-linux-gnu"
+          # - platform: "ubuntu-24.04-arm"
+          #   args: "--bundles appimage,deb,rpm"
+          #   target: "aarch64-unknown-linux-gnu"
+
+    uses: ./.github/workflows/build.yml
+    with:
+      platform: ${{ matrix.platform }}
+      target: ${{ matrix.target }}
+      build-args: ${{ matrix.args }}
+      upload-artifacts: true
+      # Неделя, а не 30 дней: при квоте приватного репо в 500 МБ и бандле 77 МБ
+      # тридцатидневное хранение накопило 2.9 ГБ и вырубило ЗАГРУЗКУ артефактов на
+      # трёх успешных сборках подряд. Постоянного дома для билда это не заменяет —
+      # main-артефакт не должен быть архивом.
+      retention-days: 7
+      # Fork has no paid Apple/Azure code-signing certs — keep this false (matches
+      # release.yml). With true, the keychain-import / Azure-signing steps fail.
+      sign-binaries: false
+    secrets: inherit

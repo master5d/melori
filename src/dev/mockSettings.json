@@ -1,0 +1,203 @@
+{
+  "agent_bridge_enabled": true,
+  "agent_bridge_port": 4123,
+  "always_on_microphone": false,
+  "app_language": "en-US",
+  "append_trailing_space": false,
+  "assistant_enabled": false,
+  "assistant_system_prompt": "",
+  "audio_feedback": false,
+  "audio_feedback_volume": 1,
+  "auto_capitalize": true,
+  "auto_punctuate": true,
+  "auto_submit": false,
+  "auto_submit_key": "enter",
+  "autostart_enabled": false,
+  "bindings": {
+    "cancel": {
+      "current_binding": "escape",
+      "default_binding": "escape",
+      "description": "Cancels the current recording.",
+      "id": "cancel",
+      "name": "Cancel"
+    },
+    "toggle_meeting_copilot": {
+      "current_binding": "",
+      "default_binding": "",
+      "description": "Shows the meeting copilot panel.",
+      "id": "toggle_meeting_copilot",
+      "name": "Toggle Meeting Copilot"
+    },
+    "transcribe": {
+      "current_binding": "ctrl+space",
+      "default_binding": "ctrl+space",
+      "description": "Converts your speech into text.",
+      "id": "transcribe",
+      "name": "Transcribe"
+    },
+    "transcribe_with_post_process": {
+      "current_binding": "ctrl+shift+space",
+      "default_binding": "ctrl+shift+space",
+      "description": "Converts your speech into text and applies AI post-processing.",
+      "id": "transcribe_with_post_process",
+      "name": "Transcribe with Post-Processing"
+    }
+  },
+  "capture_folder": "",
+  "capture_trigger_phrases": "capture note, сохрани заметку",
+  "clamshell_microphone": null,
+  "clipboard_handling": "dont_modify",
+  "coach_toast_enabled": false,
+  "command_mode_enabled": false,
+  "custom_filler_words": null,
+  "custom_words": [],
+  "debug_mode": false,
+  "dev_dictionary_enabled": false,
+  "experimental_enabled": false,
+  "external_script_path": null,
+  "extra_recording_buffer_ms": 0,
+  "history_limit": 5,
+  "keyboard_implementation": "echo_keys",
+  "lazy_stream_close": false,
+  "log_level": "debug",
+  "meeting_consent_acked": true,
+  "model_unload_timeout": "min5",
+  "mute_while_recording": false,
+  "ort_accelerator": "auto",
+  "overlay_position": "bottom",
+  "paste_delay_ms": 60,
+  "paste_method": "direct",
+  "post_process_api_keys": {
+    "anthropic": "",
+    "bedrock_mantle": "",
+    "cerebras": "",
+    "custom": "",
+    "groq": "",
+    "openai": "",
+    "openrouter": "",
+    "zai": ""
+  },
+  "post_process_enabled": false,
+  "post_process_models": {
+    "anthropic": "",
+    "bedrock_mantle": "",
+    "cerebras": "",
+    "custom": "qwen2.5-coder-32b-instruct",
+    "groq": "",
+    "openai": "",
+    "openrouter": "",
+    "zai": ""
+  },
+  "post_process_prompts": [
+    {
+      "id": "semantic-smoothing",
+      "name": "Semantic Smoothing",
+      "prompt": "You are a professional transcription editor. Fix grammar, punctuation, and remove disfluencies (um, uh, fillers, repeated words, э-э, ну, типа) from the following text. PRESERVE THE ORIGINAL LANGUAGE (Russian or English) strictly. Output ONLY the corrected text without any chat or explanation: ${output}"
+    },
+    {
+      "id": "default_improve_transcriptions",
+      "name": "Improve Transcriptions",
+      "prompt": "Clean this transcript:\n1. Fix spelling, capitalization, and punctuation errors\n2. Convert number words to digits (twenty-five → 25, ten percent → 10%, five dollars → $5)\n3. Replace spoken punctuation with symbols (period → ., comma → ,, question mark → ?)\n4. Remove filler words (um, uh, like as filler)\n5. Keep the language in the original version (if it was french, keep it in french for example)\n\nPreserve exact meaning and word order. Do not paraphrase or reorder content.\n\nReturn only the cleaned transcript.\n\nTranscript:\n${output}"
+    }
+  ],
+  "post_process_provider_id": "custom",
+  "post_process_providers": [
+    {
+      "allow_base_url_edit": false,
+      "base_url": "https://api.openai.com/v1",
+      "id": "openai",
+      "label": "OpenAI",
+      "models_endpoint": "/models",
+      "supports_structured_output": true
+    },
+    {
+      "allow_base_url_edit": false,
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "id": "zai",
+      "label": "Z.AI",
+      "models_endpoint": "/models",
+      "supports_structured_output": true
+    },
+    {
+      "allow_base_url_edit": false,
+      "base_url": "https://openrouter.ai/api/v1",
+      "id": "openrouter",
+      "label": "OpenRouter",
+      "models_endpoint": "/models",
+      "supports_structured_output": true
+    },
+    {
+      "allow_base_url_edit": false,
+      "base_url": "https://api.anthropic.com/v1",
+      "id": "anthropic",
+      "label": "Anthropic",
+      "models_endpoint": "/models",
+      "supports_structured_output": false
+    },
+    {
+      "allow_base_url_edit": false,
+      "base_url": "https://api.groq.com/openai/v1",
+      "id": "groq",
+      "label": "Groq",
+      "models_endpoint": "/models",
+      "supports_structured_output": false
+    },
+    {
+      "allow_base_url_edit": false,
+      "base_url": "https://api.cerebras.ai/v1",
+      "id": "cerebras",
+      "label": "Cerebras",
+      "models_endpoint": "/models",
+      "supports_structured_output": true
+    },
+    {
+      "allow_base_url_edit": false,
+      "base_url": "https://bedrock-mantle.us-east-1.api.aws/v1",
+      "id": "bedrock_mantle",
+      "label": "AWS Bedrock (Mantle)",
+      "models_endpoint": "/models",
+      "supports_structured_output": true
+    },
+    {
+      "allow_base_url_edit": true,
+      "base_url": "http://localhost:4000/v1",
+      "id": "custom",
+      "label": "Local LLM (LiteLLM)",
+      "models_endpoint": "/models",
+      "supports_structured_output": true
+    }
+  ],
+  "post_process_selected_prompt_id": "semantic-smoothing",
+  "push_to_talk": true,
+  "recording_retention_period": "preserve_limit",
+  "selected_language": "auto",
+  "selected_microphone": null,
+  "selected_model": "turbo",
+  "selected_output_device": null,
+  "self_correction_enabled": false,
+  "show_tray_icon": true,
+  "snippets": [],
+  "sound_theme": "marimba",
+  "spoken_lists_enabled": true,
+  "start_hidden": false,
+  "subtitle_font_size": "medium",
+  "subtitle_max_chars": 140,
+  "subtitle_overlay": false,
+  "subtitle_refresh_ms": 300,
+  "translate_base_url": "http://127.0.0.1:11434/v1",
+  "translate_enabled": false,
+  "translate_model": "hy-mt1.5",
+  "translate_target": "English",
+  "translate_to_english": false,
+  "tts_enabled": true,
+  "tts_rate": 1,
+  "tts_voice_id": null,
+  "tutor_enabled": false,
+  "typing_tool": "auto",
+  "update_checks_enabled": false,
+  "wellbeing_url": "http://127.0.0.1:8000",
+  "whisper_accelerator": "auto",
+  "whisper_gpu_device": -1,
+  "word_correction_threshold": 0.18,
+  "shell_skin": "home"
+}
