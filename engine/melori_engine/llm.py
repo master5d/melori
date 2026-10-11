@@ -1,10 +1,24 @@
 """OpenAI-compatible chat client. No provider names, no keys in code: base_url + model alias only."""
 from __future__ import annotations
 
+import os
 from urllib.parse import urlparse
 import httpx
 
 LOCAL_HOSTS = {"127.0.0.1", "localhost", "::1"}
+EXTRA_HEADER_ENV = "MELORI_EXTRA_HEADER"
+
+
+def extra_headers() -> dict[str, str]:
+    """One optional caller-identification header from the environment, e.g.
+    ``MELORI_EXTRA_HEADER="x-client-tag: melori"`` — for gateways that attribute usage per client.
+    Unset, empty or malformed -> no extra header."""
+    raw = os.environ.get(EXTRA_HEADER_ENV, "")
+    name, sep, value = raw.partition(":")
+    name, value = name.strip(), value.strip()
+    if not sep or not name or not value or any(c in name for c in " \r\n") or any(c in value for c in "\r\n"):
+        return {}
+    return {name: value}
 
 
 class LLMUnavailable(RuntimeError):
@@ -26,6 +40,7 @@ class OpenAICompatLLM:
         self.model = model
         # Optional bearer key for gateways that require one; never logged, never part of the URL.
         headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
+        headers.update(extra_headers())
         self._client = httpx.Client(timeout=httpx.Timeout(timeout, connect=10.0), transport=transport,
                                     headers=headers)
 
@@ -52,6 +67,7 @@ class OpenAICompatEmbeddings:
         self.base_url = base_url.rstrip("/")
         self.model = model
         headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
+        headers.update(extra_headers())
         self._client = httpx.Client(timeout=httpx.Timeout(timeout, connect=10.0), transport=transport,
                                     headers=headers)
 

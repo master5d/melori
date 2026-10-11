@@ -11,6 +11,16 @@ def test_is_local_url():
     assert not L.is_local_url("https://gw.example.net/v1")
 
 
+def test_extra_header_parsing(monkeypatch):
+    monkeypatch.delenv(L.EXTRA_HEADER_ENV, raising=False)
+    assert L.extra_headers() == {}
+    for bad in ("", "no-colon", ": value", "name:", "bad name: v", "n: v\r\nx: y"):
+        monkeypatch.setenv(L.EXTRA_HEADER_ENV, bad)
+        assert L.extra_headers() == {}, bad
+    monkeypatch.setenv(L.EXTRA_HEADER_ENV, " x-client-tag :  melori ")
+    assert L.extra_headers() == {"x-client-tag": "melori"}
+
+
 def test_complete_parses_choice():
     def handler(request):
         assert request.url.path.endswith("/chat/completions")
@@ -52,6 +62,35 @@ def test_api_key_is_sent_as_bearer_only_when_given():
     L.OpenAICompatLLM("http://127.0.0.1:9/v1", "m",
                       transport=httpx.MockTransport(handler)).complete([{"role": "user", "content": "x"}])
     assert seen == ["Bearer k-123", None]
+
+
+def test_extra_header_is_sent_for_chat_and_embeddings(monkeypatch):
+    monkeypatch.setenv(L.EXTRA_HEADER_ENV, "x-client-tag: melori")
+    seen = []
+
+    def handler(request):
+        seen.append((request.url.path, request.headers.get("x-client-tag")))
+        if request.url.path.endswith("/embeddings"):
+            return httpx.Response(200, json={"data": [{"index": 0, "embedding": [1]}]})
+        return httpx.Response(200, json={"choices": [{"message": {"content": "ok"}}]})
+
+    url = "https://gw.example.net/v1"
+    L.OpenAICompatLLM(url, "m", transport=httpx.MockTransport(handler)).complete([])
+    L.OpenAICompatEmbeddings(url, "embed", transport=httpx.MockTransport(handler)).embed(["x"])
+    assert seen == [("/v1/chat/completions", "melori"), ("/v1/embeddings", "melori")]
+
+
+def test_no_extra_header_by_default(monkeypatch):
+    monkeypatch.delenv(L.EXTRA_HEADER_ENV, raising=False)
+    seen = []
+
+    def handler(request):
+        seen.append(request.headers.get("x-client-tag"))
+        return httpx.Response(200, json={"choices": [{"message": {"content": "ok"}}]})
+
+    for url in ("http://127.0.0.1:9/v1", "https://gw.example.net/v1"):
+        L.OpenAICompatLLM(url, "m", transport=httpx.MockTransport(handler)).complete([])
+    assert seen == [None, None]
 
 
 def test_embeddings_are_ordered_by_index():
