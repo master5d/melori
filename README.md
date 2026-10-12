@@ -37,6 +37,8 @@ A client meeting starts only for a client with recorded consent. Consent is gran
 
 Officially sourced models download from the URL recorded in the manifest. Models without an official source have a `mirror_path` and remain unavailable until the user supplies a model mirror URL in settings. Checksums are verified before an artifact is accepted.
 
+Language models are never chosen for you. The engine's model (Settings → Engine and language model) uses an OpenAI-compatible server on loopback (`http://127.0.0.1:11434/v1`) until you set an address and a model there. The text post-processing provider "Custom (OpenAI-compatible)" (Settings → Post Process) ships with an empty address and model; post-processing is skipped until you fill both in or pick another provider.
+
 ## License
 
 melori is released under the MIT License — see `LICENSE`. It is derived from Handy (MIT, © CJ Pais); that notice and the third-party components are listed in `NOTICE` and `THIRD_PARTY.md`.

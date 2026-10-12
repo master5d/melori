@@ -1017,12 +1017,14 @@ pub fn default_post_process_providers() -> Vec<PostProcessProvider> {
         supports_structured_output: true,
     });
 
-    // Custom provider: a local LLM via a LiteLLM-style gateway (or any
-    // OpenAI-compatible endpoint). id stays "custom" — load-bearing for stored configs.
+    // Custom provider: any OpenAI-compatible server the user runs or chooses (a local
+    // server, a LiteLLM-style gateway, ...). It ships unconfigured — empty address and
+    // model — so nothing is called until the user fills both in Settings.
+    // id stays "custom" — load-bearing for stored configs.
     providers.push(PostProcessProvider {
         id: "custom".to_string(),
-        label: "Local LLM (LiteLLM)".to_string(),
-        base_url: "http://localhost:4000/v1".to_string(),
+        label: "Custom (OpenAI-compatible)".to_string(),
+        base_url: String::new(),
         allow_base_url_edit: true,
         models_endpoint: Some("/models".to_string()),
         supports_structured_output: true,
@@ -1043,9 +1045,7 @@ pub fn default_model_for_provider(provider_id: &str) -> String {
     if provider_id == APPLE_INTELLIGENCE_PROVIDER_ID {
         return APPLE_INTELLIGENCE_DEFAULT_MODEL_ID.to_string();
     }
-    if provider_id == "custom" {
-        return "qwen2.5-coder-32b-instruct".to_string(); // SOTA local model fallback
-    }
+    // Every other provider, "custom" included, has no default model: the user picks one.
     String::new()
 }
 
@@ -1146,6 +1146,26 @@ pub fn corrupt_settings_backup_filename(unix_secs: u64) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn custom_provider_ships_unconfigured() {
+        // A fresh install must not point at anyone's private server or name a model
+        // the user never chose: the custom provider starts empty and the LLM step is
+        // skipped until the user fills in the address and model in Settings.
+        let custom = default_post_process_providers()
+            .into_iter()
+            .find(|p| p.id == "custom")
+            .expect("custom provider exists (id is load-bearing for stored configs)");
+        assert_eq!(custom.base_url, "");
+        assert!(custom.allow_base_url_edit);
+        assert_eq!(default_model_for_provider("custom"), "");
+        assert_eq!(
+            default_post_process_models()
+                .get("custom")
+                .map(String::as_str),
+            Some("")
+        );
+    }
 
     #[test]
     fn corrupt_backup_filename_is_timestamped_sibling() {

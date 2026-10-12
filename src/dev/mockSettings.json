@@ -82,7 +82,7 @@
     "anthropic": "",
     "bedrock_mantle": "",
     "cerebras": "",
-    "custom": "qwen2.5-coder-32b-instruct",
+    "custom": "",
     "groq": "",
     "openai": "",
     "openrouter": "",
@@ -160,9 +160,9 @@
     },
     {
       "allow_base_url_edit": true,
-      "base_url": "http://localhost:4000/v1",
+      "base_url": "",
       "id": "custom",
-      "label": "Local LLM (LiteLLM)",
+      "label": "Custom (OpenAI-compatible)",
       "models_endpoint": "/models",
       "supports_structured_output": true
     }
